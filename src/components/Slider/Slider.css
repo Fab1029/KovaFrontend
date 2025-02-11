@@ -1,0 +1,11 @@
+.slider {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    text-align: center;
+}
+
+.slider-point {
+    cursor: pointer;
+    transition: background-color 300ms ease-in-out;
+}
