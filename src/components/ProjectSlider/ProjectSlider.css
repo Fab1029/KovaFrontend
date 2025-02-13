@@ -1,0 +1,98 @@
+.project-slider {
+    width: 100%;  
+    height: 100vh; 
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.slider {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-arrow, .right-arrow {
+    width: 4%; 
+    max-width: 50px;
+    cursor: pointer;
+    transition: filter 0.3s ease, transform 0.3s ease; 
+}
+
+
+.left-arrow:hover, .right-arrow:hover {
+    filter: brightness(0) invert(1);
+}
+
+
+.right-arrow:hover {
+    transform: translateX(10%); 
+}
+
+
+.left-arrow:hover {
+    transform: translateX(-10%); 
+}
+
+.project-title, .project-subtitle {
+    opacity: 0;
+    animation: clipReveal 1s ease-in-out forwards;
+}
+
+.project-title {
+    color: white;
+    font-size: 500%;
+    text-align: left;
+}
+
+.project-subtitle {
+    color: transparent;
+    font-size: 500%;
+    text-align: right;
+    margin-right: -20%;
+    -webkit-text-stroke: 2px white;
+}
+
+.point-slider {
+    width: 100%;
+    position: absolute;
+    left: 85%;
+    bottom: 2%;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+
+.point {
+    padding: 0.75%;
+    margin: 0 0.3%;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+@keyframes clipReveal {
+    from {
+        clip-path: inset(0 100% 0 0); /* Oculta todo el texto desde la derecha */
+        opacity: 0;
+    }
+    to {
+        clip-path: inset(0 0 0 0); /* Revela completamente el texto */
+        opacity: 1;
+    }
+}
+

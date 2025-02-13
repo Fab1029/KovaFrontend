@@ -1,0 +1,49 @@
+.nav-bar {
+    top: 0;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    padding: 1%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+.main-kova-img {
+    width: 10%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+    position: relative;
+}
+
+.menu-img {
+    width: 10%;
+    cursor: pointer;
+}
+
+.menu-img path {
+    transition: opacity 0.3s;
+}
+
+.menu-img:hover path {
+    opacity: 0.8;
+}
+
+.menu-text {
+    color: white;
+    font-size: 100%;
+    margin: 0 2%;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.menu:hover .menu-text {
+    opacity: 1;
+    transform: translateX(0);
+}

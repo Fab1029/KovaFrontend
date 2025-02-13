@@ -1,9 +1,17 @@
 import React from 'react'
-import Slider from '../components/Slider/Slider'
+import ProjectSlider from '../components/ProjectSlider/ProjectSlider.jsx'
+import Link from '../components/Link/Link.jsx'
+import Nav from '../components/Nav/Nav.jsx'
 
 const Home = () => {
   return (
-    <div> <Slider padding_size={"10px"} margin_size={"5px"}/> </div>
+    <div> 
+      <header>
+        <ProjectSlider navBar={<Nav />} viewMore={<Link prompt={'Ver mas'} color={'white'}/>}/> 
+      </header>
+      
+      
+    </div>
   )
 }
 

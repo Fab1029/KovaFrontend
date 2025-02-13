@@ -1,0 +1,32 @@
+.link {
+    display: block;
+    cursor: pointer;
+    width: fit-content;
+    text-decoration: none;
+    transition: opacity 0.3s ease-in-out;
+    animation: moveUpFadeIn 0.8s ease-in-out both;
+}
+
+.link:hover {
+    opacity: 0.8; /* Ahora sí funcionará con transición */
+}
+
+.link p {
+    font-size: 100%;
+}
+
+.link div {
+    width: 100%;
+    height: 5px;
+}
+
+@keyframes moveUpFadeIn {
+    from { 
+        transform: translateY(0);
+        opacity: 0;
+    }  
+    to { 
+        transform: translateY(-5px);  
+        opacity: 1;
+    }
+}
