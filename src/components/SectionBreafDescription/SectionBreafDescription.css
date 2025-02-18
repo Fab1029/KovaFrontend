@@ -1,0 +1,29 @@
+.section-breaf-description-container-info {
+    width: 50%;
+    display: flex;
+    margin: 0 auto;
+    align-items: center; 
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section-breaf-description-text {
+    font-size: 120%;
+    color: #253646;
+    text-align: justify;
+    width: 100%;
+}
+
+.section-breaf-description-container-info a {
+    margin-top: 2%; /* Espacio entre el texto y el botón */
+    align-self: flex-end; /* Lo alinea a la derecha */
+}
+
+.info-card-list {
+    margin: 1% 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
