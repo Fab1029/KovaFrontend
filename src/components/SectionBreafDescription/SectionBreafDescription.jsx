@@ -118,10 +118,7 @@ const SectionBreafDescription = () => {
               </svg>}
             /></li>
             
-        </ul>
-
-        <p>PRUEBA PARA VER COMO QUEDO</p>
-        
+        </ul>      
     </div>
   )
 }

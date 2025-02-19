@@ -1,12 +1,18 @@
 .nav-bar {
     top: 0;
     width: 100%;
+    padding: 1%;
+    z-index: 1;
     display: flex;
     position: fixed;
-    padding: 1%;
     align-items: center;
     justify-content: space-between;
     background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.nav-bar-active {
+    background-color: #253646;
 }
 
 .main-kova-img {
@@ -35,10 +41,10 @@
 }
 
 .menu-text {
-    color: white;
-    font-size: 100%;
-    margin: 0 2%;
     opacity: 0;
+    margin: 0 2%;
+    color: white;
+    font-size: 18px;
     transform: translateX(-10px);
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }

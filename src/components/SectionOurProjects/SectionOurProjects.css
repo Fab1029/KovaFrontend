@@ -1,0 +1,10 @@
+.section-our-projects-container {
+    display: flex;
+}
+
+
+.section-our-projects-container div {
+    flex: 2;
+    width: 500px;
+    height: 300px;
+}

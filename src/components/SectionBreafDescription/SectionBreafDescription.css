@@ -1,5 +1,5 @@
 .section-breaf-description-container-info {
-    width: 50%;
+    width: 40%;
     display: flex;
     margin: 0 auto;
     align-items: center; 
@@ -8,10 +8,12 @@
 }
 
 .section-breaf-description-text {
-    font-size: 120%;
+    width: 100%;
+    margin: 2% 0;
+    font-size: 18px;
     color: #253646;
     text-align: justify;
-    width: 100%;
+    
 }
 
 .section-breaf-description-container-info a {
@@ -24,6 +26,6 @@
     display: flex;
     list-style: none;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     
 }
