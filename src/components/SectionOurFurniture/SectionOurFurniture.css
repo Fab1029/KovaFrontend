@@ -1,4 +1,4 @@
-.section-our-projects-container {
+.section-our-furniture-container {
     gap: 5%;
     height: 400px;
     display: flex;
@@ -7,13 +7,12 @@
     justify-content: space-between;
 }
 
-.section-our-projects-slider {
+.section-our-furniture-slider {
     width: 1000px;
     height: 100%;
 }
 
 
-.section-our-projects-description-text {
+.section-our-furniture-description-text {
     margin-bottom: 10px;
 }
-

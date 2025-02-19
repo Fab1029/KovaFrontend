@@ -1,16 +1,7 @@
 import React, { useState } from 'react'
 import './ProjectSlider.css'
 
-const ProjectSlider = ({navBar, font_size}) => {
-  /* AQUI DEBE IR LOS 5 PROYECTOS MAS IMPORTANTES O NUEVOS */
-  const projects = [
-    {title: 'Proyecto', subtitle: 'Nabon', description: 'Proyecto realizado en la provincia de Nabon', image: '/assets/HeaderImage.webp'},
-    {title: 'Proyecto', subtitle: 'Cuenca', description: 'Proyecto realizado en la provincia de Nabon', image: '/assets/HeaderImage2.png'},
-    {title: 'Proyecto', subtitle: 'Yunguilla', description: 'Proyecto realizado en la provincia de Nabon', image: '/assets/HeaderImage3.jpg'},
-    {title: 'Proyecto', subtitle: 'Carmen', description: 'Proyecto realizado en la provincia de Nabon', image: '/assets/HeaderImage.webp'},
-    {title: 'Proyecto', subtitle: 'Salinas', description: 'Proyecto realizado en la provincia de Nabon', image: '/assets/HeaderImage2.png'},
-  ]
-
+const ProjectSlider = ({navBar, projects, font_size}) => {
   const [index, setIndex] = useState(0)
 
   const handlePointClick = (index) => {
