@@ -5,6 +5,7 @@ import Nav from '../../components/Nav/Nav.jsx'
 import SectionBreafDescription from '../../components/SectionBreafDescription/SectionBreafDescription.jsx'
 import SectionOurProjects from '../../components/SectionOurProjects/SectionOurProjects.jsx'
 import SectionOurFurniture from '../../components/SectionOurFurniture/SectionOurFurniture.jsx'
+import SectionOurClients from '../../components/SectionOurClients/SectionOurClients.jsx'
 
 const Home = () => {
   const projects = [
@@ -24,6 +25,7 @@ const Home = () => {
         <SectionBreafDescription/>
         <SectionOurProjects/>
         <SectionOurFurniture/>
+        <SectionOurClients/>
       </main>
       
       

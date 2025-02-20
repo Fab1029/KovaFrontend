@@ -1,0 +1,27 @@
+.clients-slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.clients-list {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    list-style: none;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    width: 80%;
+}
+
+.clients-list::-webkit-scrollbar {
+    display: none;
+}
+
+.arrow {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}

@@ -8,12 +8,16 @@
 }
 
 .section-our-projects-slider {
-    width: 1000px;
+    flex: 1;
     height: 100%;
 }
 
+.section-our-projects-description {
+    flex: 1;
+}
 
 .section-our-projects-description-text {
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
