@@ -6,6 +6,7 @@ import SectionBreafDescription from '../../components/SectionBreafDescription/Se
 import SectionOurProjects from '../../components/SectionOurProjects/SectionOurProjects.jsx'
 import SectionOurFurniture from '../../components/SectionOurFurniture/SectionOurFurniture.jsx'
 import SectionOurClients from '../../components/SectionOurClients/SectionOurClients.jsx'
+import Footer from '../../components/Footer/Footer.jsx'
 
 const Home = () => {
   const projects = [
@@ -27,7 +28,9 @@ const Home = () => {
         <SectionOurFurniture/>
         <SectionOurClients/>
       </main>
-      
+      <footer className='home-footer'>
+        <Footer/>
+      </footer>
       
     </div>
   )

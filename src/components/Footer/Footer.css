@@ -1,0 +1,77 @@
+.footer {
+    width: 100%;
+    height: 400px;
+    padding: 2% 2%;
+    background-color: #253646;
+}
+
+.footer-title-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.footer-section-title-title, .footer-section-title-subtitle {
+    font-size: 80px;
+}
+
+.footer-section-title-title {
+    color: white;
+    text-align: left;
+} 
+
+.footer-section-title-subtitle {
+    text-align: right;
+    margin-right: -20%;
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+    
+
+}
+
+.footer-title-container svg {
+    width: 50px;
+    padding: 0.5% 0;
+}
+
+.footer-social-icon-container {
+    display: flex;
+    margin-top: 5%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.social-icon {
+    width: 50px;
+    cursor: pointer;
+    margin-right: 2%;
+}
+
+.facebook-icon {
+    transition: fill 0.5s ease-in-out;
+}
+
+.facebook-icon:hover {
+    fill: #ffffff80;
+}
+
+.instagram-icon path {
+    transition: fill 0.5s ease-in-out;
+}
+
+.instagram-icon:hover {    
+    path {
+        fill: #ffffff80;
+    }
+}
+
+.whatsapp-icon g {
+    transition: fill 0.5s ease-in-out;
+}
+
+.whatsapp-icon:hover {
+    g {
+        fill: #ffffff80;
+    }
+}
