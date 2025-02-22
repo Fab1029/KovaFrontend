@@ -1,5 +1,6 @@
 import React from 'react'
 import './Home.css'
+import '../../utils/css/Animation.css'
 import ProjectSlider from '../../components/ProjectSlider/ProjectSlider.jsx'
 import Nav from '../../components/Nav/Nav.jsx'
 import SectionBreafDescription from '../../components/SectionBreafDescription/SectionBreafDescription.jsx'

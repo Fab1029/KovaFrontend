@@ -10,6 +10,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    transition: slideLeft 1s ease-in;
 }
 
 .slider {
@@ -85,14 +86,4 @@
     transition: background-color 0.3s ease-in-out;
 }
 
-@keyframes clipReveal {
-    from {
-        clip-path: inset(0 100% 0 0); /* Oculta todo el texto desde la derecha */
-        opacity: 0;
-    }
-    to {
-        clip-path: inset(0 0 0 0); /* Revela completamente el texto */
-        opacity: 1;
-    }
-}
 

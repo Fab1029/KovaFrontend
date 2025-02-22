@@ -1,3 +1,9 @@
+.section-our-furniture {
+    animation: fadeIn 1s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 10% cover 45%;
+}
+
 .section-our-furniture-container {
     gap: 5%;
     height: 400px;

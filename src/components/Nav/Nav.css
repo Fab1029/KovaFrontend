@@ -17,6 +17,12 @@
 
 .main-kova-img {
     width: 10%;
+    cursor: pointer;
+    transition: width 0.3s ease-in-out;
+}
+
+.main-kova-img:hover {
+    width: 10.5%;
 }
 
 .menu {
@@ -30,14 +36,11 @@
 .menu-img {
     width: 10%;
     cursor: pointer;
+    transition: width 0.3s ease-in-out;
 }
 
 .menu-img path {
-    transition: opacity 0.3s;
-}
-
-.menu-img:hover path {
-    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .menu-text {
@@ -49,7 +52,18 @@
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-.menu:hover .menu-text {
-    opacity: 1;
-    transform: translateX(0);
+
+.menu:hover {
+    .menu-img {
+        width: 10.5%;
+    }
+
+    .menu-img path {
+        opacity: 0.8;
+    }
+
+    .menu-text {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }

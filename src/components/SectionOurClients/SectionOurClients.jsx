@@ -19,7 +19,7 @@ const SectionOurClients = () => {
   };
 
   return (
-    <div>
+    <div className='section-our-clients'>
       <SectionTitle title={'Nuestros'} subtitle={'Clientes'} />
       <div className='clients-slider-container'>
         <svg className='arrow left-arrow' viewBox="0, 0, 400,400" onClick={handleArrowLeftClick}>

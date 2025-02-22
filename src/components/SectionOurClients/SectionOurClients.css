@@ -1,3 +1,9 @@
+.section-our-clients {
+    animation: fadeIn 1s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 10% cover 45%;
+}
+
 .clients-slider-container {
     display: flex;
     align-items: center;
@@ -6,11 +12,14 @@
 }
 
 .clients-list {
+    margin: 5% 0;
     display: flex;
     overflow-x: auto;
-    scroll-behavior: smooth;
     list-style: none;
     align-items: center;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
     gap: 20px;
     padding: 10px;
     width: 80%;
