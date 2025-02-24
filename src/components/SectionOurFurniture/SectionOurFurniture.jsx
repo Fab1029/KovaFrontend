@@ -4,11 +4,7 @@ import SectionTitle from '../SectionTitle/SectionTitle'
 import ProjectSlider from '../ProjectSlider/ProjectSlider'
 import Link from '../Link/Link'
 
-const SectionOurFurniture = () => {
-    const projects = [
-        {title: '', subtitle: '', description: '', image: '/assets/furniture1.jpeg'},
-        {title: '', subtitle: '', description: '', image: '/assets/furniture2.jpg'},
-    ]
+const SectionOurFurniture = ({projects}) => {
     
     return (
         <div className='section-our-furniture'>

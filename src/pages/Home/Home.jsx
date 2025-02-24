@@ -11,12 +11,17 @@ import Footer from '../../components/Footer/Footer.jsx'
 
 const Home = () => {
   const projects = [
-    {title: 'Proyecto', subtitle: 'Nabon', description: 'Proyecto realizado en la provincia de Nabon', image: '/assets/HeaderImage.webp'},
-    {title: 'Proyecto', subtitle: 'Cuenca', description: 'Proyecto realizado en la provincia de Nabon', image: '/assets/HeaderImage2.png'},
-    {title: 'Proyecto', subtitle: 'Yunguilla', description: 'Proyecto realizado en la provincia de Nabon', image: '/assets/HeaderImage3.jpg'},
-    {title: 'Proyecto', subtitle: 'Carmen', description: 'Proyecto realizado en la provincia de Nabon', image: '/assets/HeaderImage.webp'},
-    {title: 'Proyecto', subtitle: 'Salinas', description: 'Proyecto realizado en la provincia de Nabon', image: '/assets/HeaderImage2.png'},
+    {title: 'Proyecto', subtitle: 'Nabon', description: 'Proyecto realizado en la provincia de Nabon', image: '/assets/headerImage3.webp'},
+    {title: 'Proyecto', subtitle: 'Cuenca', description: 'Proyecto realizado en la provincia de Nabon', image: '/assets/headerImage2.png'},
+    {title: 'Proyecto', subtitle: 'Yunguilla', description: 'Proyecto realizado en la provincia de Nabon', image: '/assets/headerImage1.jpg'},
+    {title: 'Proyecto', subtitle: 'Carmen', description: 'Proyecto realizado en la provincia de Nabon', image: '/assets/headerImage3.webp'},
+    {title: 'Proyecto', subtitle: 'Salinas', description: 'Proyecto realizado en la provincia de Nabon', image: '/assets/headerImage2.png'},
   ]
+
+  const furniture = [
+    {title: '', subtitle: '', description: '', image: '/assets/furniture1.jpeg'},
+    {title: '', subtitle: '', description: '', image: '/assets/furniture2.jpg'},
+]
 
   return (
     <div> 
@@ -25,8 +30,8 @@ const Home = () => {
       </header>
       <main className='home-main'>
         <SectionBreafDescription/>
-        <SectionOurProjects/>
-        <SectionOurFurniture/>
+        <SectionOurProjects projects={projects}/>
+        <SectionOurFurniture projects={furniture}/>
         <SectionOurClients/>
       </main>
       <footer className='home-footer'>

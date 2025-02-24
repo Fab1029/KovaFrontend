@@ -5,14 +5,7 @@ import ProjectSlider from '../ProjectSlider/ProjectSlider'
 import Link from '../Link/Link'
 
 
-const SectionOurProjects = () => {
-  const projects = [
-    {title: 'Proyecto', subtitle: 'Nabon', description: 'Proyecto realizado en la provincia de Nabon', image: '/assets/HeaderImage.webp'},
-    {title: 'Proyecto', subtitle: 'Cuenca', description: 'Proyecto realizado en la provincia de Nabon', image: '/assets/HeaderImage2.png'},
-    {title: 'Proyecto', subtitle: 'Yunguilla', description: 'Proyecto realizado en la provincia de Nabon', image: '/assets/HeaderImage3.jpg'},
-    {title: 'Proyecto', subtitle: 'Carmen', description: 'Proyecto realizado en la provincia de Nabon', image: '/assets/HeaderImage.webp'},
-    {title: 'Proyecto', subtitle: 'Salinas', description: 'Proyecto realizado en la provincia de Nabon', image: '/assets/HeaderImage2.png'},
-  ]
+const SectionOurProjects = ({projects}) => {
 
   return (
     <div className='section-our-projects'>
