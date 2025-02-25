@@ -7,12 +7,7 @@
     position: fixed;
     align-items: center;
     justify-content: space-between;
-    background-color: transparent;
     transition: background-color 0.3s ease-in-out;
-}
-
-.nav-bar-active {
-    background-color: #253646;
 }
 
 .main-kova-img {

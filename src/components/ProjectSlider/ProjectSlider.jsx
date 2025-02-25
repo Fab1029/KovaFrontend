@@ -4,7 +4,7 @@ import './ProjectSlider.css';
 const ProjectSlider = ({ navBar, projects, font_size }) => {
   const [index, setIndex] = useState(0);
   const [rightSlide, setRightSlide] = useState(true);
-  const [previewIndex, setPreviewIndex] = useState(0);
+  const [previewIndex, setPreviewIndex] = useState(projects.length - 1);
 
   const handleArrowRightClick = () => {
     setPreviewIndex(index)

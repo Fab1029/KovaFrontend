@@ -1,6 +1,6 @@
 import React from 'react'
 import './SectionBreafDescription.css'
-import Link from '../Link/Link'
+import StyledLink from '../StyledLink/StyledLink'
 import SectionTitle from '../SectionTitle/SectionTitle'
 import InfoCard from '../InfoCard/InfoCard'
 
@@ -18,7 +18,7 @@ const SectionBreafDescription = () => {
                 Que es KOVA y que inspira a KOVA en un texto breve.
             </p>
             
-            <Link prompt={'Ver mas'} color={'#5B8095'}/>
+            <StyledLink prompt={'Ver mas'} color={'#5B8095'}/>
         </div>
 
         <ul className='info-card-list'>

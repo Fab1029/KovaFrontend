@@ -1,0 +1,54 @@
+.section-knowUsAlong {
+    animation: fadeIn 1s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 45%;
+}
+
+.section-knowUsAlong-list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-knowUsAlong-element {
+    gap: 10%;
+    padding: 0 5%;
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.section-knowUsAlong-description-text {
+    font-size: 18px;
+}
+
+.section-knowUsAlong-description-divider {
+    width: 25%;
+    height: 5px;
+    margin-top: 10px;
+    background-color: #253646;
+}
+
+.section-knowUsAlong-image-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-knowUsAlong-image-container img {
+    width: 800px;
+    max-width: 90%;
+    object-fit: cover;
+}
+
+
+
+.section-knowUsAlong-image-name {
+    font-size: 18px;
+    margin-top: 10px;
+}
