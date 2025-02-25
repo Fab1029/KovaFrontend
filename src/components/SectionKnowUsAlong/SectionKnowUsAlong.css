@@ -13,13 +13,16 @@
 }
 
 .section-knowUsAlong-element {
+    animation: fadeSlideLeft linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 35%;
+
     gap: 10%;
     padding: 0 5%;
     display: flex;
     margin: 10px 0;
     align-items: center;
     justify-content: center;
-
 }
 
 .section-knowUsAlong-description-text {

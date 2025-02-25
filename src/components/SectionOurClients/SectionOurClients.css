@@ -1,14 +1,18 @@
 .section-our-clients {
-    animation: fadeIn 1s ease-in-out;
+    animation: fadeIn linear;
     animation-timeline: view();
-    animation-range: entry 10% cover 45%;
+    animation-range: entry 0% cover 40%;
 }
 
 .clients-slider-container {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
-    position: relative;
 }
 
 .clients-list {

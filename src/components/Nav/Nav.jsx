@@ -4,7 +4,7 @@ import './Nav.css';
 
 const Nav = () => {
   const location = useLocation()
-  const [navBg, setNavBg] = useState("#253646")
+  const [navBg, setNavBg] = useState("transparent")
   const [menuOpen, setMenuOpen] = useState(false)
   
 

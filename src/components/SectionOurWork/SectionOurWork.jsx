@@ -14,7 +14,6 @@ const SectionOurWork = () => {
         {title: 'titulo', description: '', img: '/assets/galleryImage2.jpg'},
         {title: 'titulo', description: '', img: '/assets/galleryImage3.jpg'},
         {title: 'titulo', description: '', img: '/assets/galleryImage.jpg'}
-        
     ]
 
     return (

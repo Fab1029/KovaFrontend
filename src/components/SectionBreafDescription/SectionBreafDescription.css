@@ -1,10 +1,14 @@
 .section-breaf-description {
-    animation: fadeIn 1s ease-in-out;
+    animation: fadeIn linear;
     animation-timeline: view();
-    animation-range: entry 10% cover 45%;
+    animation-range: entry 0% cover 40%;
 }
   
 .section-breaf-description-container-info {
+    animation: fadeSlideLeft linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    
     width: 40%;
     display: flex;
     margin: 0 auto;
@@ -35,3 +39,9 @@
     
 }
 
+
+.info-card-list  li{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
