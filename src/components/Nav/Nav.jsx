@@ -51,7 +51,7 @@ const Nav = () => {
         </div>
         <ul className='menu-list'>
           <li><Link to={'/'}>Inicio</Link></li>
-          <li><Link>Galería</Link></li>
+          <li><Link to={'/ProjectsGallery'}>Galería</Link></li>
           <li><Link>Mueblería</Link></li>
           <li><Link to={'/WhoWeAre'}>Acerca de</Link></li>
         </ul>
