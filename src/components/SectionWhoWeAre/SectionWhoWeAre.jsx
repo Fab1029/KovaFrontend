@@ -13,6 +13,11 @@ const SectionWhoWeAre = () => {
                     Que es KOVA y que inspira a KOVA en un texto breve.
                     Que es KOVA y que inspira a KOVA en un texto breve.
                     Que es KOVA y que inspira a KOVA en un texto breve.
+                    Que es KOVA y que inspira a KOVA en un texto breve.
+                    Que es KOVA y que inspira a KOVA en un texto breve.
+                    Que es KOVA y que inspira a KOVA en un texto breve.
+                    Que es KOVA y que inspira a KOVA en un texto breve.
+                    Que es KOVA y que inspira a KOVA en un texto breve.
                 </p>
                
             </div>

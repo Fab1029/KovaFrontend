@@ -1,0 +1,101 @@
+.section-project {
+    animation: fadeIn linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 5%;
+    
+}
+
+.section-project-info {
+    margin: 2% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-project-info-description {
+    animation: fadeSlideRight linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+    
+    width: 60%;
+    padding: 5% 2%;
+        
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5B8095;
+}
+
+.section-project-info-description p {
+    animation: clipReveal 1s ease-in forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+
+    color: white;
+    font-size: 20px;
+}
+
+.section-project-info-details {
+    animation: fadeSlideLeft linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+    
+    width: 30%;
+    padding: 2%;
+    background-color: #FBFBFB;
+}
+
+.section-project-info-detail {
+    animation: clipReveal 1s ease-in forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+
+    margin: 2% 0;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.section-project-info-title {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.section-project-render-main, .section-project-blueprint-main {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+    
+    
+    width: 100%;
+    margin: 2% 0;
+    height: 650px;
+    margin-bottom: 1%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.section-project-renders-container, .section-project-blueprint-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+
+    gap: 2%;
+    list-style: none;
+    align-items: stretch;
+    justify-content: center;
+    
+}
+
+.section-project-renders-container li, .section-project-blueprint-container li {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+
+    overflow: hidden;
+}
+
+.section-project-render, .section-project-blueprint {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
