@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './SectionProject.css'
 import SectionTitle from '../SectionTitle/SectionTitle'
 
 const SectionProject = ({projectId}) => {
     const project = {id: 1, title: 'Proyecto', subtitle: 'Nabon', description: `Is simply dummy text of the printing and typesetting industry. Lorem  Ipsum has been the industry's standard dummy text ever since the 1500s,  when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also  the leap into electronic typesetting, remaining essentially unchanged.  It was popularised in the 1960s with the release of Letraset sheets  containing Lorem Ipsum passages, and more recently with desktop  publishing software like Aldus PageMaker including versions of Lorem  Ipsum.`, mainRenderImage: '/assets/headerImage3.webp',
-        blueprintMain: '/assets/blueprintMain.jpg',
+        blueprintMain: '/assets/blueprintMain.jpg', renderVideo: '/assets/renderVideoMain.mp4',
 
         details: [
             {title: 'Area de construccion', detail: '125 metros cuadrados'},
@@ -17,19 +17,53 @@ const SectionProject = ({projectId}) => {
             '/assets/render1.jpeg',
             '/assets/render2.jpeg',
             '/assets/render3.webp',
-            '/assets/render4.jpg'
+            '/assets/render4.jpg',
+            '/assets/render4.webp',
+            '/assets/render5.jpg',
         ],
         blueprints: [
             '/assets/blueprint1.webp',
             '/assets/blueprint2.jpg'
         ]
     }
+
+
+    const [showVideo, setShowVideo] = useState(false);
+    const [hoverTimeout, setHoverTimeout] = useState(null);
+
+    // Manejar el hover con temporizador
+    const handleMouseEnter = () => {
+        const timeout = setTimeout(() => {
+            setShowVideo(true);
+        }, 1500); // 3 segundos
+        setHoverTimeout(timeout);
+    };
+
+    // Cancelar el temporizador y ocultar el video al salir
+    const handleMouseLeave = () => {
+        if (hoverTimeout) {
+            clearTimeout(hoverTimeout);
+        }
+        setShowVideo(false);
+    };
   
     return (
         <div className='section-project'>
-            <SectionTitle title={project.title} subtitle={project.subtitle}/>
-            
-            <img className='section-project-render-main' src={project.mainRenderImage} />
+            <div className='section-project-header-container'>
+                <SectionTitle title={project.title} subtitle={project.subtitle} />
+                
+                <div
+                    className='section-project-header-render'
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
+                >
+                    {showVideo ? (
+                        <video className='section-project-render-main' src={project.renderVideo} autoPlay loop muted />
+                    ) : (
+                        <img className='section-project-render-main' src={project.mainRenderImage} />
+                    )}
+                </div>
+            </div>
             
 
             <div className='section-project-info'>
