@@ -1,7 +1,5 @@
 .section-projectsGallery {
-    animation: fadeIn linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 5%;
+    animation: fadeSlideRight 0.5s ease-in-out;
 }
 
 .projectsGallery-list {

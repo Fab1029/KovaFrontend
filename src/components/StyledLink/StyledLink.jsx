@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 import './StyledLink.css'
 
 
-const StyledLink = ({prompt, color}) => {
+const StyledLink = ({prompt, color, link}) => {
+  
   return (
-    <Link className='link'>
+    <Link to={link} className='link'>
         <p style={{
             color: color
         }}>{prompt}</p>

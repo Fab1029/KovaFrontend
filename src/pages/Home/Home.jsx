@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Home.css'
 import '../../utils/css/Animation.css'
 import ProjectSlider from '../../components/ProjectSlider/ProjectSlider.jsx'
@@ -8,37 +8,68 @@ import SectionOurProjects from '../../components/SectionOurProjects/SectionOurPr
 import SectionOurFurniture from '../../components/SectionOurFurniture/SectionOurFurniture.jsx'
 import SectionOurClients from '../../components/SectionOurClients/SectionOurClients.jsx'
 import Footer from '../../components/Footer/Footer.jsx'
+import {getProjects} from '../../services/Project.js'
+import {getClients} from '../../services/Clients.js'
+import {getInformationById} from '../../services/Information.js'
+import {getForniture} from '../../services/Forniture.js'
 
 const Home = () => {
-  const projects = [
-    {title: 'Proyecto', subtitle: 'Nabon', description: 'Proyecto realizado en la provincia de Nabon', image: '/assets/headerImage3.webp'},
-    {title: 'Proyecto', subtitle: 'Cuenca', description: 'Proyecto realizado en la provincia de Nabon', image: '/assets/headerImage2.png'},
-    {title: 'Proyecto', subtitle: 'Yunguilla', description: 'Proyecto realizado en la provincia de Nabon', image: '/assets/headerImage1.jpg'},
-    {title: 'Proyecto', subtitle: 'Carmen', description: 'Proyecto realizado en la provincia de Nabon', image: '/assets/headerImage3.webp'},
-    {title: 'Proyecto', subtitle: 'Salinas', description: 'Proyecto realizado en la provincia de Nabon', image: '/assets/headerImage2.png'},
-  ]
+  const [clients, setClients] = useState(null);
+  const [projects, setProjects] = useState(null);
+  const [forniture, setForniture] = useState(null);
+  const [information , setInformation] = useState(null);
 
-  const furniture = [
-    {title: '', subtitle: '', description: '', image: '/assets/furniture1.jpeg'},
-    {title: '', subtitle: '', description: '', image: '/assets/furniture2.jpg'},
-]
+  useEffect(() => {
+    const fetchProjects = async () => {
+      const data = await getProjects();
+      setProjects(data); 
+    };
+
+    const fetchClients = async () => {
+      const data = await getClients();
+      setClients(data); 
+    };
+
+    const fetchInformation = async () => {
+      const data = await getInformationById(1);
+      setInformation(data); 
+    };
+
+    const fetchForniture = async () => {
+      const data = await getForniture();
+      setForniture(data); 
+    };
+
+    fetchClients();
+    fetchForniture();
+    fetchInformation();
+    fetchProjects();
+    
+    
+  }, []); 
 
   return (
-    <div> 
-      <header className='home-header'>
-        <ProjectSlider navBar={<Nav/>} projects={projects} font_size={'100px'}/> 
-      </header>
-      <main className='home-main'>
-        <SectionBreafDescription/>
-        <SectionOurProjects projects={projects}/>
-        <SectionOurFurniture projects={furniture}/>
-        <SectionOurClients/>
-      </main>
-      <footer className='home-footer'>
-        <Footer/>
-      </footer>
-      
-    </div>
+    <>
+      {clients && forniture && information && projects ?
+        <div> 
+          <header className='home-header'>
+            <ProjectSlider navBar={<Nav/>} projects={projects} font_size={'100px'}/> 
+          </header>
+          <main className='home-main'>
+            <SectionBreafDescription information={information}/>
+            <SectionOurProjects projects={projects}/>
+            <SectionOurFurniture forniture={forniture}/>
+            <SectionOurClients clients={clients}/>
+          </main>
+          <footer className='home-footer'>
+            <Footer/>
+          </footer>
+        </div>
+        :
+        <div>Cargando..</div>
+      }
+    </>
+    
   )
 }
 

@@ -1,35 +1,41 @@
 import React, { useState } from 'react';
 import './ProjectSlider.css';
+import { useNavigate } from 'react-router-dom';
 
 const ProjectSlider = ({ navBar, projects, font_size }) => {
+  const navigate = useNavigate();
   const [index, setIndex] = useState(0);
   const [rightSlide, setRightSlide] = useState(true);
   const [previewIndex, setPreviewIndex] = useState(projects.length - 1);
+
+  const handleProjectClick = () => {
+    navigate(`/ProjectsGallery/${index + 1}`)
+  };
 
   const handleArrowRightClick = () => {
     setPreviewIndex(index)
     setRightSlide(true)
     setIndex(index === projects.length - 1 ? 0 : index + 1);
     
-  }
+  };
 
   const handleArrowLeftClick = () => {
     setPreviewIndex(index)
     setRightSlide(false)
     setIndex(index === 0 ? projects.length - 1 : index - 1);
-  }
+  };
 
   return (
     <div key={index} className="project-slider">
      
       <div
         className='project-background project-background-preview'
-        style={{ backgroundImage: `url(${projects[previewIndex].image})` }}
+        style={{ backgroundImage: `url(${projects[previewIndex].render})` }}
       />
 
       <div
         className={`project-background ${rightSlide ? 'project-background-right-next' : 'project-background-left-next'} `}
-        style={{ backgroundImage: `url(${projects[index].image})` }}
+        style={{ backgroundImage: `url(${projects[index].render})` }}
       />
 
       {navBar}
@@ -41,12 +47,12 @@ const ProjectSlider = ({ navBar, projects, font_size }) => {
           </g>
         </svg>
 
-        <div className="name-slider">
+        <div className="name-slider" onClick={handleProjectClick}>
           <h1 className="project-title" style={{ fontSize: font_size }}>
             {projects[index].title}
           </h1>
           <h1 className="project-subtitle" style={{ fontSize: font_size }}>
-            {projects[index].subtitle}
+            {projects[index].subTitle}
           </h1>
         </div>
 

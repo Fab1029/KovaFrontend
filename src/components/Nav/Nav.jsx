@@ -20,7 +20,7 @@ const Nav = () => {
       }
     }
 
-    if (location.pathname === "/") {
+    if (location.pathname === "/" || location.pathname === "/WhoWeAre") {
       setNavBg("transparent");
       window.addEventListener("scroll", handleScroll);
     } else {

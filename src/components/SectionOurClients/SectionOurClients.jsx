@@ -3,7 +3,7 @@ import './SectionOurClients.css';
 import SectionTitle from '../SectionTitle/SectionTitle';
 import ClientCard from '../ClientCard/ClientCard';
 
-const SectionOurClients = () => {
+const SectionOurClients = ({clients}) => {
   const listRef = useRef(null);
 
   const handleArrowLeftClick = () => {
@@ -29,13 +29,9 @@ const SectionOurClients = () => {
         </svg>
 
         <ul className='clients-list' ref={listRef}>
-          <li><ClientCard /></li>
-          <li><ClientCard /></li>
-          <li><ClientCard /></li>
-          <li><ClientCard /></li>
-          <li><ClientCard /></li>
-          <li><ClientCard /></li>
-          <li><ClientCard /></li>
+          {clients.map((client, index) => (
+            <li key={index}><ClientCard client={client}/></li>
+          ))}
         </ul>
 
         <svg className='arrow right-arrow' viewBox="0, 0, 400,400" onClick={handleArrowRightClick}>

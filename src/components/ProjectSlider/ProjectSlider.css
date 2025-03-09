@@ -71,6 +71,8 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
+
+    cursor: pointer;
 }
 
 .project-title {
@@ -86,7 +88,7 @@
 }
 
 .point-slider {
-    left: 85%;
+    left: 88%;
     bottom: 2%;
     width: 100%;
     display: flex;

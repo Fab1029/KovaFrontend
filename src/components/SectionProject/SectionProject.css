@@ -4,21 +4,41 @@
     animation-range: entry 0% cover 5%;  
 }
 
-.section-project-header-container {
+.section-project-header-container {  
     width: 100%;
     height: 100vh;
+    
 }
 
 .section-project-header-render {
     width: 100%;
-    height: 100%;
+    height: 75%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .section-project-render-main {
-    width: 100%;
-    height: 65%;
-    object-fit: cover;
+    width: 90%;
+    height: 100%;
     transition: opacity 1s ease-in-out;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.section-project-render-main image {
+    height: 100%;
+}
+
+.section-project-render-main video {
+    height: 100%;
 }
 
 .section-project-info {

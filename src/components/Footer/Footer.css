@@ -51,10 +51,13 @@
     
 }
 
+.footer-social-icon-container a {
+    margin: 0 0.8%;
+}
+
 .social-icon {
     width: 50px;
     cursor: pointer;
-    margin-right: 2%;
     transition: transform 0.3 ease-in;
 }
 

@@ -1,21 +1,8 @@
 .section-whoWeAre {
     animation: fadeIn 1s ease-in-out;
     animation-timeline: view();
-    animation-range: entry 10% cover 45%;
+    animation-range: entry 5% cover 30%;
+
 }
   
-.section-whoWeAre-container-info {
-    width: 40%;
-    display: flex;
-    margin: 3% auto;
-    align-items: center; 
-    justify-content: center;
-    flex-direction: column;
-}
 
-.section-whoWeAre-text {
-    width: 100%;
-    font-size: 18px;
-    color: #253646;
-    text-align: justify; 
-}
