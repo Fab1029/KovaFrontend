@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './ProjectSlider.css';
 import { useNavigate } from 'react-router-dom';
 
-const ProjectSlider = ({ navBar, projects, font_size }) => {
+const ProjectSlider = ({ navBar, projects, header }) => {
   const navigate = useNavigate();
   const [index, setIndex] = useState(0);
   const [rightSlide, setRightSlide] = useState(true);
@@ -48,10 +48,10 @@ const ProjectSlider = ({ navBar, projects, font_size }) => {
         </svg>
 
         <div className="name-slider" onClick={handleProjectClick}>
-          <h1 className="project-title" style={{ fontSize: font_size }}>
+          <h1 className={`project-title project-title${header}`}>
             {projects[index].title}
           </h1>
-          <h1 className="project-subtitle" style={{ fontSize: font_size }}>
+          <h1 className={`project-subtitle project-subtitle${header}`}>
             {projects[index].subTitle}
           </h1>
         </div>

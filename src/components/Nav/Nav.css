@@ -30,7 +30,13 @@
 }
 
 .menu-img {
-    width: 35px;
+    width: 10%;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.close-img {
+    width: 2%;
     cursor: pointer;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
@@ -70,8 +76,8 @@
 }
 
 .menu-list {
-    margin: 15% 0 ;
     padding: 0;
+    margin: 15% 0;
     list-style: none;
     text-align: center;
 }
@@ -89,4 +95,134 @@
 
 .menu-list li a:hover {
     color: #5B8095;
+}
+
+@media (max-width:360px) {
+    .main-kova-img {
+        width: 35%;
+    }
+
+    .menu-img {
+        width: 10%;
+    }
+
+    .close-img {
+        width: 8%;
+    }
+
+    .menu-text {
+        font-size: 12px;
+    }
+
+    .menu-list {
+        padding: 20% 0;
+    } 
+
+    .menu-list li a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:480px) {
+    .main-kova-img {
+        width: 30%;
+    }
+
+    .menu-img {
+        width: 10%;
+    }
+
+    .close-img {
+        width: 8%;
+    }
+
+    .menu-text {
+        font-size: 14px;
+    }
+
+    .menu-list {
+        padding: 40% 0;
+    } 
+
+    .menu-list li a {
+        font-size: 24px;
+    }
+}
+
+@media (min-width:481px) and (max-width:768px) {
+    .main-kova-img {
+        width: 20%;
+    }
+
+    .menu-img {
+        width: 10%;
+    }
+
+    .close-img {
+        width: 5%;
+    }
+
+    .menu-text {
+        font-size: 16px;
+    }
+
+    .menu-list {
+        padding: 30% 0;
+    } 
+
+    .menu-list li a {
+        font-size: 26px;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+    .main-kova-img {
+        width: 16%;
+    }
+
+    .menu-img {
+        width: 10%;
+    }
+
+    .close-img {
+        width: 4%;
+    }
+
+    .menu-text {
+        font-size: 16px;
+    }
+
+    .menu-list {
+        padding: 20% 0;
+    } 
+
+    .menu-list li a {
+        font-size: 30px;
+    }
+}
+
+@media (min-width:1025px) and (max-width:1366px) {
+    .main-kova-img {
+        width: 14%;
+    }
+
+    .menu-img {
+        width: 10%;
+    }
+
+    .close-img {
+        width: 3%;
+    }
+
+    .menu-text {
+        font-size: 18px;
+    }
+
+    .menu-list {
+        padding: 10% 0;
+    } 
+
+    .menu-list li a {
+        font-size: 32px;
+    }
 }

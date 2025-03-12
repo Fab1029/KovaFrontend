@@ -63,6 +63,7 @@
 
 .project-title, .project-subtitle {
     opacity: 0;
+    font-size: 60px;
     animation: clipReveal 1s ease-in-out forwards;
 }
 
@@ -87,6 +88,10 @@
     -webkit-text-stroke: 2px white;
 }
 
+.project-titleheader, .project-subtitleheader {
+    font-size: 100px;
+}
+
 .point-slider {
     left: 88%;
     bottom: 2%;
@@ -102,4 +107,105 @@
     margin: 0 0.3%;
     border-radius: 50%;
     transition: background-color 0.3s ease-in-out;
+}
+
+@media (max-width:360px) {
+    .point {
+        padding: 1.5%;
+        margin: 0 0.5%;
+    }
+
+    .project-title, .project-subtitle {
+        font-size: 24px;
+    }
+
+    .project-titleheader, .project-subtitleheader {
+        font-size: 40px;
+    }
+
+    .left-arrow, .right-arrow {
+        width: 5%;
+    }
+
+    
+}
+
+@media (min-width:361px) and (max-width:480px) {
+    .point {
+        padding: 1.5%;
+        margin: 0 0.5%;
+    }
+
+    .project-title, .project-subtitle {
+        font-size: 28px;
+    }
+
+    .project-titleheader, .project-subtitleheader {
+        font-size: 50px;
+    }
+
+    .left-arrow, .right-arrow {
+        width: 5%;
+    }
+
+}
+
+@media (min-width:481px) and (max-width:768px) {
+    .point {
+        padding: 1.2%;
+        margin: 0 0.5%;
+    }
+
+    .project-title, .project-subtitle {
+        font-size: 42px;
+    }
+
+    .project-titleheader, .project-subtitleheader {
+        font-size: 64px;
+    }
+
+    .left-arrow, .right-arrow {
+        width: 5%;
+    }
+
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+    .point {
+        padding: 1.1%;
+        margin: 0 0.5%;
+    }
+
+    .project-title, .project-subtitle {
+        font-size: 58px;
+    }
+
+    .project-titleheader, .project-subtitleheader {
+        font-size: 78px;
+    }
+
+    .left-arrow, .right-arrow {
+        width: 4%;
+    }
+
+}
+
+@media (min-width:1025px) and (max-width:1366px) {
+    .point {
+        padding: 1%;
+        margin: 0 0.5%;
+    }
+
+    .project-title, .project-subtitle {
+        font-size: 64px;
+    }
+
+    .project-titleheader, .project-subtitleheader {
+        font-size: 88px;
+    }
+
+    .left-arrow, .right-arrow {
+        width: 4%;
+    }
+
 }

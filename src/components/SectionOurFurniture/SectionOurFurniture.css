@@ -1,12 +1,14 @@
 .section-our-furniture {
     animation: fadeIn linear;
-    animation-timeline: view();
+    animation-timeline: scroll(root);
     animation-range: entry 0% cover 40%;
+
+    margin: 2% 0;
 }
 
 .section-our-furniture-container {
     gap: 5%;
-    height: 400px;
+    height: 450px;
     display: flex;
     margin-bottom: 10px;
     align-items: center;
@@ -25,7 +27,7 @@
 .section-our-furniture-description {
     animation: slideLeft linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 10%;
 
     flex: 1;
 }
@@ -33,4 +35,71 @@
 .section-our-furniture-description-text {
     font-size: 18px;
     margin-bottom: 10px;
+}
+
+@media (max-width:360px) {
+    .section-our-furniture {
+        margin: 8% 0;
+    }
+    .section-our-furniture-container {
+        height: 300px;
+        display: block;   
+    }
+    .section-our-furniture-description-text {
+        display: none;
+    }
+}
+
+@media (min-width:361px) and (max-width:480px) {
+    .section-our-furniture {
+        margin: 6% 0;
+    }
+    .section-our-furniture-container {
+        height: 320px;
+        display: block;   
+    }
+    .section-our-furniture-description-text {
+        display: none;
+    }
+}
+
+@media (min-width:481px) and (max-width:768px) {
+    .section-our-furniture {
+        margin: 6% 0;
+    }
+    .section-our-furniture-container {
+        height: 350px;
+        display: block;   
+    }
+    .section-our-furniture-description-text {
+        display: none;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+    .section-our-furniture {
+        margin: 6% 0;
+    }
+    .section-our-furniture-container {
+        height: 400px;
+        display: block;   
+    }
+    .section-our-furniture-description-text {
+        display: none;
+    }
+}
+
+@media (min-width:1025px) and (max-width:1366px) {
+    .section-our-furniture {
+        margin: 4% 0;
+    }
+    .section-our-furniture-container {
+        height: 400px;
+    }
+    .section-our-furniture-slider {
+        flex: 1.5;
+    }
+    .section-our-furniture-description-text {
+        font-size: 16px;
+    }
 }

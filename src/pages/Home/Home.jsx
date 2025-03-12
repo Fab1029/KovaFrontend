@@ -12,6 +12,7 @@ import {getProjects} from '../../services/Project.js'
 import {getClients} from '../../services/Clients.js'
 import {getInformationById} from '../../services/Information.js'
 import {getForniture} from '../../services/Forniture.js'
+import Loading from '../../components/Loading/Loading.jsx'
 
 const Home = () => {
   const [clients, setClients] = useState(null);
@@ -53,7 +54,7 @@ const Home = () => {
       {clients && forniture && information && projects ?
         <div> 
           <header className='home-header'>
-            <ProjectSlider navBar={<Nav/>} projects={projects} font_size={'100px'}/> 
+            <ProjectSlider navBar={<Nav/>} projects={projects} header={'header'}/> 
           </header>
           <main className='home-main'>
             <SectionBreafDescription information={information}/>
@@ -66,7 +67,7 @@ const Home = () => {
           </footer>
         </div>
         :
-        <div>Cargando..</div>
+        <Loading />
       }
     </>
     

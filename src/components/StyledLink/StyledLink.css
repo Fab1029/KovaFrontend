@@ -19,13 +19,47 @@
     height: 5px;
 }
 
-@keyframes moveUpFadeIn {
-    from { 
-        transform: translateY(0);
-        opacity: 0;
-    }  
-    to { 
-        transform: translateY(-5px);  
-        opacity: 1;
+@media(max-width:360px) {
+    .link p {
+        font-size: 12px;
+    }
+    .link div {
+        height: 3px;
+    }
+}
+
+@media (min-width:361px) and (max-width:480px) {
+    .link p {
+        font-size: 14px;
+    }
+    .link div {
+        height: 4px;
+    }
+}
+
+@media (min-width:481px) and (max-width:768px) {
+    .link p {
+        font-size: 16px;
+    }
+    .link div {
+        height: 4px;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+    .link p {
+        font-size: 18px;
+    }
+    .link div {
+        height: 5px;
+    }
+}
+
+@media (min-width:1025px) and (max-width:1366px) {
+    .link p {
+        font-size: 18px;
+    }
+    .link div {
+        height: 5px;
     }
 }
