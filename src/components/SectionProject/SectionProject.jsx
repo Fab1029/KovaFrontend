@@ -23,25 +23,21 @@ const SectionProject = ({ project }) => {
     };
 
     return (
-        <div className='section-project'>
+        <div key={''} className='section-project'>
             <div className='section-project-header-container'>
                 <SectionTitle title={project.title} subtitle={project.subTitle} />
+                
                 <div
-                    className='section-project-header-render'
+                    className='section-project-render-main'
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
+                    style={showVideo ? {} : { backgroundImage: `url("${project.render}")` }}
                 >
                     {showVideo ? (
-                        <div className='section-project-render-main'>
-                            <video className='section-project-video' src={project.video} autoPlay loop muted />
-                        </div>
-                    ) : (
-                        <div className='section-project-render-main'>
-                            <img className='section-project-render-main' src={project.render} alt='Render' />
-                        </div>
-
-                    )}
+                        <video className='section-project-video' src={project.video} autoPlay loop muted />
+                    ) : null}
                 </div>
+                
             </div>
 
             <div className='section-project-info'>
