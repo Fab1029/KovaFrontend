@@ -11,8 +11,8 @@
 }
 
 .section-project-render-main {
-    width: 95%;
-    height: 75%;
+    width: 85%;
+    height: 80%;
     overflow: hidden;
     background-size: cover;
     background-position: center;
@@ -51,7 +51,7 @@
 
 .section-project-info-description p {
     color: white;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .section-project-info-details {
@@ -72,7 +72,7 @@
 }
 
 .section-project-info-title {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bolder;
 }
 
@@ -114,6 +114,11 @@
     object-fit: cover; 
 }
 
+.section-title-project , .section-title-subtitle-project {
+    font-size: 40px;
+}
+
+
 @media (max-width:360px) {
     .section-project {
         margin: 10% 0;
@@ -147,6 +152,9 @@
     }
     .section-project-render, .section-project-blueprint {
         margin: 2% 0;
+    }
+    .section-title-project , .section-title-subtitle-project {
+        font-size: 20px;
     }
 }
 
@@ -184,6 +192,9 @@
     .section-project-render, .section-project-blueprint {
         margin: 2% 0;
     }
+    .section-title-project , .section-title-subtitle-project {
+        font-size: 30px;
+    }
 }
 
 @media (min-width:481px) and (max-width:768px) {
@@ -219,6 +230,9 @@
     .section-project-render, .section-project-blueprint {
         margin: 2% 0;
     }
+    .section-title-project , .section-title-subtitle-project {
+        font-size: 30px;
+    }
 }
 
 @media (min-width:769px) and (max-width:1024px) {
@@ -241,7 +255,7 @@
     }
     .section-project-info-description p, .section-project-info-detail, .section-project-info-title {
         margin: 3% 0;
-        font-size: 24px;
+        font-size: 18px;
         text-align: center;
     }
     .section-project-renders-container, .section-project-blueprint-container {

@@ -30,7 +30,6 @@
 
 .section-knowUsAlong-team-img {
     animation: fadeSlideLeft 0.5s ease-in-out;
-    
     height: 90%;
 }
 
@@ -53,4 +52,82 @@
     color: white;
     font-size: 20px;
     text-align: center;
+}
+
+@media (max-width:360px) {
+    .section-knowUsAlong-background {
+        flex-direction: column;
+    }
+    .section-knowUsAlong-info-container {
+        margin: 5% 0;
+    }
+    .section-knowUsAlong-kova-img {
+        width: 60%;
+        margin: 10% 0;
+    }
+    .section-knowUsAlong-text {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+@media (min-width:361px) and (max-width:480px) {
+    .section-knowUsAlong-background {
+        flex-direction: column;
+    }
+    .section-knowUsAlong-info-container {
+        margin: 5% 0;
+    }
+    .section-knowUsAlong-kova-img {
+        width: 40%;
+        margin: 8% 0;
+    }
+    .section-knowUsAlong-text {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+@media (min-width:481px) and (max-width:768px)  {
+    .section-knowUsAlong-background {
+        flex-direction: column;
+    }
+    .section-knowUsAlong-info-container {
+        margin: 5% 0;
+    }
+    .section-knowUsAlong-kova-img {
+        width: 40%;
+        margin: 4% 0;
+    }
+    .section-knowUsAlong-text {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+    .section-knowUsAlong-background {
+        flex-direction: column;
+    }
+    .section-knowUsAlong-info-container {
+        margin: 5% 0;
+    }
+    .section-knowUsAlong-kova-img {
+        width: 40%;
+        margin: 2% 0;
+    }
+    .section-knowUsAlong-text {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+@media (min-width:1025px) and (max-width:1366px) {
+    .section-knowUsAlong-kova-img {
+        width: 40%;
+        margin: 2% 0;
+    }
+    .section-knowUsAlong-text {
+        font-size: 20px;
+    }
 }
