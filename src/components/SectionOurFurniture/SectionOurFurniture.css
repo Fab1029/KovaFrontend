@@ -39,10 +39,11 @@
 
 @media (max-width:360px) {
     .section-our-furniture {
-        margin: 8% 0;
+        margin: 15% 0;
     }
     .section-our-furniture-container {
-        height: 300px;
+        margin: 2% 0;
+        height: 400px;
         display: block;   
     }
     .section-our-furniture-description-text {
@@ -52,10 +53,11 @@
 
 @media (min-width:361px) and (max-width:480px) {
     .section-our-furniture {
-        margin: 6% 0;
+        margin: 15% 0;
     }
     .section-our-furniture-container {
-        height: 320px;
+        margin: 2% 0;
+        height: 420px;
         display: block;   
     }
     .section-our-furniture-description-text {
@@ -65,10 +67,11 @@
 
 @media (min-width:481px) and (max-width:768px) {
     .section-our-furniture {
-        margin: 6% 0;
+        margin: 15% 0;
     }
     .section-our-furniture-container {
-        height: 350px;
+        margin: 2% 0;
+        height: 500px;
         display: block;   
     }
     .section-our-furniture-description-text {
@@ -78,10 +81,11 @@
 
 @media (min-width:769px) and (max-width:1024px) {
     .section-our-furniture {
-        margin: 6% 0;
+        margin: 8% 0;
     }
     .section-our-furniture-container {
-        height: 400px;
+        margin: 1% 0;
+        height: 600px;
         display: block;   
     }
     .section-our-furniture-description-text {
@@ -94,6 +98,7 @@
         margin: 4% 0;
     }
     .section-our-furniture-container {
+        margin: 0.5% 0;
         height: 400px;
     }
     .section-our-furniture-slider {

@@ -95,45 +95,69 @@
 }
 
 @media (max-width:360px) {
+    .footer {
+        padding: 5% 2%;
+    }
+    .footer-title-container {
+        margin: 8% 0;
+    }
     .footer-section-title-title, .footer-section-title-subtitle {
-        font-size: 24px;
+        font-size: 30px;
     }
     .footer-title-container svg {
         width: 6%;
     }
     .social-icon {
-        width: 20px;
+        width: 30px;
         margin: 0 5px;
     }
 }
 
 @media (min-width:361px) and (max-width:480px) {
+    .footer {
+        padding: 5% 2%;
+    }
+    .footer-title-container {
+        margin: 8% 0;
+    }
     .footer-section-title-title, .footer-section-title-subtitle {
-        font-size: 28px;
+        font-size: 30px;
     }
     .footer-title-container svg {
-        width: 5%;
+        width: 6%;
     }
     .social-icon {
-        width: 22px;
+        width: 30px;
         margin: 0 5px;
     }
 }
 
 @media (min-width:481px) and (max-width:768px) {
+    .footer {
+        padding: 4% 2%;
+    }
+    .footer-title-container {
+        margin: 8% 0;
+    }
     .footer-section-title-title, .footer-section-title-subtitle {
         font-size: 42px;
     }
     .footer-title-container svg {
-        width: 4%;
+        width: 5%;
     }
     .social-icon {
-        width: 34px;
+        width: 40px;
         margin: 0 4px;
     }
 }
 
 @media (min-width:769px) and (max-width:1024px) {
+    .footer {
+        padding: 2%;
+    }
+    .footer-title-container {
+        margin: 6% 0;
+    }
     .footer-section-title-title, .footer-section-title-subtitle {
         font-size: 44px;
     }
@@ -141,7 +165,7 @@
         width: 4%;
     }
     .social-icon {
-        width: 40px;
+        width: 42px;
         margin: 0 4px;
     }
 }

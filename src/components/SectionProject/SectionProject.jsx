@@ -1,45 +1,17 @@
 import React, { useState } from 'react';
 import './SectionProject.css';
 import SectionTitle from '../SectionTitle/SectionTitle';
+import ProjectSlider from '../../components/ProjectSlider/ProjectSlider.jsx'
 
 const SectionProject = ({ project }) => {
-    const [showVideo, setShowVideo] = useState(false);
-    const [hoverTimeout, setHoverTimeout] = useState(null);
-
-    // Manejar el hover con temporizador
-    const handleMouseEnter = () => {
-        const timeout = setTimeout(() => {
-            setShowVideo(true);
-        }, 3000);
-        setHoverTimeout(timeout);
-    };
-
-    // Cancelar el temporizador y ocultar el video al salir
-    const handleMouseLeave = () => {
-        if (hoverTimeout) {
-            clearTimeout(hoverTimeout);
-        }
-        setShowVideo(false);
-    };
 
     return (
         <div key={''} className='section-project'>
             <div className='section-project-header-container'>
                 <SectionTitle title={project.title} subtitle={project.subTitle} />
-                
-                <div
-                    className='section-project-render-main'
-                    onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}
-                    style={showVideo ? {} : { backgroundImage: `url("${project.render}")` }}
-                >
-                    {showVideo ? (
-                        <video className='section-project-video' src={project.video} autoPlay loop muted />
-                    ) : null}
-                </div>
-                
+                <video className='section-project-video' src={project.video} autoPlay loop muted />
             </div>
-
+              
             <div className='section-project-info'>
                 <div className='section-project-info-description'>
                     <p>{project.description}</p>
@@ -53,18 +25,35 @@ const SectionProject = ({ project }) => {
                     ))}
                 </div>
             </div>
+            
+            <div className='section-project-render-main-container'>
+                <img className='section-project-render-main' src={project.render}/>
+                <div>
+                    <img className='section-project-render' src={project.renders[0]} alt='Render' />
+                    <img className='section-project-render' src={project.renders[1]} alt='Render' />
+                </div>
+            </div>
+            
+            <div className='section-project-blueprint-main-container'>
+                <div>
+                    <img className='section-project-blueprint' src={project.blueprints[0]} alt='Render' />
+                    <img className='section-project-blueprint' src={project.blueprints[1]} alt='Render' />
+                </div>
+                <img className='section-project-blueprint-main' src={project.blueprint}/>
+            </div>
+            {/*
 
-            {/*Los renders del proyecto*/}
+
             <ul className='section-project-renders-container'>
-                {project.renders?.map((render, index) => (
+                {project.renders?.slice(2).map((render, index) => (
                     <li key={index}>
                         <img className='section-project-render' src={render} alt='Render' />
                     </li>
                 ))}
             </ul>
-
-            {/*Los planos del proyecto*/}
+            
             <img className='section-project-blueprint-main' src={project.blueprint} alt='Blueprint' />
+
             <ul className='section-project-blueprint-container'>
                 {project.blueprints?.map((blueprint, index) => (
                     <li key={index}>
@@ -72,6 +61,7 @@ const SectionProject = ({ project }) => {
                     </li>
                 ))}
             </ul>
+            */}
         </div>
     );
 };

@@ -79,10 +79,10 @@
         width: 18%;
     }
     .client-info-name, .client-project-description{
-        font-size: 12px;
+        font-size: 14px;
     }
     .client-project-title, .client-project-subtitle {
-        font-size: 14px;
+        font-size: 24px;
     }
 }
 

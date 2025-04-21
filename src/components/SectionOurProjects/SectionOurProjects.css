@@ -39,10 +39,11 @@
 
 @media (max-width:360px) {
     .section-our-projects {
-        margin: 8% 0;
+        margin: 10% 0;
     }
     .section-our-projects-container {
-        height: 300px;
+        margin: 2% 0;
+        height: 400px;
         display: block;   
     }
     .section-our-projects-description-text {
@@ -52,10 +53,11 @@
 
 @media (min-width:361px) and (max-width:480px) {
     .section-our-projects {
-        margin: 6% 0;
+        margin: 10% 0;
     }
     .section-our-projects-container {
-        height: 320px;
+        margin: 2% 0;
+        height: 420px;
         display: block;   
     }
     .section-our-projects-description-text {
@@ -65,10 +67,11 @@
 
 @media (min-width:481px) and (max-width:768px) {
     .section-our-projects {
-        margin: 6% 0;
+        margin: 10% 0;
     }
     .section-our-projects-container {
-        height: 350px;
+        margin: 2% 0;
+        height: 500px;
         display: block;   
     }
     .section-our-projects-description-text {
@@ -78,10 +81,11 @@
 
 @media (min-width:769px) and (max-width:1024px) {
     .section-our-projects {
-        margin: 6% 0;
+        margin: 8% 0;
     }
     .section-our-projects-container {
-        height: 400px;
+        margin: 1% 0;
+        height: 600px;
         display: block;   
     }
     .section-our-projects-description-text {
@@ -94,7 +98,8 @@
         margin: 4% 0;
     }
     .section-our-projects-container {
-        height: 400px;    
+        margin: 0.5% 0;
+        height: 400px;  
     }
     .section-our-projects-slider {
         flex: 1.5;

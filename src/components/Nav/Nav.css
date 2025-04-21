@@ -98,42 +98,19 @@
 }
 
 @media (max-width:360px) {
+    .nav-bar {
+        padding: 2% 5%;
+    }
     .main-kova-img {
-        width: 35%;
+        width: 45%;
     }
 
     .menu-img {
-        width: 10%;
+        width: 12%;
     }
 
     .close-img {
-        width: 8%;
-    }
-
-    .menu-text {
-        font-size: 12px;
-    }
-
-    .menu-list {
-        padding: 20% 0;
-    } 
-
-    .menu-list li a {
-        font-size: 18px;
-    }
-}
-
-@media (min-width:361px) and (max-width:480px) {
-    .main-kova-img {
-        width: 35%;
-    }
-
-    .menu-img {
         width: 10%;
-    }
-
-    .close-img {
-        width: 8%;
     }
 
     .menu-text {
@@ -141,26 +118,26 @@
     }
 
     .menu-list {
-        padding: 30% 0;
+        padding: 20% 0;
     } 
 
     .menu-list li a {
         font-size: 24px;
     }
-
 }
 
-@media (min-width:481px) and (max-width:768px) {
+@media (min-width:361px) and (max-width:480px) {
+    .nav-bar {
+        padding: 2.5% 5%;
+    }
     .main-kova-img {
-        width: 30%;
+        width: 36%;
     }
-
     .menu-img {
-        width: 10%;
+        width: 11%;
     }
-
     .close-img {
-        width: 5%;
+        width: 9%;
     }
 
     .menu-text {
@@ -174,56 +151,82 @@
     .menu-list li a {
         font-size: 26px;
     }
+
+}
+
+@media (min-width:481px) and (max-width:768px) {
+    .nav-bar {
+        padding: 2.5% 5%;
+    }
+    .main-kova-img {
+        width: 25%;
+    }
+    .menu-img {
+        width: 12%;
+    }
+    .close-img {
+        width: 6%;
+    }
+    .menu-text {
+        font-size: 20px;
+    }
+    .menu-list {
+        padding: 30% 0;
+    } 
+    .menu-list li a {
+        font-size: 34px;
+    }
 }
 
 @media (min-width:769px) and (max-width:1024px) {
+    .nav-bar {
+        padding: 2.5% 5%;
+    }
     .main-kova-img {
-        width: 16%;
+        width: 18%;
     }
-
     .menu-img {
-        width: 10%;
+        width: 11%;
     }
-
     .close-img {
-        width: 4%;
+        width: 5%;
     }
-
     .menu-text {
-        font-size: 16px;
+        font-size: 20px;
     }
-
     .menu-list {
-        padding: 20% 0;
+        padding: 15% 0;
     } 
-
     .menu-list li a {
-        font-size: 30px;
+        font-size: 34px;
     }
 }
 
 @media (min-width:1025px) and (max-width:1366px) {
+    .nav-bar {
+        padding: 2.5% 5%;
+    }
     .main-kova-img {
         width: 14%;
     }
 
     .menu-img {
-        width: 10%;
+        width: 11%;
     }
 
     .close-img {
-        width: 3%;
+        width: 3.5%;
     }
 
     .menu-text {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .menu-list {
-        padding: 10% 0;
+        padding: 5% 0;
     } 
 
     .menu-list li a {
-        font-size: 32px;
+        font-size: 34px;
     }
 }

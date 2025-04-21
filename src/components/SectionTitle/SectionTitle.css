@@ -52,15 +52,15 @@
 
 @media (max-width:360px) {
     .section-title-title, .section-title-subtitle {
-        font-size: 20px;
+        font-size: 28px;
     }
 
     .title-container svg {
-        width: 5%;
+        width: 6%;
     }
 
     .divider-section-title {
-        height: 3px;
+        height: 4px;
     }
 }
 
@@ -70,7 +70,7 @@
     }
 
     .title-container svg {
-        width: 5%;
+        width: 6%;
     }
 
     .divider-section-title {
@@ -84,7 +84,7 @@
     }
 
     .title-container svg {
-        width: 4%;
+        width: 5%;
     }
 
     .divider-section-title {

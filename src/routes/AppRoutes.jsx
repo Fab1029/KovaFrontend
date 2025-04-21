@@ -14,7 +14,6 @@ const AppRoutes = () => {
             <Route path='/ProjectsGallery' element={<ProjectsGallery/>} />
             <Route path='/ProjectsGallery/:id' element={<Project/>} />
         </Routes>
-
     </Router>
   )
 }

@@ -1,8 +1,9 @@
-const API_URL = "http://localhost:8080/project";
+const API_URL = "http://localhost:8080";
+//const API_URL = "http://192.168.1.4:8080";
 
 export const getProjectById = async(id) => {
     try {
-        const response = await fetch(`${API_URL}/${id}`);
+        const response = await fetch(`${API_URL}/project/${id}`);
 
         if(!response.ok) {
             throw new Error('Could not load project')
@@ -18,7 +19,7 @@ export const getProjectById = async(id) => {
 
 export const getProjects = async() => {
     try {
-        const response = await fetch(API_URL);
+        const response = await fetch(`${API_URL}/project`);
 
         if(!response.ok) {
             throw new Error('Could not load projects')

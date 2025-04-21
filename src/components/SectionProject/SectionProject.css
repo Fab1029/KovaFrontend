@@ -5,33 +5,19 @@
 .section-project-header-container {  
     width: 100%;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.section-project-render-main {
-    width: 85%;
-    height: 80%;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .section-project-video {
     width: 100%;
-    height: 100%;
+    height: 70%;
 }
 
 .section-project-info {
+    gap: 5%;
     display: flex;
     margin-bottom: 2%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .section-project-info-description {
@@ -39,7 +25,7 @@
     animation-timeline: view();
     animation-range: entry 0% cover 20%;
     
-    width: 60%;
+    width: 80%;
     padding: 5% 2%;
         
     display: flex;
@@ -51,7 +37,7 @@
 
 .section-project-info-description p {
     color: white;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .section-project-info-details {
@@ -76,230 +62,86 @@
     font-weight: bolder;
 }
 
-.section-project-blueprint-main {
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 30%;
-    
-    width: 100%;
-    height: auto;
+.section-project-render-main-container, .section-project-blueprint-main-container {
+    gap: 0.5%;
     margin: 1% 0;
-    object-fit: cover;
-    object-position: center;
+    display: flex;
+    height: 800px;
 }
 
-
-.section-project-renders-container, .section-project-blueprint-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-
-    gap: 2%;
-    list-style: none;
-    align-items: stretch;
-    justify-content: center;
-    
-}
-
-.section-project-renders-container li, .section-project-blueprint-container li {
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 30%;
-
-    overflow: hidden;
-}
-
-.section-project-render, .section-project-blueprint {
-    width: 100%;
+.section-project-render-main-container div, .section-project-blueprint-main-container div {
+    gap: 0.5%;
     height: 100%;
-    object-fit: cover; 
+    display: flex;
+    flex-direction: column;
 }
 
-.section-title-project , .section-title-subtitle-project {
-    font-size: 40px;
+.section-project-render-main {
+    width: 65%;
+    height: 100%;
+    animation: fadeSlideRight linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
 }
 
+.section-project-blueprint-main {
+    width: 65%;
+    height: 100%;
+    animation: fadeSlideLeft linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+
+.section-project-render {
+    height: 100%;
+    animation: fadeSlideLeft linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+
+
+.section-project-blueprint {
+    height: 100%;
+    animation: fadeSlideRight linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
 
 @media (max-width:360px) {
     .section-project {
-        margin: 10% 0;
+        margin-top: 50px;
     }
     .section-project-header-container {
-        height: 300px;
-    }
-    .section-project-render-main {
-        width: 100%;
-        height: 100%;
+        height: 50vh;
     }
     .section-project-info {
-        margin: 2% 0;
-        flex-direction: column;
+        display: inline-block;
     }
     .section-project-info-description, .section-project-info-details {
-        width: 95%;
-        margin: 2% 0;
-    }
-    .section-project-info-description p, .section-project-info-detail, .section-project-info-title {
-        margin: 5% 0;
-        font-size: 14px;
-        text-align: center;
-    }
-    .section-project-renders-container, .section-project-blueprint-container {
-        margin: 2% 0;
-        display: flex;
-        align-items: stretch;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .section-project-render, .section-project-blueprint {
-        margin: 2% 0;
-    }
-    .section-title-project , .section-title-subtitle-project {
-        font-size: 20px;
-    }
-}
-
-@media (min-width:361px) and (max-width:480px){
-    .section-project {
-        margin: 10% 0;
-    }
-    .section-project-header-container {
-        height: 450px;
-    }
-    .section-project-render-main {
         width: 100%;
-        height: 100%;
-    }
-    .section-project-info {
-        margin: 2% 0;
-        flex-direction: column;
-    }
-    .section-project-info-description, .section-project-info-details {
-        width: 95%;
-        padding: 1% 0;
+        margin-top: 10px;
+        
     }
     .section-project-info-description p, .section-project-info-detail, .section-project-info-title {
-        margin: 5% 0;
-        font-size: 14px;
-        text-align: center;
+        font-size: 16px;
     }
-    .section-project-renders-container, .section-project-blueprint-container {
-        margin: 2% 0;
-        display: flex;
-        align-items: stretch;
-        flex-direction: column;
-        justify-content: center;
+    .section-project-render-main-container, .section-project-blueprint-main-container {
+        display: inline-block;
+        height: 400px;
     }
-    .section-project-render, .section-project-blueprint {
-        margin: 2% 0;
-    }
-    .section-title-project , .section-title-subtitle-project {
-        font-size: 30px;
+    .section-project-render-main-container div, .section-project-blueprint-main-container div {
+        flex-direction: unset;
     }
 }
 
 @media (min-width:481px) and (max-width:768px) {
-    .section-project {
-        margin: 10% 0;
-    }
-    .section-project-header-container {
-        height: 500px;
-    }
-    .section-project-render-main {
-        width: 100%;
-        height: 100%;
-    }
-    .section-project-info {
-        margin: 2% 0;
-        flex-direction: column;
-    }
-    .section-project-info-description, .section-project-info-details {
-        width: 95%;
-    }
-    .section-project-info-description p, .section-project-info-detail, .section-project-info-title {
-        margin: 3% 0;
-        font-size: 18px;
-        text-align: center;
-    }
-    .section-project-renders-container, .section-project-blueprint-container {
-        margin: 2% 0;
-        display: flex;
-        align-items: stretch;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .section-project-render, .section-project-blueprint {
-        margin: 2% 0;
-    }
-    .section-title-project , .section-title-subtitle-project {
-        font-size: 30px;
-    }
+    
 }
 
 @media (min-width:769px) and (max-width:1024px) {
-    .section-project {
-        margin: 5% 0;
-    }
-    .section-project-header-container {
-        height: 900px;
-    }
-    .section-project-render-main {
-        width: 100%;
-        height: 100%;
-    }
-    .section-project-info {
-        margin: 2% 0;
-        flex-direction: column;
-    }
-    .section-project-info-description, .section-project-info-details {
-        width: 95%;
-    }
-    .section-project-info-description p, .section-project-info-detail, .section-project-info-title {
-        margin: 3% 0;
-        font-size: 18px;
-        text-align: center;
-    }
-    .section-project-renders-container, .section-project-blueprint-container {
-        margin: 2% 0;
-        display: flex;
-        align-items: stretch;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .section-project-render, .section-project-blueprint {
-        margin: 2% 0;
-    }
+    
 }
 
 @media (min-width:1025px) and (max-width:1366px) {
-    .section-project {
-        margin: 4% 0;
-    }
-    .section-project-header-container {
-        height: 900px;
-    }
-    .section-project-render-main {
-        width: 100%;
-        height: 100%;
-    }
-    .section-project-info {
-        margin: 2% 0;
-    }
-    .section-project-info-description, .section-project-info-details {
-        width: 95%;
-    }
-    .section-project-info-description p, .section-project-info-detail, .section-project-info-title {
-        margin: 3% 0;
-        font-size: 24px;
-        text-align: center;
-    }
-    .section-project-renders-container, .section-project-blueprint-container {
-        margin: 2% 0;
-        display: flex;
-        align-items: stretch;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .section-project-render, .section-project-blueprint {
-        margin: 2% 0;
-    }
+    
 }
