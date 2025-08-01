@@ -9,7 +9,7 @@
     justify-content: center;
 }
 
-/* Nuevo div solo para la imagen de fondo */
+
 .project-background {
     top: 0;
     left: 0;
@@ -43,8 +43,8 @@
 }
 
 .left-arrow, .right-arrow {
-    width: 4%;
-    max-width: 50px;
+    width: 2rem;
+    max-width: 6rem;
     cursor: pointer;
     transition: filter 0.3s ease, transform 0.3s ease;
 }
@@ -63,17 +63,17 @@
 
 .project-title, .project-subtitle {
     opacity: 0;
-    font-size: 60px;
+    font-size: 100px;
+    font-family: 'Inter', sans-serif;
     animation: clipReveal 1s ease-in-out forwards;
 }
 
 .name-slider {
     display: flex;
+    cursor: pointer;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-
-    cursor: pointer;
 }
 
 .project-title {
@@ -82,143 +82,26 @@
 }
 
 .project-subtitle {
+    color: white;
     text-align: right;
-    margin-right: -20%;
-    color: transparent;
-    -webkit-text-stroke: 2px white;
+    margin-right: -35%;
 }
 
-.project-titleheader, .project-subtitleheader {
-    font-size: 100px;
-}
 
 .point-slider {
-    left: 88%;
     bottom: 2%;
     width: 100%;
+    gap: 0.5rem;
     display: flex;
     list-style: none;
+    margin-right: 1rem;
     position: absolute;
+    justify-content: end;
     align-items: center;
 }
 
 .point {
-    padding: 0.70%;
-    margin: 0 0.3%;
-    border-radius: 50%;
+    padding: 0.6rem;;
+    border-radius: 1rem;
     transition: background-color 0.3s ease-in-out;
-}
-
-@media (max-width:360px) {
-    .point-slider {
-        left: 72%;
-    }
-    .point {
-        padding: 2%;
-        margin: 0 0.5%;
-    }
-
-    .project-title, .project-subtitle {
-        font-size: 36px;
-    }
-
-    .project-titleheader, .project-subtitleheader {
-        font-size: 40px;
-    }
-
-    .left-arrow, .right-arrow {
-        width: 10%;
-    }    
-}
-
-@media (min-width:361px) and (max-width:480px) {
-    .point-slider {
-        left: 76%;
-    }
-    .point {
-        padding: 1.8%;
-        margin: 0 0.5%;
-    }
-
-    .project-title, .project-subtitle {
-        font-size: 36px;
-    }
-
-    .project-titleheader, .project-subtitleheader {
-        font-size: 50px;
-    }
-
-    .left-arrow, .right-arrow {
-        width: 8%;
-    }
-
-}
-
-@media (min-width:481px) and (max-width:768px) {
-    .point-slider {
-        left: 75%;
-    }
-    .point {
-        padding: 1.5%;
-        margin: 0 0.5%;
-    }
-
-    .project-title, .project-subtitle {
-        font-size: 42px;
-    }
-
-    .project-titleheader, .project-subtitleheader {
-        font-size: 70px;
-    }
-
-    .left-arrow, .right-arrow {
-        width: 8%;
-    }
-
-}
-
-@media (min-width:769px) and (max-width:1024px) {
-    .point-slider {
-        left: 78%;
-    }
-    .point {
-        padding: 1.2%;
-        margin: 0 0.5%;
-    }
-
-    .project-title, .project-subtitle {
-        font-size: 58px;
-    }
-
-    .project-titleheader, .project-subtitleheader {
-        font-size: 78px;
-    }
-
-    .left-arrow, .right-arrow {
-        width: 5%;
-    }
-
-}
-
-@media (min-width:1025px) and (max-width:1366px) {
-    .point-slider {
-        left: 82%;
-    }
-    .point {
-        padding: 1%;
-        margin: 0 0.5%;
-    }
-
-    .project-title, .project-subtitle {
-        font-size: 64px;
-    }
-
-    .project-titleheader, .project-subtitleheader {
-        font-size: 88px;
-    }
-
-    .left-arrow, .right-arrow {
-        width: 4%;
-    }
-
 }

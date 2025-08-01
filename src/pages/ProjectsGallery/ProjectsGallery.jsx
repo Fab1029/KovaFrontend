@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import './ProjectsGallery.css'
 import '../../utils/css/Animation.css'
-import Nav from '../../components/Nav/Nav'
-import SectionProjectsGallery from '../../components/SectionProjectsGallery/SectionProjectsGallery'
+import NavBar from '../../components/NavBar/NavBar'
+
 import Footer from '../../components/Footer/Footer'
 import { getProjects } from '../../services/Project';
 
@@ -22,10 +22,10 @@ const ProjectsGallery = () => {
       {projects ?
         <div>
           <header className='projectsGallery-header'>
-              <Nav/>
+              <NavBar/>
           </header>
           <main className='projectsGallery-main'>
-              <SectionProjectsGallery projects={projects}/>
+
           </main>
           <footer className='projectsGallery-footer'>
               <Footer />

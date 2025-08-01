@@ -1,17 +1,13 @@
 import React, { useState } from 'react';
 import './ProjectSlider.css';
-import { useNavigate } from 'react-router-dom';
 
-const ProjectSlider = ({ navBar, projects, header }) => {
-  const navigate = useNavigate();
+const ProjectSlider = ({ navBar, projects }) => {
+
   const [index, setIndex] = useState(0);
   const [rightSlide, setRightSlide] = useState(true);
   const [previewIndex, setPreviewIndex] = useState(projects.length - 1);
 
-  const handleProjectClick = () => {
-    navigate(`/ProjectsGallery/${index + 1}`)
-  };
-
+  
   const handleArrowRightClick = () => {
     setPreviewIndex(index)
     setRightSlide(true)
@@ -47,12 +43,12 @@ const ProjectSlider = ({ navBar, projects, header }) => {
           </g>
         </svg>
 
-        <div className="name-slider" onClick={handleProjectClick}>
-          <h1 className={`project-title project-title${header}`}>
-            {projects[index].title}
+        <div className="name-slider" onClick={null}>
+          <h1 className= 'project-title'>
+            {projects[index].title.split(' ')[0]}
           </h1>
-          <h1 className={`project-subtitle project-subtitle${header}`}>
-            {projects[index].subTitle}
+          <h1 className= 'project-subtitle'>
+            {projects[index].title.split(' ')[1]}
           </h1>
         </div>
 

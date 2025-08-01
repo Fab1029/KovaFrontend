@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import './Project.css'
 import '../../utils/css/Animation.css'
-import Nav from '../../components/Nav/Nav'
+import NavBar from '../../components/NavBar/NavBar'
 import { useParams } from 'react-router-dom'
 import Footer from '../../components/Footer/Footer'
-import SectionProject from '../../components/SectionProject/SectionProject'
 import { getProjectById } from '../../services/Project';
 
 const Project = () => {
@@ -18,7 +17,7 @@ const Project = () => {
         setProject(data); // Guardamos los datos en el estado
     };
 
-    fetchProject();
+    //fetchProject();
   }, [id]); // Se ejecuta cada vez que `projectId` cambie
 
   return (
@@ -26,10 +25,10 @@ const Project = () => {
       { project ?
         <div> 
           <header className='project-header'>
-            <Nav/>
+            <NavBar/>
           </header>
           <main className='project-main'>
-            <SectionProject project={project}/>
+
           </main>
           <footer className='project-footer'>
             <Footer/>

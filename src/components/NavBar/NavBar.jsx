@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import './Nav.css';
+import './NavBar.css';
 
-const Nav = () => {
+const NavBar = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [navBg, setNavBg] = useState("transparent");
@@ -65,4 +65,4 @@ const Nav = () => {
   );
 }
 
-export default Nav;
+export default NavBar;

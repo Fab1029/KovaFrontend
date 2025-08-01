@@ -1,15 +1,15 @@
-const API_URL = "http://localhost:8080";
-//const API_URL = "http://192.168.1.4:8080";
+import {project} from '../data/Projetc.js';
+
 
 export const getProjectById = async(id) => {
     try {
-        const response = await fetch(`${API_URL}/project/${id}`);
+        const response = project.find(p => p.id === id);
 
-        if(!response.ok) {
+        if(!response) {
             throw new Error('Could not load project')
         }
 
-        return await response.json();
+        return response;
     }
     catch(error) {
         console.error("Error getProjectById:", error);
@@ -17,15 +17,16 @@ export const getProjectById = async(id) => {
     }
 }
 
-export const getProjects = async() => {
+export const getProjects = () => {
     try {
-        const response = await fetch(`${API_URL}/project`);
-
-        if(!response.ok) {
+        const response = project;
+        
+        
+        if(response.length === 0) {
             throw new Error('Could not load projects')
         }
 
-        return await response.json();
+        return response;
     }
     catch(error) {
         console.error("Error getProjects:", error);
