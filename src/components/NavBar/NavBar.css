@@ -1,8 +1,8 @@
 .nav-bar {
     top: 0;
-    width: 100%;
-    padding: 1%;
     z-index: 2;
+    width: 100%;
+    padding: 1rem;
     display: flex;
     position: fixed;
     align-items: center;
@@ -11,7 +11,7 @@
 }
 
 .main-kova-img {
-    width: 10%;
+    width: 10rem;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
 }
@@ -20,213 +20,30 @@
     transform: scale(1.02);
 }
 
-.menu-img-container {
+.nav-links {
+    gap: 1rem;
     display: flex;
-    cursor: pointer;
-    margin-right: 0.5%;
-    align-items: center;
-    justify-content: flex-end;
-
-}
-
-.menu-img {
-    width: 10%;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-}
-
-.close-img {
-    width: 2%;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-}
-
-.menu-img:hover {
-    opacity: 0.8;
-    transform: scale(1.02);
-}
-
-.menu-text {
-    opacity: 0;
-    color: white;
-    font-size: 18px;
-    margin-left: 10px;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.menu-img-container:hover .menu-text {
-    opacity: 1;
-}
-
-/* Estilos para el menú desplegable */
-.menu-container {
-    top: 0;
-    left: 0;
-    padding: 1%;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    transform: translateY(-100%);
-    background-color: rgba(0, 0, 0, 0.9);
-    transition: transform 0.3s ease-in-out;
-}
-
-.menu-open {
-    transform: translateY(0);
-}
-
-.menu-list {
-    padding: 0;
-    margin: 15% 0;
     list-style: none;
-    text-align: center;
 }
 
-.menu-list li{
-    margin: 30px 0;
+.link-item {
     cursor: pointer;
+    border-radius: 2rem;
+    padding: 0.5rem 2rem;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
-.menu-list li a {
+.link-item.active {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.link-item h4 {
     color: white;
-    font-size: 30px;
-    transition: color 0.3s ease-in-out;
+    font-size: small;
+    text-align: center;
+    font-family: Poppins, sans-serif;
 }
 
-.menu-list li a:hover {
-    color: #5B8095;
-}
-
-@media (max-width:360px) {
-    .nav-bar {
-        padding: 2% 5%;
-    }
-    .main-kova-img {
-        width: 45%;
-    }
-
-    .menu-img {
-        width: 12%;
-    }
-
-    .close-img {
-        width: 10%;
-    }
-
-    .menu-text {
-        font-size: 14px;
-    }
-
-    .menu-list {
-        padding: 20% 0;
-    } 
-
-    .menu-list li a {
-        font-size: 24px;
-    }
-}
-
-@media (min-width:361px) and (max-width:480px) {
-    .nav-bar {
-        padding: 2.5% 5%;
-    }
-    .main-kova-img {
-        width: 36%;
-    }
-    .menu-img {
-        width: 11%;
-    }
-    .close-img {
-        width: 9%;
-    }
-
-    .menu-text {
-        font-size: 16px;
-    }
-
-    .menu-list {
-        padding: 30% 0;
-    } 
-
-    .menu-list li a {
-        font-size: 26px;
-    }
-
-}
-
-@media (min-width:481px) and (max-width:768px) {
-    .nav-bar {
-        padding: 2.5% 5%;
-    }
-    .main-kova-img {
-        width: 25%;
-    }
-    .menu-img {
-        width: 12%;
-    }
-    .close-img {
-        width: 6%;
-    }
-    .menu-text {
-        font-size: 20px;
-    }
-    .menu-list {
-        padding: 30% 0;
-    } 
-    .menu-list li a {
-        font-size: 34px;
-    }
-}
-
-@media (min-width:769px) and (max-width:1024px) {
-    .nav-bar {
-        padding: 2.5% 5%;
-    }
-    .main-kova-img {
-        width: 18%;
-    }
-    .menu-img {
-        width: 11%;
-    }
-    .close-img {
-        width: 5%;
-    }
-    .menu-text {
-        font-size: 20px;
-    }
-    .menu-list {
-        padding: 15% 0;
-    } 
-    .menu-list li a {
-        font-size: 34px;
-    }
-}
-
-@media (min-width:1025px) and (max-width:1366px) {
-    .nav-bar {
-        padding: 2.5% 5%;
-    }
-    .main-kova-img {
-        width: 14%;
-    }
-
-    .menu-img {
-        width: 11%;
-    }
-
-    .close-img {
-        width: 3.5%;
-    }
-
-    .menu-text {
-        font-size: 20px;
-    }
-
-    .menu-list {
-        padding: 5% 0;
-    } 
-
-    .menu-list li a {
-        font-size: 34px;
-    }
+a {
+    text-decoration: none;
 }
