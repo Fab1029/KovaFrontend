@@ -1,0 +1,142 @@
+.recent-projects-container {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+
+.recent-project-title,
+.recent-project-subtitle {
+    font-size: 3.5rem;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}
+
+.recent-project-title {
+    color: #5B8095;
+}
+
+.recent-project-subtitle {
+    color: #253646;
+    margin-left: 4rem;
+}
+
+.recent-projects-container ul {
+    gap: 1rem;
+    width: 100%;
+    height: 35rem;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.recent-projects-container ul li {
+    transition: flex 0.2s ease-in-out;
+}
+
+.recent-project-item-container {
+    flex: 1;
+    padding: 1rem;
+    position: relative;
+    background-color: #253646;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    transition: flex 0.2s ease-in-out;
+}
+
+.recent-project-image-container {
+    width: 100%;
+    height: 60%;
+    position: relative;
+}
+
+.recent-project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.recent-project-image-top {
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    object-fit: cover;
+    position: absolute;
+    transition: opacity 0.2s ease-in-out;
+    
+}
+
+.recent-project-item-container:hover {
+    flex: 2;
+}
+
+.recent-project-item-container:hover .recent-project-image-top {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.recent-project-title-container,
+.recent-project-item-container p,
+.recent-project-button {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.2s ease-in-out;
+}
+
+.recent-project-item-container:hover .recent-project-title-container,
+.recent-project-item-container:hover p,
+.recent-project-item-container:hover .recent-project-button {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.recent-project-title-title,
+.recent-project-title-subtitle {
+    color: white;
+    font-weight: 600;
+    font-size: x-large;
+    font-family: 'Inter', sans-serif;
+}
+
+.recent-project-title-subtitle {
+    margin-left: 3rem;
+}
+
+.recent-project-item-container p {
+    color: white;
+    font-size: small;
+    font-weight: 100;
+    margin: 0.5rem 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.recent-project-button {
+    width: 7rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 1rem;
+    padding: 0.3rem 0.2rem;
+    background-color: #5B8095;
+    gap: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.recent-project-button div {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 3rem;
+    background-color: #253646;
+}
+
+.recent-project-button h4 {
+    color: white;
+    font-size: small;
+    font-weight: 100;
+    font-family: 'Poppins';
+}

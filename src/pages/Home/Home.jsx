@@ -10,6 +10,7 @@ import {getClients} from '../../services/Client.js'
 import Loading from '../../components/Loading/Loading.jsx'
 import Offers from '../../components/Offers/Offers.jsx'
 import VideoPlayer from '../../components/VideoPlayer/VideoPlayer.jsx'
+import RecentProjects from '../../components/RecentProjects/RecentProjects.jsx'
 
 const Home = () => {
   const [clients, setClients] = useState(null);
@@ -46,6 +47,7 @@ const Home = () => {
             <div data-aos="flip-up" data-aos-delay="100" data-aos-duration="1200" className='home-video-container'>
               <VideoPlayer video={video1}/>
             </div>
+            <RecentProjects projects={projects}/>
             
           </main>
           <footer className='home-footer'>
