@@ -1,15 +1,15 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import './Footer.css'
 import footerImage from '../../assets/Footer/footerImage.jpg'
 
-
 const Footer = () => {
+  
   return (
     <div className='footer' style={{ backgroundImage:  `url(${footerImage})` }}>
         <div className='footer-slide'/>
         <div className='footer-information-container'>
             <div className='footer-title-container'>
-                <div>
+                <div data-aos='fade-up'>
                     <h1 className='footer-section-title-title'>Contáctate</h1>
                     <h1 className='footer-section-title-subtitle'>con nosotros</h1>
                 </div>

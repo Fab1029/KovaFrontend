@@ -63,7 +63,8 @@
 
 .project-title, .project-subtitle {
     opacity: 0;
-    font-size: 100px;
+    font-size: 80px;
+    font-weight: 500;
     font-family: 'Inter', sans-serif;
     animation: clipReveal 1s ease-in-out forwards;
 }

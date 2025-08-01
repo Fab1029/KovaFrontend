@@ -1,8 +1,8 @@
 .nav-bar {
     top: 0;
-    z-index: 2;
+    z-index: 10;
     width: 100%;
-    padding: 1rem;
+    padding: 0.8rem;
     display: flex;
     position: fixed;
     align-items: center;
@@ -30,7 +30,12 @@
     cursor: pointer;
     border-radius: 2rem;
     padding: 0.5rem 2rem;
+    transition: trabsform 0.3s ease-in-out;
     background-color: rgba(255, 255, 255, 0.3);
+}
+
+.link-item:hover {
+    transform: scale(1.02);
 }
 
 .link-item.active {
@@ -39,6 +44,7 @@
 
 .link-item h4 {
     color: white;
+    font-weight: 100;
     font-size: small;
     text-align: center;
     font-family: Poppins, sans-serif;

@@ -4,10 +4,12 @@ import '../../utils/css/Animation.css'
 import ProjectSlider from '../../components/ProjectSlider/ProjectSlider.jsx'
 import NavBar from '../../components/NavBar/NavBar.jsx'
 import Footer from '../../components/Footer/Footer.jsx'
+import video1 from '../../assets/VideoPlayer/video1.mp4'
 import {getProjects} from '../../services/Project.js'
 import {getClients} from '../../services/Client.js'
-
 import Loading from '../../components/Loading/Loading.jsx'
+import Offers from '../../components/Offers/Offers.jsx'
+import VideoPlayer from '../../components/VideoPlayer/VideoPlayer.jsx'
 
 const Home = () => {
   const [clients, setClients] = useState(null);
@@ -35,15 +37,16 @@ const Home = () => {
   return (
     <>
       {/*clients && forniture && information &&*/ projects ?
-        <div> 
+        <div style={{overflowX: 'hidden'}}> 
           <header className='home-header-container'>
             <ProjectSlider navBar={<NavBar/>} projects={projects} header={'header'}/> 
           </header>
           <main className='home-main'>
-            {/*<SectionBreafDescription information={information}/>
-            <SectionOurProjects projects={projects}/>
-            <SectionOurFurniture forniture={forniture}/>
-            <SectionOurClients clients={clients}/>*/}
+            <Offers/>
+            <div data-aos="flip-up" data-aos-delay="100" data-aos-duration="1200" className='home-video-container'>
+              <VideoPlayer video={video1}/>
+            </div>
+            
           </main>
           <footer className='home-footer'>
             <Footer/>
