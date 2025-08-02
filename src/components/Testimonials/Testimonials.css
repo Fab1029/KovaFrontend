@@ -1,0 +1,78 @@
+.testimonials-container {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 10rem;
+}
+
+.testimonials-title,
+.testimonials-subtitle {
+    font-size: 3.5rem;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}
+
+.testimonials-title {
+    color: #5B8095;
+}
+
+.testimonials-subtitle {
+    color: #253646;
+    margin-left: 4rem;
+}
+
+.testimonials-body-container {
+    display: flex;
+}
+
+.testimonials-left-container, .testimonials-right-container {
+    flex: 1;
+}
+
+.testimonials-right-container p {
+    margin: 2rem 0;
+    color: #253646;
+    font-weight: 100;
+    font-size: medium;
+    text-align: center;
+    font-family: 'Poppins', serif;
+}
+
+.testimonials-right-container h4 {
+    color: #253646;
+    font-weight: 500;
+    font-size: large;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'Poppins', serif;
+}
+
+.testimonials-slider {
+    width: 100%;
+    height: 0.3rem;
+    position: relative;
+    background-color: #5B8095;
+    margin-top: 1rem;
+}
+
+.testimonials-slider-box {
+    top: -0.90rem; 
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    background-color: #253646;
+    border-radius: 2rem;
+    transition: left 0.4s ease;
+}
+
+.testimonial-fade {
+  opacity: 0;
+  transform: translateY(8rem);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.testimonial-fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
