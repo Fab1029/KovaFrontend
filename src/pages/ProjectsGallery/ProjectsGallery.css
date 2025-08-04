@@ -1,9 +1,5 @@
-.projectsGallery-header {
-    width: 100%;
+.projectsGallery-footer {
+    width: 100vw;
+    height: 60vh;
 }
 
-.projectsGallery-main {
-    margin: 0 2%;
-    margin-top: 4%;  
-    margin-bottom: 4%;
-}

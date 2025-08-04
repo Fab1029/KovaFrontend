@@ -16,25 +16,29 @@ const Offers = () => {
             <h2 data-aos='fade-left' data-aos-delay='200' className='offers-description'>Diseñamos espacios únicos y funcionales, combinando creatividad, innovación y sostenibilidad para cada proyecto</h2>
             <ul className='types-offers-container'>
                 <li data-aos='fade-down' key={'proyecto-comercial'} style={{backgroundImage: `url(${proyectoComercial})`}}>
-                    <Link to={null}/>
-                    <div className='types-offers-title-container'>
-                        <h4 className='types-offers-title'>Proyecto</h4>
-                        <h4 className='types-offers-subtitle'>Comercial</h4>
-                    </div>
+                    <Link to={`/ProjectsGallery?type=Comercial`}>
+                        <div className='types-offers-title-container'>
+                            <h4 className='types-offers-title'>Proyectos</h4>
+                            <h4 className='types-offers-subtitle'>Comerciales</h4>
+                        </div>
+                    </Link>
                 </li>
                 <li data-aos='fade-up' className='types-offers-item' key={'proyecto-residencial'} style={{backgroundImage: `url(${proyectoResidencial})`}}>
-                    <Link to={null}/>
-                    <div className='types-offers-title-container'>
-                        <h4 className='types-offers-title'>Proyecto</h4>
-                        <h4 className='types-offers-subtitle'>Residencial</h4>
-                    </div>
+                    <Link to={`/ProjectsGallery?type=Residencial`}>
+                        <div className='types-offers-title-container'>
+                            <h4 className='types-offers-title'>Proyectos</h4>
+                            <h4 className='types-offers-subtitle'>Residenciales</h4>
+                        </div>
+                    </Link>
                 </li>
                 <li data-aos='fade-down' key={'proyecto-social'} style={{backgroundImage: `url(${proyectoSocial})`}}>
-                    <Link to={null}/>
-                    <div className='types-offers-title-container'>
-                        <h4 className='types-offers-title'>Proyecto</h4>
-                        <h4 className='types-offers-subtitle'>Social</h4>
-                    </div>
+                    <Link to={`/ProjectsGallery?type=Social`}>
+                        <div className='types-offers-title-container'>
+                            <h4 className='types-offers-title'>Proyectos</h4>
+                            <h4 className='types-offers-subtitle'>Sociales</h4>
+                        </div>
+                    </Link>
+                    
                 </li>
             </ul>
         </div>

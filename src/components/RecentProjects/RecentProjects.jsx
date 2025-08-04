@@ -1,7 +1,16 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './RecentProjects.css'
 
-const RecentProjects = ({projects}) => {
+const RecentProjects = ({projects}) => { 
+  const [randomProjects, setRandomProjects] = useState(null);
+  
+  useEffect(() => {
+    if (!projects || projects.length <= 5) setRandomProjects(projects);
+
+    const shuffled = [...projects].sort(() => 0.5 - Math.random());
+    setRandomProjects(shuffled.slice(0, 5));
+
+  }, []);
 
   return (
     <div className='recent-projects-container'>
@@ -18,7 +27,7 @@ const RecentProjects = ({projects}) => {
             data-aos-delay='200' 
             data-aos-duration="800"
         >
-            {projects.map((project, index) => (
+            {randomProjects && randomProjects.map((project, index) => (
                 <li key = {index} className='recent-project-item-container'>
                     <img src={project.render} className='recent-project-image-top'/>
                     <div className='recent-project-image-container'>

@@ -19,7 +19,7 @@ const NavBar = () => {
       }
     }
 
-    if (location.pathname === "/") {
+    if (location.pathname === "/" || location.pathname === "/ProjectsGallery") {
       setNavBg("transparent");
       window.addEventListener("scroll", handleScroll);
     } else {

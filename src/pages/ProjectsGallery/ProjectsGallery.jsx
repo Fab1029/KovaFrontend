@@ -1,41 +1,37 @@
 import React, { useEffect, useState } from 'react'
+import { useLocation } from 'react-router-dom'
 import './ProjectsGallery.css'
 import '../../utils/css/Animation.css'
 import NavBar from '../../components/NavBar/NavBar'
-
 import Footer from '../../components/Footer/Footer'
-import { getProjects } from '../../services/Project';
+import OffersPicker from '../../components/OffersPicker/OffersPicker'
 
 const ProjectsGallery = () => {
-  const [projects, setProjects] = useState(null);
-  
+  const location = useLocation();
+  const [typeProject, setTypeProject] = useState('Comercial');
+
   useEffect(() => {
-    const fetchProjects = async () => {
-        const data = await getProjects();
-        setProjects(data);
-    };
-    fetchProjects();
-  }, []);
+    const params = new URLSearchParams(location.search)
+    const type = params.get('type')
+    if (type) {
+      setTypeProject(type)
+    }
+  }, [location.search])
 
   return (
     <>
-      {projects ?
-        <div>
-          <header className='projectsGallery-header'>
-              <NavBar/>
-          </header>
-          <main className='projectsGallery-main'>
-
-          </main>
-          <footer className='projectsGallery-footer'>
-              <Footer />
-          </footer>
-        </div>
-        :
-        <div>Cargando..</div>
-      }
+      <div style={{ overflowX: 'hidden' }}>
+        <header className='projectsGallery-header'>
+          <NavBar />
+        </header>
+        <main className='projectsGallery-main'>
+          <OffersPicker offer={typeProject} setOffer={setTypeProject} />
+        </main>
+        <footer className='projectsGallery-footer'>
+          <Footer />
+        </footer>
+      </div>
     </>
-    
   )
 }
 
