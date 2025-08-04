@@ -9,7 +9,7 @@ const Footer = () => {
         <div className='footer-slide'/>
         <div className='footer-information-container'>
             <div className='footer-title-container'>
-                <div data-aos='fade-up'>
+                <div data-aos='fade-up' data-aos-delay='200'>
                     <h1 className='footer-section-title-title'>Contáctate</h1>
                     <h1 className='footer-section-title-subtitle'>con nosotros</h1>
                 </div>

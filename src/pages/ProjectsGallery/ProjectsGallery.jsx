@@ -5,6 +5,7 @@ import '../../utils/css/Animation.css'
 import NavBar from '../../components/NavBar/NavBar'
 import Footer from '../../components/Footer/Footer'
 import OffersPicker from '../../components/OffersPicker/OffersPicker'
+import ProjectsList from '../../components/ProjectsList/ProjectsList'
 
 const ProjectsGallery = () => {
   const location = useLocation();
@@ -26,6 +27,7 @@ const ProjectsGallery = () => {
         </header>
         <main className='projectsGallery-main'>
           <OffersPicker offer={typeProject} setOffer={setTypeProject} />
+          <ProjectsList typeProjects={typeProject}/>
         </main>
         <footer className='projectsGallery-footer'>
           <Footer />
