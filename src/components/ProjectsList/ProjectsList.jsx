@@ -19,7 +19,7 @@ const ProjectsList = ({typeProjects}) => {
     }, [typeProjects]); 
 
   return (
-    <div className='project-list-container' style={{overflow: 'hidden'}}>
+    <div data-aos= 'zoom-in' data-aos-delay='100' className='project-list-container' style={{overflow: 'hidden'}}>
         {projects && projects.map((project, index) => (
             <div key={index} className="project-card-container" onClick={null}>
                 <img
