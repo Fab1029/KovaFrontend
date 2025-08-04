@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 import './VideoPlayer.css'
 
-const VideoPlayer = ({video}) => {
+const VideoPlayer = ({video, loopMode = false}) => {
   const videoPlayer = useRef(null);
   const hideTimeout = useRef(null);
   const [isMuted, setIsMuted] = useState(false);
@@ -34,7 +34,7 @@ const VideoPlayer = ({video}) => {
     
     hideTimeout.current = setTimeout(() => {
       setShowControls(false);
-    }, 2000);
+    }, 3000);
   };
 
   const handleMouseLeave = () => {
@@ -45,8 +45,16 @@ const VideoPlayer = ({video}) => {
   return (
     
     <div className='video-container' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-        <video ref={videoPlayer} src={video} className='video-element'/>
-        <button className={`play-button ${showControls ? 'visible' : 'hidden'}`} onClick={togglePlay}>
+        <video
+          ref={videoPlayer}
+          src={video}
+          className='video-element'
+          autoPlay={loopMode}
+          loop={loopMode}
+          muted={loopMode}
+        />
+        {!loopMode && (
+          <button className={`play-button ${showControls ? 'visible' : 'hidden'}`} onClick={togglePlay}>
             {isPlaying 
             ?
               <svg style={{width: '4rem'}} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
@@ -64,7 +72,7 @@ const VideoPlayer = ({video}) => {
               </svg>
             }
           </button>
-          
+        )}
           <button className={`mute-button ${showControls ? 'visible' : 'hidden'}`} onClick={toggleMute}>
             {isMuted 
             ?

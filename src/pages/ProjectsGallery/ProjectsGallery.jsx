@@ -20,20 +20,20 @@ const ProjectsGallery = () => {
   }, [location.search])
 
   return (
-    <>
-      <div style={{ overflowX: 'hidden' }}>
-        <header className='projectsGallery-header'>
-          <NavBar />
-        </header>
-        <main className='projectsGallery-main'>
-          <OffersPicker offer={typeProject} setOffer={setTypeProject} />
-          <ProjectsList typeProjects={typeProject}/>
-        </main>
-        <footer className='projectsGallery-footer'>
-          <Footer />
-        </footer>
-      </div>
-    </>
+  
+    <div style={{ overflow: 'hidden' }}>
+      <header className='projectsGallery-header'>
+        <NavBar />
+      </header>
+      <main className='projectsGallery-main'>
+        <OffersPicker offer={typeProject} setOffer={setTypeProject} />
+        <ProjectsList typeProjects={typeProject}/>
+      </main>
+      <footer className='projectsGallery-footer'>
+        <Footer />
+      </footer>
+    </div>
+    
   )
 }
 

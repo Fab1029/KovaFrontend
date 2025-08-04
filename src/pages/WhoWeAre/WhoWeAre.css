@@ -1,10 +1,8 @@
-.whoWeAre-header {
-    width: 100%;
+.whoWeAre-video-container {
+    width: 100vw;
     height: 100vh;
 }
-
-.whoWeAre-main {
-    margin: 0 2%;
-    margin-top: 2%;  
-    margin-bottom: 4%;
+.whoWeAre-footer {
+    width: 100vw;
+    height: 60vh;
 }

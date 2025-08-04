@@ -1,0 +1,46 @@
+.phrase-container {
+    width: 100%;
+    height: 28rem;
+    margin: 2rem 0;
+
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.phrase-blur-container {
+    width: 100%;
+    height: 95%;
+    padding: 5rem 0;
+    background-color: #253646;
+}
+
+.phrase-child-container {
+    width: 50%;
+    margin-left: 5rem;
+}
+
+.phrase-image {
+    top: 0;
+    right: 5%;
+    height: 100%;
+    border-radius: 1rem;
+    position: absolute;
+    object-fit: contain;
+}
+
+.phrase {
+    margin: 2rem 0;
+    color: white;
+    font-weight: 300;
+    font-size: x-large;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.quote-left-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}

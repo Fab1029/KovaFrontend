@@ -19,6 +19,7 @@ const OffersPicker = ({ offer, setOffer }) => {
 
   return (
     <div
+      data-aos = 'zoom-in'
       className='offers-picker-container'
       style={{ backgroundImage: `url(${offerImage})` }}
     >

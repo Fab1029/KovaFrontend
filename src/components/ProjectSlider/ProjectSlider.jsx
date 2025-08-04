@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './ProjectSlider.css';
 
 const ProjectSlider = ({ navBar, projects }) => {
@@ -7,7 +7,6 @@ const ProjectSlider = ({ navBar, projects }) => {
   const [rightSlide, setRightSlide] = useState(true);
   const [previewIndex, setPreviewIndex] = useState(projects.length - 1);
 
-  
   const handleArrowRightClick = () => {
     setPreviewIndex(index)
     setRightSlide(true)
@@ -42,7 +41,7 @@ const ProjectSlider = ({ navBar, projects }) => {
             <path id="path0" d="M273.047 1.840 C 269.930 3.359,250.494 22.418,176.814 96.207 L 84.487 188.672 83.164 193.301 C 81.573 198.866,81.973 204.506,84.342 209.902 C 86.493 214.804,267.140 395.713,272.266 398.099 C 283.397 403.280,291.587 400.392,305.278 386.457 C 316.365 375.172,317.493 373.220,317.538 365.234 C 317.595 355.080,322.531 360.621,238.391 276.367 L 162.128 200.000 238.819 123.242 L 315.511 46.484 316.835 41.855 C 319.898 31.147,317.035 24.220,304.500 12.016 C 291.951 -0.203,283.110 -3.064,273.047 1.840" stroke="none" fill="#D9D9D9" fill-rule="evenodd"></path>
           </g>
         </svg>
-
+        {/*AQUI DEBO HACER ON CLICK PARA LLEVAR AL PROYECTO*/}
         <div className="name-slider" onClick={null}>
           <h1 className= 'project-title'>
             {projects[index].title.split(' ')[0]}

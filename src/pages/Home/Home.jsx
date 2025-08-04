@@ -21,7 +21,8 @@ const Home = () => {
   useEffect(() => {
     const fetchProjects = () => {
       const data = getProjects();
-      setProjects(data); 
+      const shuffled = [...data].sort(() => 0.5 - Math.random());
+      setProjects(shuffled.slice(0, 5)); 
     };
 
     const fetchClients = () => {
@@ -39,7 +40,7 @@ const Home = () => {
   return (
     <>
       {/*clients && forniture && information &&*/ projects ?
-        <div style={{overflowX: 'hidden'}}> 
+        <div style={{overflow: 'hidden'}}> 
           <header className='home-header-container'>
             <ProjectSlider navBar={<NavBar/>} projects={projects} header={'header'}/> 
           </header>

@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import './WhoWeAre.css'
 import '../../utils/css/Animation.css'
+import video1 from '../../assets/VideoPlayer/video1.mp4'
 import NavBar from '../../components/NavBar/NavBar.jsx'
 import Footer from '../../components/Footer/Footer.jsx'
+import VideoPlayer from '../../components/VideoPlayer/VideoPlayer.jsx'
+import Phrase from '../../components/Phrase/Phrase.jsx'
 
 
 
@@ -10,23 +13,22 @@ const WhoWeAre = () => {
   
 
   return (
-    <>
-      {information ?
-        <div> 
-          <header className='whoWeAre-header'>
-
-          </header>
-          <main className='whoWeAre-main'>
-
-          </main>
-          <footer className='whoWeAre-footer'>
-            <Footer/>
-          </footer>
+    
+    <div style={{overflow: 'hidden'}}> 
+      <header className='whoWeAre-header'>
+        <NavBar/>
+      </header>
+      <main className='whoWeAre-main'>
+        <div className='whoWeAre-video-container'>
+          <VideoPlayer video={video1} loopMode={true}/>
         </div>
-        :
-        <div>Cargando..</div>
-      }
-    </>
+        <Phrase/>
+      </main>
+      <footer className='whoWeAre-footer'>
+        <Footer/>
+      </footer>
+    </div>
+        
   )
 }
 
