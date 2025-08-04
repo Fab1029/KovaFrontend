@@ -6,6 +6,7 @@ import NavBar from '../../components/NavBar/NavBar.jsx'
 import Footer from '../../components/Footer/Footer.jsx'
 import VideoPlayer from '../../components/VideoPlayer/VideoPlayer.jsx'
 import Phrase from '../../components/Phrase/Phrase.jsx'
+import Values from '../../components/Values/Values.jsx'
 
 
 
@@ -23,6 +24,7 @@ const WhoWeAre = () => {
           <VideoPlayer video={video1} loopMode={true}/>
         </div>
         <Phrase/>
+        <Values/>
       </main>
       <footer className='whoWeAre-footer'>
         <Footer/>

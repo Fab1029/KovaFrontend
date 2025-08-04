@@ -1,0 +1,55 @@
+.values-container {
+    width: 100%;
+    padding: 2rem;
+    margin: 2rem 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    gap: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.value-container {
+    width: 30rem;
+    height: 20rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: #253646;
+
+    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;   
+}
+
+.value-container:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.value-title, .value-description {
+    color: white;
+}
+
+.value-title {
+    font-weight: 700;
+    font-size: xx-large;
+    font-family: 'Inter', sans-serif;
+}
+
+.value-description {
+    font-weight: 400;
+    font-size: medium;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.value-title-vision {
+    text-align: right;
+}
