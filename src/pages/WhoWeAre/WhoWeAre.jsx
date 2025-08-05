@@ -7,6 +7,8 @@ import Footer from '../../components/Footer/Footer.jsx'
 import VideoPlayer from '../../components/VideoPlayer/VideoPlayer.jsx'
 import Phrase from '../../components/Phrase/Phrase.jsx'
 import Values from '../../components/Values/Values.jsx'
+import Team from '../../components/Team/Team.jsx'
+import PhotosGallery from '../../components/PhotosGallery/PhotosGallery.jsx'
 
 
 
@@ -25,6 +27,8 @@ const WhoWeAre = () => {
         </div>
         <Phrase/>
         <Values/>
+        <Team/>
+        <PhotosGallery/>
       </main>
       <footer className='whoWeAre-footer'>
         <Footer/>

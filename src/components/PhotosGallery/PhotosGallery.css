@@ -1,0 +1,43 @@
+.photos-galley-container {
+    width: 100%;
+    margin: 4rem 0;
+    padding: 0rem 8rem;
+}
+
+.main-photo-container {
+    width: 100%;
+    height: 25rem;
+    margin: 1rem 0;
+}
+
+.body-photos-container {
+    width: 100%;
+    height: 25rem;
+
+    gap: 1rem;
+    display: flex;
+}
+
+.body-left-container, .body-right-container {
+    width: 100%;
+    height: 100%;
+}
+
+.body-left-container {
+    flex: 2;
+}
+
+.body-right-container {
+    flex: 1;
+}
+
+.photo-element {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.body-right-container img {
+    height: 50%;
+}

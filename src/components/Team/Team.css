@@ -1,0 +1,73 @@
+.team-container {
+    padding: 1rem;
+    margin: 0.5rem 0;
+}
+
+.team-profile-container {
+    gap: 3rem;
+    margin-top: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-container {
+    width: 25rem;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.profile-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-image {
+    width: 18rem;
+    object-fit: cover;
+}
+
+.profile-container-name {
+    margin: 1rem 0;
+}
+
+.profile-name, .profile-last-name {
+    font-family: 'Inter', sans-serif;
+}
+
+.profile-name {
+    color: #253646;
+    font-weight: 400;
+    font-size: larger;
+}
+
+.profile-last-name {
+    color: #5B8095;
+    font-weight: 500;
+    margin-left: 2rem;
+    font-size: x-large;
+}
+
+.profile-description {
+    font-size: medium;
+    font-weight: 200;
+    font-family: 'Poppins', sans-serif;
+}
+
+.profile-name, .profile-last-name, .profile-description {
+    transition: all 0.3s ease-in-out;
+}
+
+.profile-container:hover {
+    border-radius: 1rem;
+    background-color: #253646;
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+
+    .profile-name, .profile-last-name, .profile-description {
+        color: white;
+    }
+}
