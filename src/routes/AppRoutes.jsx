@@ -4,16 +4,18 @@ import Home from '../pages/Home/Home';
 import WhoWeAre from '../pages/WhoWeAre/WhoWeAre';
 import ProjectsGallery from '../pages/ProjectsGallery/ProjectsGallery';
 import Project from '../pages/Project/Project';
+import ScrollToTop from '../components/ScrollToTop/ScrollToTop';
 
 const AppRoutes = () => {
   return (
     <Router>
-        <Routes>
-            <Route path='/' element={<Home />}/>
-            <Route path='/ProjectsGallery' element={<ProjectsGallery/>}/>
-            <Route path="/WhoWeAre" element={<WhoWeAre/>}/>
-            {/*<Route path='/ProjectsGallery/:id' element={<Project/>} />*/}
-        </Routes>
+      <ScrollToTop/>
+      <Routes>
+          <Route path='/' element={<Home />}/>
+          <Route path='/ProjectsGallery' element={<ProjectsGallery/>}/>
+          <Route path="/WhoWeAre" element={<WhoWeAre/>}/>
+          {/*<Route path='/ProjectsGallery/:id' element={<Project/>} />*/}
+      </Routes>
     </Router>
   )
 }

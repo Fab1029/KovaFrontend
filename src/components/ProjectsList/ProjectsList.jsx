@@ -10,7 +10,6 @@ const ProjectsList = ({typeProjects}) => {
         const fetchProjects = () => {
             const data = getProjects();
             const dataFiltered = data.filter((project) => project.type === typeProjects);
-            console.log(dataFiltered);
             setProjects(dataFiltered); 
         };
 
