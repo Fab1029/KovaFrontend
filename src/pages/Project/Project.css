@@ -1,10 +1,10 @@
-.project-header {
-    width: 100%;
+.render-video-container {
+    width: 100vw;
+    height: 100vh;
 }
 
-.project-main {
-    margin: 0 2%;
-    margin-top: 3%;  
-    margin-bottom: 3%;
+.project-footer {
+    width: 100vw;
+    height: 60vh;
 }
 

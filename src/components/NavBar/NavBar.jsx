@@ -19,12 +19,8 @@ const NavBar = () => {
       }
     }
 
-    if (location.pathname === "/" || location.pathname === "/ProjectsGallery" || location.pathname === "/WhoWeAre") {
-      setNavBg("transparent");
-      window.addEventListener("scroll", handleScroll);
-    } else {
-      setNavBg("#253646");
-    }
+    setNavBg("transparent");
+    window.addEventListener("scroll", handleScroll);
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);

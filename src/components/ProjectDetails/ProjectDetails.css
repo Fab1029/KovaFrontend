@@ -1,0 +1,77 @@
+.project-details-container {
+    width: 90vw;
+    height: 85vh;
+    margin: 1rem auto;
+    border-radius: 1rem;
+
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.project-details-left-container {
+    flex: 2;
+    padding: 2rem;
+}
+
+.project-details-title, .project-details-subtitle {
+    color: white;
+    font-size: 45px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}
+
+.project-details-subtitle {
+    margin-left: 2rem;
+}
+
+.project-details-right-container {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-details {
+    padding: 2rem;
+    margin: 0 2rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    background-color: #253646;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.project-details:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.project-details-description {
+    color: white;
+    margin: 1rem 0;
+    font-weight: 200;
+    font-size: medium;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.project-detail-item {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.project-detail-item-title {
+    color: white;
+    font-weight: 500;
+    font-size: medium;
+    font-family: 'Inter', sans-serif;
+}
+
+.project-detail-item-description {
+    color: white;
+    font-weight: 200;
+    font-family: 'Poppins', sans-serif;
+}

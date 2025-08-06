@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import './ProjectsList.css'
 import {getProjects} from '../../services/Project.js'
+import { useNavigate } from 'react-router-dom'
 
 const ProjectsList = ({typeProjects}) => {
+    const navigate = useNavigate(null);
     const [projects, setProjects] = useState(null);
 
 
@@ -17,10 +19,14 @@ const ProjectsList = ({typeProjects}) => {
 
     }, [typeProjects]); 
 
+    const handleOnClickProject = (id) => {
+        navigate(`/ProjectsGallery/${id}`)
+    } 
+
   return (
     <div data-aos= 'zoom-in' data-aos-delay='100' className='project-list-container' style={{overflow: 'hidden'}}>
         {projects && projects.map((project, index) => (
-            <div key={index} className="project-card-container" onClick={null}>
+            <div key={index} className="project-card-container" onClick={() => handleOnClickProject(project.id)}>
                 <img
                     src={project.render}
                     alt={project.title}

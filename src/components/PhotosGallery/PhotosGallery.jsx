@@ -11,7 +11,7 @@ const PhotosGallery = () => {
     <div className='photos-galley-container'>
         
         <div className='main-photo-container'>
-            <img data-aos = 'slide-up' className='photo-element' src={photo1}/>
+            <img data-aos = 'fade-up' data-aos-duration = '650' className='photo-element' src={photo1}/>
         </div>
 
         <div className='body-photos-container'>

@@ -1,9 +1,9 @@
 import {project} from '../data/Projetc.js';
 
 
-export const getProjectById = async(id) => {
+export const getProjectById = (id) => {
     try {
-        const response = project.find(p => p.id === id);
+        const response = project.find(p => p.id == id);
 
         if(!response) {
             throw new Error('Could not load project')
@@ -20,7 +20,6 @@ export const getProjectById = async(id) => {
 export const getProjects = () => {
     try {
         const response = project;
-        
         
         if(response.length === 0) {
             throw new Error('Could not load projects')
