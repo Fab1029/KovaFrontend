@@ -1,8 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import './RecentProjects.css'
+import { useNavigate } from 'react-router-dom'
 
 const RecentProjects = ({projects}) => { 
-  
+  const navigate = useNavigate(null);
+
+  const handleOnClickProject = (id) => {
+    navigate(`/ProjectsGallery/${id}`)
+  } 
+
   return (
     <div className='recent-projects-container'>
         <div data-aos='zoom-in' data-aos-delay="100" data-aos-duration="800">
@@ -34,7 +40,7 @@ const RecentProjects = ({projects}) => {
                         </h1>
                     </div>
                     <p>{project.description}</p>
-                    <button className='recent-project-button'>
+                    <button className='recent-project-button' onClick={() => handleOnClickProject(project.id)}>
                         <div>
                             <svg style={{width: '1rem'}} viewBox="0, 0, 400,400">
                                 <g id="svgg">

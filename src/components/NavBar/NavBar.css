@@ -44,6 +44,10 @@
     transform: scale(1.02);
 }
 
+.link-item:active {
+    transform: scale(1.02);
+}
+
 .link-item.active {
     background-color: rgba(255, 255, 255, 0.8);
 
@@ -62,4 +66,30 @@
 
 a {
     text-decoration: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+    .main-kova-img {
+        width: 7rem;
+    }   
+
+    .link-item {
+        padding: 0.5rem 1rem;
+    }  
+}
+
+@media (max-width: 500px) {
+    .main-kova-img {
+        width: 5rem;
+    }
+
+    .link-item {
+        padding: 0.5rem 0.55rem;
+    }
+
+    .nav-links {
+        gap: 0.5rem;
+        justify-content: space-between;
+    }   
 }
