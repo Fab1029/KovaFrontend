@@ -41,7 +41,7 @@
 }
 
 .footer-section-title-title, .footer-section-title-subtitle {
-    font-size: 50px;
+    font-size: 3.5rem;
     font-family: 'Inter', sans-serif;
 }
 
@@ -103,5 +103,15 @@
 .whatsapp-icon:hover {
     g path {
         fill: #ffffff80;
+    }
+}
+
+@media (max-width: 800px) {
+    .footer-section-title-title, .footer-section-title-subtitle {
+        font-size: 2rem;
+    }
+
+    .social-icon {
+        width: 2rem;
     }
 }

@@ -24,6 +24,7 @@
 
 .testimonials-body-container {
     display: flex;
+    margin-top: 2rem;
 }
 
 .testimonials-left-container, .testimonials-right-container {
@@ -51,9 +52,9 @@
 .testimonials-slider {
     width: 100%;
     height: 0.3rem;
+    margin-top: 1rem;
     position: relative;
     background-color: #5B8095;
-    margin-top: 1rem;
 }
 
 .testimonials-slider-box {
@@ -75,4 +76,34 @@
 .testimonial-fade.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+@media (max-width: 800px) {
+    .testimonials-title,
+    .testimonials-subtitle {
+        font-weight: 600;
+        font-size: 2.5rem;
+    }
+
+    .testimonials-left-container {
+        display: none;
+    }
+
+    .testimonials-right-container p {
+        font-size: small;
+    }
+
+    .testimonials-slider {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .testimonials-title,
+    .testimonials-subtitle {
+        font-weight: 600;
+        font-size: 2rem;
+    }
+
 }
