@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom'
 const Offers = () => {
   return (
     <div className='offers-container'>
-        <div data-aos='zoom-in' className='offers-image-container' style={{backgroundImage: `url(${offers})`}}/>
+        <div data-aos='slide-right' className='offers-image-container' style={{backgroundImage: `url(${offers})`}}/>
         <div className='offers-right-container'>
             <h2 data-aos='fade-left' data-aos-delay='200' className='offers-description'>Diseñamos espacios únicos y funcionales, combinando creatividad, innovación y sostenibilidad para cada proyecto</h2>
             <ul className='types-offers-container'>

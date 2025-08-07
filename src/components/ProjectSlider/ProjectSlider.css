@@ -36,16 +36,20 @@
 
 
 .slider {
-    width: 98%;
+    width: 97%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .left-arrow, .right-arrow {
-    width: 2rem;
-    max-width: 6rem;
+    width: 4rem;
+    padding: 1rem;
     cursor: pointer;
+    max-width: 6rem;
+    border-radius: 4rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
     transition: filter 0.3s ease, transform 0.3s ease;
 }
 

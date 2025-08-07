@@ -2,19 +2,21 @@ export const project = [
     {
         id: 1,
         title: "Proyecto Cuenca",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         year: 2024,
         location: "Cuenca, Ecuador",
         type: "Residencial",
         video: "/ProyectoCuenca/video1.mp4",
         render: "/ProyectoCuenca/render1.jpg",
         renders: [
+            "/ProyectoCuenca/render1.jpg",
             "/ProyectoCuenca/render2.webp",
             "/ProyectoCuenca/render3.jpeg",
             "/ProyectoCuenca/render4.webp",
         ],
         blueprints: [
-            ""
+            "/ProyectoCuenca/render3.jpeg",
+            "/ProyectoCuenca/render1.jpg"
         ]
     },
     {
@@ -27,6 +29,7 @@ export const project = [
         video: "/ProyectoYunguilla/video1.mp4",
         render: "/ProyectoYunguilla/render1.jpg",
         renders: [
+            "/ProyectoYunguilla/render1.jpg",
             "/ProyectoYunguilla/render2.webp",
             "/ProyectoYunguilla/render3.jpeg",
             "/ProyectoYunguilla/render4.webp",
@@ -45,12 +48,13 @@ export const project = [
         video: "/ProyectoCuenca/video1.mp4",
         render: "/ProyectoCuenca/render1.jpg",
         renders: [
+            "/ProyectoCuenca/render1.jpg",
             "/ProyectoCuenca/render2.webp",
             "/ProyectoCuenca/render3.jpeg",
             "/ProyectoCuenca/render4.webp",
         ],
         blueprints: [
-            ""
+            "/ProyectoCuenca/render2.webp"
         ]
     },
     {
