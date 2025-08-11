@@ -6,7 +6,7 @@ const VideoPlayer = ({video, loopMode = false}) => {
   const hideTimeout = useRef(null);
   const [isMuted, setIsMuted] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [showControls, setShowControls] = useState(false);
+  const [showControls, setShowControls] = useState(true);
 
   
   const togglePlay = () => {

@@ -38,34 +38,47 @@ const Home = () => {
   }, []); 
 
   return (
-    <>
-      {/*clients && forniture && information &&*/ projects ?
-        <div style={{overflow: 'hidden'}}> 
-          <header className='home-header-container'>
-            <ProjectSlider navBar={<NavBar/>} projects={projects} header={'header'}/> 
+    <div style={{ overflow: 'hidden' }}>
+      {clients && projects ? (
+        <>
+          <header className="home-header-container">
+            <ProjectSlider navBar={<NavBar />} projects={projects} header="header" />
           </header>
-          <main className='home-main'>
-            <Offers/>
-            <div data-aos="flip-up" data-aos-delay="100" data-aos-duration="1200" className='home-video-container'>
-              <VideoPlayer video={video1}/>
+
+          <main className="home-main">
+            <Offers />
+            <div
+              data-aos="flip-up"
+              data-aos-delay="100"
+              data-aos-duration="1200"
+              className="home-video-container"
+            >
+              <VideoPlayer video={video1} />
             </div>
-            <RecentProjects projects={projects}/>
-            <div data-aos="flip-up" data-aos-delay="100" data-aos-duration="1200" className='home-video-container'>
-              <VideoPlayer video={video1}/>
+
+            <RecentProjects projects={projects} />
+
+            <div
+              data-aos="flip-up"
+              data-aos-delay="100"
+              data-aos-duration="1200"
+              className="home-video-container"
+            >
+              <VideoPlayer video={video1} />
             </div>
-            <Testimonials clients={clients}/>
-            
+
+            <Testimonials clients={clients} />
           </main>
-          <footer className='home-footer'>
-            <Footer/>
+
+          <footer className="home-footer">
+            <Footer />
           </footer>
-        </div>
-        :
+        </>
+      ) : (
         <Loading />
-      }
-    </>
-    
-  )
+      )}
+    </div>
+  );
 }
 
 export default Home

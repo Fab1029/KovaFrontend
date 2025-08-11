@@ -20,7 +20,7 @@
     margin-left: 4rem;
 }
 
-.recent-projects-container ul {
+.recent-projects-list {
     gap: 1rem;
     width: 100%;
     height: 35rem;
@@ -29,19 +29,16 @@
     justify-content: space-between;
 }
 
-.recent-projects-container ul li {
-    transition: flex 0.2s ease-in-out;
-}
-
 .recent-project-item-container {
     flex: 1;
     padding: 1rem;
     position: relative;
     background-color: #253646;
+
     display: flex;
+    overflow: hidden;
     flex-direction: column;
     justify-content: space-between;
-    overflow: hidden;
     transition: flex 0.2s ease-in-out;
 }
 
@@ -122,6 +119,7 @@
     border-radius: 1rem;
     padding: 0.3rem 0.2rem;
     background-color: #5B8095;
+
     gap: 0.5rem;
     display: flex;
     align-items: center;
@@ -133,6 +131,7 @@
     height: 1.5rem;
     border-radius: 3rem;
     background-color: #253646;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -147,4 +146,151 @@
     font-size: small;
     font-weight: 100;
     font-family: 'Poppins';
+}
+
+.carrusel-projects {
+    display: none;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+    .recent-projects-list {
+        display: none;
+    }
+
+    .recent-project-title,
+    .recent-project-subtitle {
+        font-size: 2.5rem;
+    }
+
+    .carrusel-projects {
+        margin: 2rem 0;
+        list-style: none;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        gap: 2rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .carrusel-projects::-webkit-scrollbar {
+        display: none; 
+    }
+
+    .carrusel-project-item {
+        height: 20rem;
+        min-width: 30rem;             
+        position: relative;
+        border-radius: 1rem;
+        box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+    }
+
+    .carrusel-project-item img {
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        object-fit: cover;
+        position: absolute;
+    }
+
+    .title-project-carrusel-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        text-align: center;
+    }
+
+    .title-project-carrusel-title,
+    .title-project-carrusel-subtitle {
+        color: white;
+        font-weight: 600;
+        font-size: xx-large;
+        font-family: 'Inter', sans-serif;
+        margin: 0;
+    }
+
+    .carrusel-button-container {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        z-index: 2;
+    }
+
+    .recent-project-button-carrusel {
+        width: 6rem;
+        border: none;
+        cursor: pointer;
+        border-radius: 1rem;
+        padding: 0.5rem 0.2rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
+        gap: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .recent-project-button-carrusel:hover,
+    .recent-project-button-carrusel:active {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .recent-project-button-carrusel h4 {
+        color: white;
+        font-size: small;
+        font-weight: 100;
+        font-family: 'Poppins';
+        margin: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .recent-project-title,
+    .recent-project-subtitle {
+        font-size: 2rem;
+    }
+
+    .carrusel-project-item {
+        height: 20rem;
+        min-width: 25rem;             
+    }
+}
+
+@media (max-width: 500px) {
+    .carrusel-project-item {
+        height: 18rem;
+        min-width: 22rem;             
+    }
+
+    .title-project-carrusel-title,
+    .title-project-carrusel-subtitle {
+        color: white;
+        font-weight: 500;
+        font-size: x-large;
+    }
+
+    .recent-project-button-carrusel {
+        width: 5rem;
+    }
+
+    .recent-project-button-carrusel h4 {
+        font-size: smaller;
+    }
+}
+
+@media (max-width: 450px) {
+    .carrusel-project-item {
+        height: 18rem;
+        min-width: 18rem;             
+    }
+
 }
