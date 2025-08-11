@@ -53,19 +53,16 @@
 .footer-section-title-subtitle {
     color: white;
     text-align: right;
-    margin-right: -5rem;
+    margin-left: 2rem;
 }
 
 .footer-social-icon-container {
+    gap: 2rem;
+    width: 100%;
     display: flex;
     margin-bottom: 2rem;
     align-items: center;
     justify-content: center;
-    
-}
-
-.footer-social-icon-container a {
-    margin: 0 0.8rem;
 }
 
 .social-icon {
