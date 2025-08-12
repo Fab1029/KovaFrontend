@@ -102,4 +102,24 @@
     animation: fadeSlideLeft 0.4s ease-in-out;
 }
 
+/* RESPONSIVE */ 
+@media (max-width: 500px) {
+    .arrow-render-slider {
+        width: 2rem;
+        padding: 0.4rem;
+    }
+
+    .render-slider-buttons-container button {
+        font-size: 0.7rem;
+    }
+
+    .render-slider-numbers-container h1 {
+        font-size: 0.8rem;
+    }
+
+    .render-slider-buttons-container button:hover, .render-slider-buttons-container button:active {
+        transform: scale(0.95);
+        box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+    }
+}
 
