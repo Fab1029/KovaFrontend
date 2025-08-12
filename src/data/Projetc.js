@@ -182,5 +182,24 @@ export const project = [
         blueprints: [
             ""
         ]
+    },
+    {
+        id: 11,
+        title: "Proyecto Macas",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        year: 2025,
+        location: "Macas, Ecuador",
+        type: "Comercial",
+        video: "/ProyectoMacas/video1.mp4",
+        render: "/ProyectoMacas/render1.jpg",
+        renders: [
+            "/ProyectoMacas/render1.jpg",
+            "/ProyectoMacas/render2.webp",
+            "/ProyectoMacas/render3.jpeg",
+            "/ProyectoMacas/render4.webp",
+        ],
+        blueprints: [
+            ""
+        ]
     }
 ]

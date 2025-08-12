@@ -53,7 +53,7 @@ const RenderSlider = ({project}) => {
     }
 
   return (
-    <div data-aos = 'slide-up' data-aos-duration = '1000' className='render-slider-container'>
+    <div data-aos = 'slide-up' data-aos-duration = '900' className='render-slider-container'>
         
         <div className={`render-slider-container-child ${direction === 'left' ? 'slide-left' : direction === 'right' ? 'slide-right' : ''}`} style={{backgroundImage: `url(${image})`}} onAnimationEnd={() => setDirection('')}>
             <div className='render-slider-buttons-container'>
