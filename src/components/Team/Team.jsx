@@ -10,10 +10,10 @@ const Team = () => {
       
       <div data-aos='zoom-in' data-aos-delay="100" data-aos-duration="800">
           <h1 className='recent-project-title'>
-              Proyectos
+              Nuestro
           </h1>
           <h1 className='recent-project-subtitle'>
-              Recientes
+              Equipo
           </h1>
       </div>
 

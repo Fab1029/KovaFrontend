@@ -13,7 +13,6 @@
 }
 
 .profile-container {
-    width: 25rem;
     padding: 1rem;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
@@ -53,7 +52,7 @@
 
 .profile-description {
     font-size: medium;
-    font-weight: 200;
+    font-weight: 100;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -69,5 +68,61 @@
 
     .profile-name, .profile-last-name, .profile-description {
         color: white;
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 1200px) {
+    .profile-container {
+        border-radius: 1rem;
+        background-color: #253646;
+        .profile-name, .profile-last-name, .profile-description {
+            color: white;
+        }
+    }
+
+    .profile-image {
+        width: 12rem;
+    }
+
+    .profile-description {
+        font-size: 0.9rem;
+    }
+
+    .profile-container:active, .profile-container:hover {
+        transform: translateY(-5px) scale(1.02);
+    }
+}
+
+@media (max-width: 800px) {
+    .profile-image {
+        width: 10rem;
+    }
+
+    .profile-description {
+        font-size: 0.8rem;
+    }
+
+    .profile-name {
+        font-size: large;
+    }
+
+    .profile-last-name {
+        margin-left: 1rem;
+        font-size: larger;
+    }
+}
+
+@media (max-width: 650px) {
+    .team-profile-container {
+        flex-direction: column;
+    }
+
+    .profile-container {
+        width: 20rem;
+    }
+
+    .profile-image {
+        width: 12rem;
     }
 }
