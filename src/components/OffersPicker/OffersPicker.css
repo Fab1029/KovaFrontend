@@ -1,6 +1,6 @@
 .offers-picker-container {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   position: relative;
   align-items: center;
@@ -87,4 +87,23 @@
   border-radius: 1rem;
   pointer-events: none;
   transition: all 0.3s ease-in-out;
+}
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+  .offers-picker-right-container {
+    flex: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .offers-picker-right-container {
+    flex: 3;
+  }
+}
+
+@media (max-width: 500px) {
+  .offers-picker-right-container {
+    flex: 4;
+  }
 }

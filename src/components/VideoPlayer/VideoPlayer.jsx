@@ -57,13 +57,13 @@ const VideoPlayer = ({video, loopMode = false}) => {
           <button className={`play-button ${showControls ? 'visible' : 'hidden'}`} onClick={togglePlay}>
             {isPlaying 
             ?
-              <svg style={{width: '4rem'}} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+              <svg style={{width: '3.5rem'}} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
                 <g id="SVGRepo_bgCarrier" strokeWidth="0"/>
                 <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"/>
                 <g id="SVGRepo_iconCarrier"> <g id="Media / Pause_Circle"> <path id="Vector" d="M14 9V15M10 9V15M12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/> </g> </g>
               </svg>
             : 
-              <svg style={{width: '4rem'}} fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+              <svg style={{width: '3rem'}} fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
                 <g id="SVGRepo_bgCarrier" strokeWidth="0"/>
                 <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"/>
                 <g id="SVGRepo_iconCarrier">
@@ -76,7 +76,7 @@ const VideoPlayer = ({video, loopMode = false}) => {
           <button className={`mute-button ${showControls ? 'visible' : 'hidden'}`} onClick={toggleMute}>
             {isMuted 
             ?
-            <svg style={{width: '2rem'}} fill="#ffffff"  viewBox="-1.5 0 19 19" xmlns="http://www.w3.org/2000/svg" class="cf-icon-svg" stroke="#ffffff">
+            <svg style={{width: '1.8rem'}} fill="#ffffff"  viewBox="-1.5 0 19 19" xmlns="http://www.w3.org/2000/svg" class="cf-icon-svg" stroke="#ffffff">
               <g id="SVGRepo_bgCarrier" strokeWidth="0"/>
               <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"/>
               <g id="SVGRepo_iconCarrier">
@@ -84,7 +84,7 @@ const VideoPlayer = ({video, loopMode = false}) => {
               </g>
             </svg>
             :
-            <svg style={{width: '1.8rem'}} fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+            <svg style={{width: '1.5rem'}} fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
               <g id="SVGRepo_bgCarrier" strokeWidth="0"/>
               <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"/>
               <g id="SVGRepo_iconCarrier">

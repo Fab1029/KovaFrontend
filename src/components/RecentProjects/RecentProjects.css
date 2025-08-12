@@ -71,6 +71,10 @@
     flex: 2;
 }
 
+.recent-project-item-container:hover .down-button-recent-projects {
+    opacity: 0;
+}
+
 .recent-project-item-container:hover .recent-project-image-top {
     opacity: 0;
     pointer-events: none;
@@ -152,9 +156,26 @@
     display: none;
 }
 
+.down-button-recent-projects {
+    z-index: 5;
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    right: 2%;
+    bottom: 1%;
+    border: none;
+    padding: 0.2rem;
+    border-radius: 5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+}
+
 
 /* RESPONSIVE */
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
     .recent-projects-list {
         display: none;
     }

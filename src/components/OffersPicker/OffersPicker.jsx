@@ -40,6 +40,15 @@ const OffersPicker = ({ offer, setOffer }) => {
               style={{ backgroundImage: `url(${comercialImage})` }}
               onClick={() => handleChangePicker('Comercial')}
             >
+
+              <button className='open-item-button'>
+                  <svg style={{width: '1.5rem'}} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000">
+                      <g id="SVGRepo_bgCarrier" strokeWidth="0"/>
+                      <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"/>
+                      <g id="SVGRepo_iconCarrier"> <path d="M7 17L17 7M17 7H8M17 7V16" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/> </g>
+                  </svg>
+              </button>
+
               <div
                 className='offers-blur-item'
                 style={{
@@ -68,6 +77,14 @@ const OffersPicker = ({ offer, setOffer }) => {
               style={{ backgroundImage: `url(${residentialImage})` }}
               onClick={() => handleChangePicker('Residencial')}
             >
+              <button className='open-item-button'>
+                  <svg style={{width: '1.5rem'}} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000">
+                      <g id="SVGRepo_bgCarrier" strokeWidth="0"/>
+                      <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"/>
+                      <g id="SVGRepo_iconCarrier"> <path d="M7 17L17 7M17 7H8M17 7V16" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/> </g>
+                  </svg>
+              </button>
+
               <div
                 className='offers-blur-item'
                 style={{
@@ -96,6 +113,14 @@ const OffersPicker = ({ offer, setOffer }) => {
               style={{ backgroundImage: `url(${socialImage})` }}
               onClick={() => handleChangePicker('Social')}
             >
+              <button className='open-item-button'>
+                  <svg style={{width: '1.5rem'}} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000">
+                      <g id="SVGRepo_bgCarrier" strokeWidth="0"/>
+                      <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"/>
+                      <g id="SVGRepo_iconCarrier"> <path d="M7 17L17 7M17 7H8M17 7V16" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/> </g>
+                  </svg>
+              </button>
+              
               <div
                 className='offers-blur-item'
                 style={{

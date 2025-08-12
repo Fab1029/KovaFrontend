@@ -90,20 +90,9 @@
 }
 
 /* RESPONSIVE */
-@media (max-width: 800px) {
-    .offers-description {
-        font-size: 0.8rem;
-    }
-
-    .types-offers-title, .types-offers-subtitle {
-        font-size: 0.8rem;
-    }
-
-    .types-offers-subtitle {
-        margin-left: 1rem;
-    }
-
+@media (max-width: 1200px) {
     .open-item-button {
+        z-index: 5;        
         display: block;
         position: absolute;
 
@@ -117,6 +106,28 @@
         border-radius: 5rem;
         background-color: rgba(0, 0, 0, 0.5);
         box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+    }
+
+    .types-offers-container li {
+        transition: all 0.1s ease-in-out;
+    }
+
+    .types-offers-container li:active {
+        transform: scale(0.95);
+    }
+}
+
+@media (max-width: 800px) {
+    .offers-description {
+        font-size: 0.8rem;
+    }
+
+    .types-offers-title, .types-offers-subtitle {
+        font-size: 0.8rem;
+    }
+
+    .types-offers-subtitle {
+        margin-left: 1rem;
     }
 }
 
