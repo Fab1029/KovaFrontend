@@ -41,3 +41,26 @@
 .body-right-container img {
     height: 50%;
 }
+
+/* RESPONSIVE */
+@media (max-width: 1200px) {
+    .photos-galley-container {
+        padding: 0rem 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-photo-container, .body-photos-container {
+        height: 20rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .photos-galley-container {
+        padding: 0rem 1rem;
+    }
+
+    .main-photo-container, .body-photos-container {
+        height: 15rem;
+    }
+}

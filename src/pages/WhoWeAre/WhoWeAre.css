@@ -14,9 +14,3 @@
     height: 40vh;
   }
 }
-
-@media (max-width: 500px) {
-  .whoWeAre-footer {
-    height: 30vh;
-  }
-}

@@ -16,6 +16,9 @@
     padding: 1rem;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+
+    border-radius: 1rem;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
 }
 
 .profile-image-container {
@@ -73,14 +76,6 @@
 
 /* RESPONSIVE */
 @media (max-width: 1200px) {
-    .profile-container {
-        border-radius: 1rem;
-        background-color: #253646;
-        .profile-name, .profile-last-name, .profile-description {
-            color: white;
-        }
-    }
-
     .profile-image {
         width: 12rem;
     }

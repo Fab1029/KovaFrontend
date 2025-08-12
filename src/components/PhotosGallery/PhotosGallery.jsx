@@ -22,7 +22,7 @@ const PhotosGallery = () => {
 
             <div className='body-right-container'>
                 <img data-aos = 'slide-left' data-aos-duration = '600' className='photo-element' src={photo3}/>
-                <img data-aos = 'slide-left' className='photo-element' src={photo4}/>
+                <img data-aos = 'slide-up' className='photo-element' src={photo4}/>
             </div>
             
         </div>
