@@ -4,7 +4,7 @@ import NavBar from '../../components/NavBar/NavBar'
 import { useParams } from 'react-router-dom'
 import Footer from '../../components/Footer/Footer'
 import { getProjectById } from '../../services/Project.js';
-import VideoPlayer from '../../components/VideoPlayer/VideoPlayer.jsx'
+import Loading from '../../components/Loading/Loading.jsx'
 import ProjectDetails from '../../components/ProjectDetails/ProjectDetails.jsx'
 import RenderSlider from '../../components/RenderSlider/RenderSlider.jsx'
 
@@ -22,25 +22,26 @@ const Project = () => {
   }, [id]); 
 
   return (
-    <>
-      { project ?
-        <div className='project-page-container' style={{overflow: 'hidden'}}> 
-          <header className='project-header'>
-            <NavBar/>
-          </header>
-          <main className='project-main'>
-            <ProjectDetails project={project}/>
-            <RenderSlider project={project}/>
-          </main>
-          <footer className='project-footer'>
-            <Footer/>
-          </footer>
-        </div>
-        :
-        <div>Cargando..</div>
-      }
-    </>
-      
+      <div className='project-page-container' style={{overflow: 'hidden'}}> 
+        {project ? (
+          <>
+            <header className='project-header'>
+              <NavBar/>
+            </header>
+            <main className='project-main'>
+              <ProjectDetails project={project}/>
+              <RenderSlider project={project}/>
+            </main>
+            <footer className='project-footer'>
+              <Footer/>
+            </footer>
+          </>
+        )
+        : (
+          <Loading />
+        )
+        }
+      </div>
   );
 }
 

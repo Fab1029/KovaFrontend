@@ -44,3 +44,33 @@
     display: flex;
     justify-content: flex-end;
 }
+
+.quote-svg {
+    width: 3rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+    .phrase-child-container {
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .phrase-image {
+        right: 2%;
+        width: 40%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 500px) {
+    .quote-svg {
+        width: 2rem;
+    }
+
+    .phrase {
+        font-size: large;
+    }
+}

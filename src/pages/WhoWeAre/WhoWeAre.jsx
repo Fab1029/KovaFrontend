@@ -13,7 +13,6 @@ import PhotosGallery from '../../components/PhotosGallery/PhotosGallery.jsx'
 
 
 const WhoWeAre = () => {
-  
 
   return (
     
