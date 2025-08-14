@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import './ProjectsGallery.css'
 import '../../utils/css/Animation.css'
@@ -9,16 +9,32 @@ import ProjectsList from '../../components/ProjectsList/ProjectsList'
 
 const ProjectsGallery = () => {
   const location = useLocation();
+  const projectsListRef = useRef(null);
   const [typeProject, setTypeProject] = useState('Comercial');
 
   useEffect(() => {
-    const params = new URLSearchParams(location.search)
-    const type = params.get('type')
-    if (type) {
-      setTypeProject(type)
-    }
-  }, [location.search])
+    const params = new URLSearchParams(location.search);
+    const type = params.get('type');
 
+    if (type) {
+      setTypeProject(type);
+    }
+
+    setTimeout(() => {
+      projectsListRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 500);
+
+  }, [location.search]);
+
+  const handleOfferChange = (type) => {
+    setTypeProject(type);
+
+    setTimeout(() => {
+      projectsListRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 200);
+
+  };
+  
   return (
   
     <div style={{ overflow: 'hidden' }}>
@@ -26,8 +42,10 @@ const ProjectsGallery = () => {
         <NavBar />
       </header>
       <main className='projectsGallery-main'>
-        <OffersPicker offer={typeProject} setOffer={setTypeProject} />
-        <ProjectsList typeProjects={typeProject}/>
+        <OffersPicker offer={typeProject} setOffer={handleOfferChange} />
+        <div ref={projectsListRef}>
+          <ProjectsList typeProjects={typeProject}/>
+        </div>
       </main>
       <footer className='projectsGallery-footer'>
         <Footer />
