@@ -6,17 +6,17 @@ export const project = [
         year: 2024,
         location: "Cuenca, Ecuador",
         type: "Residencial",
-        video: "/ProyectoCuenca/video1.mp4",
-        render: "/ProyectoCuenca/render1.jpg",
+        video: `${import.meta.env.BASE_URL}ProyectoCuenca/video1.mp4`,
+        render: `${import.meta.env.BASE_URL}ProyectoCuenca/render1.jpg`,
         renders: [
-            "/ProyectoCuenca/render1.jpg",
-            "/ProyectoCuenca/render2.webp",
-            "/ProyectoCuenca/render3.jpeg",
-            "/ProyectoCuenca/render4.webp",
+            `${import.meta.env.BASE_URL}ProyectoCuenca/render1.jpg`,
+            `${import.meta.env.BASE_URL}ProyectoCuenca/render2.webp`,
+            `${import.meta.env.BASE_URL}ProyectoCuenca/render3.jpeg`,
+            `${import.meta.env.BASE_URL}ProyectoCuenca/render4.webp`,
         ],
         blueprints: [
-            "/ProyectoCuenca/render3.jpeg",
-            "/ProyectoCuenca/render1.jpg"
+            `${import.meta.env.BASE_URL}ProyectoCuenca/render3.jpeg`,
+            `${import.meta.env.BASE_URL}ProyectoCuenca/render1.jpg`
         ]
     },
     {
