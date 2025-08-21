@@ -3,7 +3,7 @@ import './ProjectSlider.css';
 import { useNavigate } from 'react-router-dom';
 
 const ProjectSlider = ({ navBar, projects }) => {
-  const navigate = useNavigate(null);
+  const navigate = useNavigate();
   const [index, setIndex] = useState(0);
   const [rightSlide, setRightSlide] = useState(true);
   const [previewIndex, setPreviewIndex] = useState(projects.length - 1);
@@ -28,14 +28,18 @@ const ProjectSlider = ({ navBar, projects }) => {
   return (
     <div key={index} className="project-slider">
      
-      <div
+      <img
+        src={projects[previewIndex].render}
+        alt={projects[previewIndex].title}
         className='project-background project-background-preview'
-        style={{ backgroundImage: `url(${projects[previewIndex].render})` }}
+        loading='lazy'
       />
 
-      <div
+      <img
+        src={projects[index].render}
+        alt={projects[index].title}
         className={`project-background ${rightSlide ? 'project-background-right-next' : 'project-background-left-next'} `}
-        style={{ backgroundImage: `url(${projects[index].render})` }}
+        loading='lazy'
       />
 
       {navBar}
@@ -68,6 +72,7 @@ const ProjectSlider = ({ navBar, projects }) => {
           <li
             key={i}
             className="point"
+            onClick={() => setIndex(i)}
             style={{ backgroundColor: i === index ? 'white' : '#d9d9d983' }}
           />
         ))}

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import './Footer.css'
-import footerImage from '../../assets/Footer/footerImage.jpg'
+import footerImage from '../../assets/Footer/footerImage.webp'
 
 const Footer = () => {
   

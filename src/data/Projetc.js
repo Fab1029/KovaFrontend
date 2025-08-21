@@ -175,9 +175,9 @@ export const project = [
         location: "Macas, Ecuador",
         type: "Comercial",
         video: `${import.meta.env.BASE_URL}ProyectoMacas/video1.mp4`,
-        render: `${import.meta.env.BASE_URL}ProyectoMacas/render1.jpg`,
+        render: `${import.meta.env.BASE_URL}ProyectoMacas/render1.webp`,
         renders: [
-            `${import.meta.env.BASE_URL}ProyectoMacas/render1.jpg`,
+            `${import.meta.env.BASE_URL}ProyectoMacas/render1.webp`,
             `${import.meta.env.BASE_URL}ProyectoMacas/render2.webp`,
             `${import.meta.env.BASE_URL}ProyectoMacas/render3.jpeg`,
             `${import.meta.env.BASE_URL}ProyectoMacas/render4.webp`,

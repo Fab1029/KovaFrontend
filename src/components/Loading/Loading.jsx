@@ -5,7 +5,7 @@ import logo from '../../assets/Loading/Logo.png'
 const Loading = () => {
   return (
     <div className='loading-container'>
-      <img className='loading-kova-img' src={logo}/>
+      <img src={logo} alt='logo' className='loading-kova-img' loading='lazy'/>
       
     </div>
     
