@@ -5,7 +5,10 @@ import footerImage from '../../assets/Footer/footerImage.jpg'
 const Footer = () => {
   
   return (
-    <div className='footer' style={{ backgroundImage:  `url(${footerImage})` }}>
+    <div className='footer'>
+        
+        <img src={footerImage} alt='footer-image' loading='lazy'/>
+
         <div className='footer-slide'/>
         <div className='footer-information-container'>
             <div className='footer-title-container'>
