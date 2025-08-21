@@ -35,9 +35,9 @@ const RecentProjects = ({projects}) => {
                         </svg>
                     </button>
 
-                    <img src={project.render} className='recent-project-image-top'/>
+                    <img src={project.render} alt={project.title} loading='lazy' className='recent-project-image-top'/>
                     <div className='recent-project-image-container'>
-                        <img src={project.render} className='recent-project-image'/>
+                        <img src={project.render} alt={project.title} loading='lazy' className='recent-project-image'/>
                     </div>
                     
                     <div className='recent-project-right-container'>
@@ -71,7 +71,7 @@ const RecentProjects = ({projects}) => {
         <ul className='carrusel-projects' data-aos="slide-left" data-aos-duration="800">
             {projects.map((project, index) => (
                 <li className='carrusel-project-item' key = {index}>
-                    <img src={project.render}/>
+                    <img src={project.render} alt={project.title} loading='lazy'/>
                     <div className='header-carrusel-item-container'/>
                     <div className='title-project-carrusel-container'>
                         <h1 className='title-project-carrusel-title'>
