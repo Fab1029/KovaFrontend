@@ -1,9 +1,9 @@
 import React from 'react'
 import './Offers.css'
-import offers from '../../assets/Offers/offers.jpg'
-import proyectoSocial from '../../assets/Offers/proyectoSocial.jpg'
-import proyectoComercial from '../../assets/Offers/proyectoComercial.jpg'
-import proyectoResidencial from '../../assets/Offers/proyectoResidencial.jpg'
+import offers from '../../assets/Offers/offers.webp'
+import proyectoSocial from '../../assets/Offers/proyectoSocial.webp'
+import proyectoComercial from '../../assets/Offers/proyectoComercial.webp'
+import proyectoResidencial from '../../assets/Offers/proyectoResidencial.webp'
 
 import { Link, useNavigate } from 'react-router-dom'
 

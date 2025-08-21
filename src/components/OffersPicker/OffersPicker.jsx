@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import './OffersPicker.css'
-import comercialImage from '../../assets/Offers/proyectoComercial.jpg';
-import residentialImage from '../../assets/Offers/proyectoResidencial.jpg';
-import socialImage from '../../assets/Offers/proyectoSocial.jpg';
+import socialImage from '../../assets/Offers/proyectoSocial.webp';
+import comercialImage from '../../assets/Offers/proyectoComercial.webp';
+import residentialImage from '../../assets/Offers/proyectoResidencial.webp';
 
 const OffersPicker = ({ offer, setOffer }) => {
   const [offerImage, setOfferImage] = useState(null);

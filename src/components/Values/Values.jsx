@@ -1,6 +1,6 @@
 import React from 'react'
 import './Values.css'
-import valuesImage from '../../assets/Values/valuesImage.jpg'
+import valuesImage from '../../assets/Values/valuesImage.webp'
 
 const Values = () => {
   return (

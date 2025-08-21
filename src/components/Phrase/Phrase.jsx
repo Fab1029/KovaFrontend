@@ -1,6 +1,6 @@
 import React from 'react'
 import './Phrase.css'
-import phraseImage from '../../assets/Phrase/phraseImage.jpg'
+import phraseImage from '../../assets/Phrase/phraseImage.webp'
 
 const Phrase = () => {
   return (

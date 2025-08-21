@@ -7,16 +7,16 @@ export const project = [
         location: "Cuenca, Ecuador",
         type: "Residencial",
         video: `${import.meta.env.BASE_URL}ProyectoCuenca/video1.mp4`,
-        render: `${import.meta.env.BASE_URL}ProyectoCuenca/render1.jpg`,
+        render: `${import.meta.env.BASE_URL}ProyectoCuenca/render1.webp`,
         renders: [
-            `${import.meta.env.BASE_URL}ProyectoCuenca/render1.jpg`,
+            `${import.meta.env.BASE_URL}ProyectoCuenca/render1.webp`,
             `${import.meta.env.BASE_URL}ProyectoCuenca/render2.webp`,
-            `${import.meta.env.BASE_URL}ProyectoCuenca/render3.jpeg`,
+            `${import.meta.env.BASE_URL}ProyectoCuenca/render3.webp`,
             `${import.meta.env.BASE_URL}ProyectoCuenca/render4.webp`,
         ],
         blueprints: [
-            `${import.meta.env.BASE_URL}ProyectoCuenca/render3.jpeg`,
-            `${import.meta.env.BASE_URL}ProyectoCuenca/render1.jpg`
+            `${import.meta.env.BASE_URL}ProyectoCuenca/render3.webp`,
+            `${import.meta.env.BASE_URL}ProyectoCuenca/render1.webp`
         ]
     },
     {
@@ -27,11 +27,11 @@ export const project = [
         location: "Yunguilla, Ecuador",
         type: "Comercial",
         video: `${import.meta.env.BASE_URL}ProyectoYunguilla/video1.mp4`,
-        render: `${import.meta.env.BASE_URL}ProyectoYunguilla/render1.jpg`,
+        render: `${import.meta.env.BASE_URL}ProyectoYunguilla/render1.webp`,
         renders: [
-            `${import.meta.env.BASE_URL}ProyectoYunguilla/render1.jpg`,
+            `${import.meta.env.BASE_URL}ProyectoYunguilla/render1.webp`,
             `${import.meta.env.BASE_URL}ProyectoYunguilla/render2.webp`,
-            `${import.meta.env.BASE_URL}ProyectoYunguilla/render3.jpeg`,
+            `${import.meta.env.BASE_URL}ProyectoYunguilla/render3.webp`,
             `${import.meta.env.BASE_URL}ProyectoYunguilla/render4.webp`,
         ],
         blueprints: [""]
@@ -44,11 +44,11 @@ export const project = [
         location: "Cuenca, Ecuador",
         type: "Social",
         video: `${import.meta.env.BASE_URL}ProyectoCuenca/video1.mp4`,
-        render: `${import.meta.env.BASE_URL}ProyectoCuenca/render1.jpg`,
+        render: `${import.meta.env.BASE_URL}ProyectoCuenca/render1.webp`,
         renders: [
-            `${import.meta.env.BASE_URL}ProyectoCuenca/render1.jpg`,
+            `${import.meta.env.BASE_URL}ProyectoCuenca/render1.webp`,
             `${import.meta.env.BASE_URL}ProyectoCuenca/render2.webp`,
-            `${import.meta.env.BASE_URL}ProyectoCuenca/render3.jpeg`,
+            `${import.meta.env.BASE_URL}ProyectoCuenca/render3.webp`,
             `${import.meta.env.BASE_URL}ProyectoCuenca/render4.webp`,
         ],
         blueprints: [
@@ -63,10 +63,10 @@ export const project = [
         location: "Yunguilla, Ecuador",
         type: "Comercial",
         video: `${import.meta.env.BASE_URL}ProyectoYunguilla/video1.mp4`,
-        render: `${import.meta.env.BASE_URL}ProyectoYunguilla/render1.jpg`,
+        render: `${import.meta.env.BASE_URL}ProyectoYunguilla/render1.webp`,
         renders: [
             `${import.meta.env.BASE_URL}ProyectoYunguilla/render2.webp`,
-            `${import.meta.env.BASE_URL}ProyectoYunguilla/render3.jpeg`,
+            `${import.meta.env.BASE_URL}ProyectoYunguilla/render3.webp`,
             `${import.meta.env.BASE_URL}ProyectoYunguilla/render4.webp`,
         ],
         blueprints: [""]
@@ -79,10 +79,10 @@ export const project = [
         location: "Cuenca, Ecuador",
         type: "Comercial",
         video: `${import.meta.env.BASE_URL}ProyectoCuenca/video1.mp4`,
-        render: `${import.meta.env.BASE_URL}ProyectoCuenca/render1.jpg`,
+        render: `${import.meta.env.BASE_URL}ProyectoCuenca/render1.webp`,
         renders: [
             `${import.meta.env.BASE_URL}ProyectoCuenca/render2.webp`,
-            `${import.meta.env.BASE_URL}ProyectoCuenca/render3.jpeg`,
+            `${import.meta.env.BASE_URL}ProyectoCuenca/render3.webp`,
             `${import.meta.env.BASE_URL}ProyectoCuenca/render4.webp`,
         ],
         blueprints: [""]
@@ -95,10 +95,10 @@ export const project = [
         location: "Cuenca, Ecuador",
         type: "Residencial",
         video: `${import.meta.env.BASE_URL}ProyectoCuenca/video1.mp4`,
-        render: `${import.meta.env.BASE_URL}ProyectoCuenca/render1.jpg`,
+        render: `${import.meta.env.BASE_URL}ProyectoCuenca/render1.webp`,
         renders: [
             `${import.meta.env.BASE_URL}ProyectoCuenca/render2.webp`,
-            `${import.meta.env.BASE_URL}ProyectoCuenca/render3.jpeg`,
+            `${import.meta.env.BASE_URL}ProyectoCuenca/render3.webp`,
             `${import.meta.env.BASE_URL}ProyectoCuenca/render4.webp`,
         ],
         blueprints: [""]
@@ -111,10 +111,10 @@ export const project = [
         location: "Yunguilla, Ecuador",
         type: "Comercial",
         video: `${import.meta.env.BASE_URL}ProyectoYunguilla/video1.mp4`,
-        render: `${import.meta.env.BASE_URL}ProyectoYunguilla/render1.jpg`,
+        render: `${import.meta.env.BASE_URL}ProyectoYunguilla/render1.webp`,
         renders: [
             `${import.meta.env.BASE_URL}ProyectoYunguilla/render2.webp`,
-            `${import.meta.env.BASE_URL}ProyectoYunguilla/render3.jpeg`,
+            `${import.meta.env.BASE_URL}ProyectoYunguilla/render3.webp`,
             `${import.meta.env.BASE_URL}ProyectoYunguilla/render4.webp`,
         ],
         blueprints: [""]
@@ -127,10 +127,10 @@ export const project = [
         location: "Cuenca, Ecuador",
         type: "Social",
         video: `${import.meta.env.BASE_URL}ProyectoCuenca/video1.mp4`,
-        render: `${import.meta.env.BASE_URL}ProyectoCuenca/render1.jpg`,
+        render: `${import.meta.env.BASE_URL}ProyectoCuenca/render1.webp`,
         renders: [
             `${import.meta.env.BASE_URL}ProyectoCuenca/render2.webp`,
-            `${import.meta.env.BASE_URL}ProyectoCuenca/render3.jpeg`,
+            `${import.meta.env.BASE_URL}ProyectoCuenca/render3.webp`,
             `${import.meta.env.BASE_URL}ProyectoCuenca/render4.webp`,
         ],
         blueprints: [""]
@@ -143,10 +143,10 @@ export const project = [
         location: "Yunguilla, Ecuador",
         type: "Comercial",
         video: `${import.meta.env.BASE_URL}ProyectoYunguilla/video1.mp4`,
-        render: `${import.meta.env.BASE_URL}ProyectoYunguilla/render1.jpg`,
+        render: `${import.meta.env.BASE_URL}ProyectoYunguilla/render1.webp`,
         renders: [
             `${import.meta.env.BASE_URL}ProyectoYunguilla/render2.webp`,
-            `${import.meta.env.BASE_URL}ProyectoYunguilla/render3.jpeg`,
+            `${import.meta.env.BASE_URL}ProyectoYunguilla/render3.webp`,
             `${import.meta.env.BASE_URL}ProyectoYunguilla/render4.webp`,
         ],
         blueprints: [""]
@@ -159,10 +159,10 @@ export const project = [
         location: "Cuenca, Ecuador",
         type: "Comercial",
         video: `${import.meta.env.BASE_URL}ProyectoCuenca/video1.mp4`,
-        render: `${import.meta.env.BASE_URL}ProyectoCuenca/render1.jpg`,
+        render: `${import.meta.env.BASE_URL}ProyectoCuenca/render1.webp`,
         renders: [
             `${import.meta.env.BASE_URL}ProyectoCuenca/render2.webp`,
-            `${import.meta.env.BASE_URL}ProyectoCuenca/render3.jpeg`,
+            `${import.meta.env.BASE_URL}ProyectoCuenca/render3.webp`,
             `${import.meta.env.BASE_URL}ProyectoCuenca/render4.webp`,
         ],
         blueprints: [""]
@@ -179,7 +179,7 @@ export const project = [
         renders: [
             `${import.meta.env.BASE_URL}ProyectoMacas/render1.webp`,
             `${import.meta.env.BASE_URL}ProyectoMacas/render2.webp`,
-            `${import.meta.env.BASE_URL}ProyectoMacas/render3.jpeg`,
+            `${import.meta.env.BASE_URL}ProyectoMacas/render3.webp`,
             `${import.meta.env.BASE_URL}ProyectoMacas/render4.webp`,
         ],
         blueprints: [""]

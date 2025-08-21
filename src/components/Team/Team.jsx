@@ -1,8 +1,8 @@
 import React from 'react'
 import './Team.css'
-import NicolasLandyImage from '../../assets/Team/NicolasLandy.jpg'
-import PaulaCordovaImage from '../../assets/Team/PaulaCordova.jpg'
-import VanessaTorresImage from '../../assets/Team/VanessaTorres.jpg'
+import NicolasLandyImage from '../../assets/Team/NicolasLandy.webp'
+import PaulaCordovaImage from '../../assets/Team/PaulaCordova.webp'
+import VanessaTorresImage from '../../assets/Team/VanessaTorres.webp'
 
 const Team = () => {
   return (

@@ -1,9 +1,9 @@
 import React from 'react'
 import './PhotosGallery.css'
-import photo1 from '../../assets/PhotosGallery/1.jpg'
-import photo2 from '../../assets/PhotosGallery/2.jpg'
-import photo3 from '../../assets/PhotosGallery/3.jpg'
-import photo4 from '../../assets/PhotosGallery/4.jpg'
+import photo1 from '../../assets/PhotosGallery/1.webp'
+import photo2 from '../../assets/PhotosGallery/2.webp'
+import photo3 from '../../assets/PhotosGallery/3.webp'
+import photo4 from '../../assets/PhotosGallery/4.webp'
 
 
 const PhotosGallery = () => {
