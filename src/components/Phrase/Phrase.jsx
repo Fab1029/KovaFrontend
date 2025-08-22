@@ -30,7 +30,7 @@ const Phrase = () => {
             </div>
             
         </div>
-        <img data-aos = 'fade-up' data-aos-delay = '450' className='phrase-image' src={phraseImage}></img>
+        <img data-aos = 'fade-up' data-aos-delay = '450' src={phraseImage} alt='phrase-image' className='phrase-image' loading='lazy'/>
     </div>
   )
 }

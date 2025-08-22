@@ -21,7 +21,7 @@ const Team = () => {
         <div data-aos = 'fade-down'>
           <div className='profile-container'>
             <div className='profile-image-container'>
-              <img className='profile-image' src={NicolasLandyImage}/>
+              <img src={NicolasLandyImage} alt='nicolas-landy' className='profile-image' loading='lazy'/>
             </div>
             <div className='profile-container-name'>
               <h2 className='profile-name'>Nicolás</h2>
@@ -36,7 +36,7 @@ const Team = () => {
         <div data-aos = 'fade-up'>
           <div className='profile-container'>
             <div className='profile-image-container'>
-              <img className='profile-image' src={VanessaTorresImage}/>
+              <img src={VanessaTorresImage} alt='vanessa-torres' className='profile-image' loading='lazy'/>
             </div>
             <div className='profile-container-name'>
               <h2 className='profile-name'>Vanessa</h2>
@@ -52,7 +52,7 @@ const Team = () => {
         <div data-aos = 'fade-down'>
           <div className='profile-container'>
             <div className='profile-image-container'>
-              <img className='profile-image' src={PaulaCordovaImage}/>
+              <img src={PaulaCordovaImage} alt='paula-cordova' className='profile-image' loading='lazy'/>
             </div>
             <div className='profile-container-name'>
               <h2 className='profile-name'>Paula</h2>

@@ -4,8 +4,9 @@ import valuesImage from '../../assets/Values/valuesImage.webp'
 
 const Values = () => {
   return (
-    <div data-aos = 'zoom-in' className='values-container' style={{backgroundImage: `url(${valuesImage})`}}>
-        <div data-aos = 'fade-up'>
+    <div data-aos = 'zoom-in' className='values-container'>
+        <img src={valuesImage} alt='values-image' loading='lazy'/>
+        <div data-aos = 'fade-up' className='value-container-aos'>
             <div  className='value-container'>
                 <h2 className='value-title'>Misión</h2>
                 <p className='value-description'>
@@ -14,7 +15,7 @@ const Values = () => {
             </div>
         </div>
         
-        <div data-aos = 'fade-up'>
+        <div data-aos = 'fade-up' className='value-container-aos'>
             <div className='value-container'>
                 <p className='value-description'>
                     Aspiramos a ser reconocidos como líderes que honran el legado arquitectónico de nuestra ciudad mientras avanza hacia el futuro, todo en estrecha colaboración con nuestros clientes
