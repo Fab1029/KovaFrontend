@@ -21,8 +21,10 @@ const OffersPicker = ({ offer, setOffer }) => {
     <div
       key={offer}
       className='offers-picker-container'
-      style={{ backgroundImage: `url(${offerImage})` }}
     >
+      
+      <img src={offerImage} alt='offer-iamge' loading='lazy'/>
+
       <div className='offers-blur-container'/>
       <div className='offers-picker-left-container' />
       <div className='offers-picker-right-container'>
@@ -37,9 +39,9 @@ const OffersPicker = ({ offer, setOffer }) => {
             {/* Contenedor hover + background */}
             <div
               className='offer-picker-item'
-              style={{ backgroundImage: `url(${comercialImage})` }}
               onClick={() => handleChangePicker('Comercial')}
             >
+              <img src={comercialImage} alt='comercial-image' loading='lazy'/>
 
               <button className='open-item-button'>
                   <svg style={{width: '1.5rem'}} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000">
@@ -55,10 +57,10 @@ const OffersPicker = ({ offer, setOffer }) => {
                   backgroundColor:
                     offer === 'Comercial'
                       ? 'rgba(0, 0, 0, 0)'
-                      : 'rgba(255, 255, 255, 0.3)',
+                      : 'rgba(37, 54, 60, 0.5)',
                 }}
               />
-              <div>
+              <div className='offer-picker-container-title'>
                 <h4 className='offer-picker-title'>Proyectos</h4>
                 <h4 className='offer-picker-subtitle'>Comerciales</h4>
               </div>
@@ -74,9 +76,10 @@ const OffersPicker = ({ offer, setOffer }) => {
           >
             <div
               className='offer-picker-item'
-              style={{ backgroundImage: `url(${residentialImage})` }}
               onClick={() => handleChangePicker('Residencial')}
             >
+              <img src={residentialImage} alt='residential-image' loading='lazy'/>
+
               <button className='open-item-button'>
                   <svg style={{width: '1.5rem'}} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000">
                       <g id="SVGRepo_bgCarrier" strokeWidth="0"/>
@@ -91,10 +94,10 @@ const OffersPicker = ({ offer, setOffer }) => {
                   backgroundColor:
                     offer === 'Residencial'
                       ? 'rgba(0, 0, 0, 0)'
-                      : 'rgba(255, 255, 255, 0.3)',
+                      : 'rgba(37, 54, 60, 0.5)',
                 }}
               />
-              <div>
+              <div className='offer-picker-container-title'>
                 <h4 className='offer-picker-title'>Proyectos</h4>
                 <h4 className='offer-picker-subtitle'>Residenciales</h4>
               </div>
@@ -110,9 +113,10 @@ const OffersPicker = ({ offer, setOffer }) => {
           >
             <div
               className='offer-picker-item'
-              style={{ backgroundImage: `url(${socialImage})` }}
               onClick={() => handleChangePicker('Social')}
             >
+              <img src={socialImage} alt='social-image' loading='lazy'/>
+
               <button className='open-item-button'>
                   <svg style={{width: '1.5rem'}} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000">
                       <g id="SVGRepo_bgCarrier" strokeWidth="0"/>
@@ -127,10 +131,10 @@ const OffersPicker = ({ offer, setOffer }) => {
                   backgroundColor:
                     offer === 'Social'
                       ? 'rgba(0, 0, 0, 0)'
-                      : 'rgba(255, 255, 255, 0.3)',
+                      : 'rgba(37, 54, 60, 0.5)',
                 }}
               />
-              <div>
+              <div className='offer-picker-container-title'>
                 <h4 className='offer-picker-title'>Proyectos</h4>
                 <h4 className='offer-picker-subtitle'>Sociales</h4>
               </div>

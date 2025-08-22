@@ -1,13 +1,20 @@
 .offers-picker-container {
   width: 100vw;
   min-height: 100vh;
+
   display: flex;
   position: relative;
   align-items: center;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   animation: fadeBackground 0.4s ease-in-out;
+}
+
+.offers-picker-container img {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  
 }
 
 .offers-blur-container {
@@ -46,6 +53,7 @@
   width: 90%;
   height: 9rem;
   cursor: pointer;
+  overflow: hidden;
   position: relative;
   border-radius: 1rem;
 
@@ -62,9 +70,13 @@
 }
 
 .offer-picker-item:hover {
+  z-index: 10;
   transform: scale(1.05);
-  z-index: 10; 
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.offer-picker-container-title {
+  z-index: 3;
 }
 
 .offer-picker-title,
@@ -80,12 +92,11 @@
 }
 
 .offers-blur-item {
-  z-index: 3;
+  z-index: 2;
   width: 100%;
   height: 100%;
   position: absolute;
-  border-radius: 1rem;
-  pointer-events: none;
+
   transition: all 0.3s ease-in-out;
 }
 
