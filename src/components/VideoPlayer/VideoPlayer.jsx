@@ -53,7 +53,7 @@ const VideoPlayer = ({video, loopMode = false}) => {
           loop={loopMode}
           muted={loopMode}
           playsInline
-          preload='metadata'
+          preload='auto'
         />
         {!loopMode && (
           <button className={`play-button ${showControls ? 'visible' : 'hidden'}`} onClick={togglePlay}>

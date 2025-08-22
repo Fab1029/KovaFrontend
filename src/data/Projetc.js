@@ -8,8 +8,9 @@ export const project = [
         location: "Cuenca, Ecuador",
         type: "Comercial",
         video: `${import.meta.env.BASE_URL}MeHanContado/video.webm`,
-        render: `${import.meta.env.BASE_URL}MeHanContado/render_2.webp`,
+        render: `${import.meta.env.BASE_URL}MeHanContado/render_1.webp`,
         renders: [
+            `${import.meta.env.BASE_URL}MeHanContado/render_1.webp`,
             `${import.meta.env.BASE_URL}MeHanContado/render_2.webp`,
             `${import.meta.env.BASE_URL}MeHanContado/render_3.webp`,
             `${import.meta.env.BASE_URL}MeHanContado/render_4.webp`,
