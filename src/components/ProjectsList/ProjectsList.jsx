@@ -29,7 +29,7 @@ const ProjectsList = ({typeProjects}) => {
             <div key={index} className="project-card-container" onClick={() => handleOnClickProject(project.id)}>
                 <img
                     src={project.render}
-                    alt={project.title}
+                    alt='render'
                     className="project-image"
                     loading='lazy'
                 />
@@ -44,8 +44,8 @@ const ProjectsList = ({typeProjects}) => {
 
                 <div className='project-card-blur-container'>
                     <div>
-                        <h2 className='project-card-blur-title'>{project.title.split(' ')[0]}</h2>
-                        <h2 className='project-card-blur-subtitle'>{project.title.split(' ')[1]}</h2>
+                        <h2 className='project-card-blur-title'>{project.title}</h2>
+                        <h2 className='project-card-blur-subtitle'>{project.subtitle}</h2>
                     </div>
                 </div>
             </div>

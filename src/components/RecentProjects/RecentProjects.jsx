@@ -35,18 +35,18 @@ const RecentProjects = ({projects}) => {
                         </svg>
                     </button>
 
-                    <img src={project.render} alt={project.title} loading='lazy' className='recent-project-image-top'/>
+                    <img src={project.render} alt='render' loading='lazy' className='recent-project-image-top'/>
                     <div className='recent-project-image-container'>
-                        <img src={project.render} alt={project.title} loading='lazy' className='recent-project-image'/>
+                        <img src={project.render} alt='render' loading='lazy' className='recent-project-image'/>
                     </div>
                     
                     <div className='recent-project-right-container'>
                         <div className='recent-project-title-container'>
                             <h1 className='recent-project-title-title'>
-                                {project.title.split(' ')[0]}
+                                {project.title}
                             </h1>
                             <h1 className='recent-project-title-subtitle'>
-                                {project.title.split(' ')[1]}
+                                {project.subtitle}
                             </h1>
                         </div>
                         <p>{project.description}</p>
@@ -75,10 +75,10 @@ const RecentProjects = ({projects}) => {
                     <div className='header-carrusel-item-container'/>
                     <div className='title-project-carrusel-container'>
                         <h1 className='title-project-carrusel-title'>
-                            {project.title.split(' ')[0]}
+                            {project.title}
                         </h1>
                         <h1 className='title-project-carrusel-subtitle'>
-                            {project.title.split(' ')[1]}
+                            {project.subtitle}
                         </h1>
                     </div>
                     <div className='carrusel-button-container'>

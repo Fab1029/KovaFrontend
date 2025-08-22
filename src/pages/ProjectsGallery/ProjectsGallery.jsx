@@ -18,11 +18,14 @@ const ProjectsGallery = () => {
 
     if (type) {
       setTypeProject(type);
+
+      setTimeout(() => {
+        projectsListRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 100);
+
     }
 
-    setTimeout(() => {
-      projectsListRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }, 500);
+    
 
   }, [location.search]);
 

@@ -54,15 +54,20 @@ const RenderSlider = ({project}) => {
 
   return (
     <div data-aos = 'slide-up' data-aos-duration = '900' className='render-slider-container'>
-        
-        <div className={`render-slider-container-child ${direction === 'left' ? 'slide-left' : direction === 'right' ? 'slide-right' : ''}`} style={{backgroundImage: `url(${image})`}} onAnimationEnd={() => setDirection('')}>
+        <img src={image} alt='render' loading='lazy' className={`render-slider-container-child ${direction === 'left' ? 'slide-left' : direction === 'right' ? 'slide-right' : ''}`} onAnimationEnd={() => setDirection('')} />
+        <div className='render-slider-controls-container'>
             <div className='render-slider-buttons-container'>
-                <button style={{backgroundColor: type === 'Render' ? 'rgba(255, 255, 255, 0.9)' : 'rgba(255, 255, 255, 0.3)'}} onClick={() => handleChangeType('Render')}>
-                    Render
-                </button>
-                <button style={{backgroundColor: type !== 'Render' ? 'rgba(255, 255, 255, 0.9)' : 'rgba(255, 255, 255, 0.3)'}} onClick={() => handleChangeType('Detalle')}>
-                    Detalle
-                </button>
+                {project.renders.length > 0 && (
+                    <button style={{backgroundColor: type === 'Render' ? 'rgba(255, 255, 255, 0.9)' : 'rgba(255, 255, 255, 0.3)'}} onClick={() => handleChangeType('Render')}>
+                        Render
+                    </button>
+                )}
+                
+                {project.blueprints.length > 0 && (
+                    <button style={{backgroundColor: type !== 'Render' ? 'rgba(255, 255, 255, 0.9)' : 'rgba(255, 255, 255, 0.3)'}} onClick={() => handleChangeType('Detalle')}>
+                        Detalle
+                    </button>
+                )}
             </div>
 
             <div className='render-slider-arrows-container'>

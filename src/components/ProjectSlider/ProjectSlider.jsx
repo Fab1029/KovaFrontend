@@ -30,14 +30,14 @@ const ProjectSlider = ({ navBar, projects }) => {
      
       <img
         src={projects[previewIndex].render}
-        alt={projects[previewIndex].title}
+        alt='render'
         className='project-background project-background-preview'
         loading='lazy'
       />
 
       <img
         src={projects[index].render}
-        alt={projects[index].title}
+        alt='render'
         className={`project-background ${rightSlide ? 'project-background-right-next' : 'project-background-left-next'} `}
         loading='lazy'
       />
@@ -53,10 +53,10 @@ const ProjectSlider = ({ navBar, projects }) => {
         {/*AQUI DEBO HACER ON CLICK PARA LLEVAR AL PROYECTO*/}
         <div className="name-slider" onClick={() => handleOnClickProject(projects[index].id)}>
           <h1 className= 'project-title'>
-            {projects[index].title.split(' ')[0]}
+            {projects[index].title}
           </h1>
           <h1 className= 'project-subtitle'>
-            {projects[index].title.split(' ')[1]}
+            {projects[index].subtitle}
           </h1>
         </div>
 

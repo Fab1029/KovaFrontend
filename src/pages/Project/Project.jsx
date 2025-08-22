@@ -30,7 +30,11 @@ const Project = () => {
             </header>
             <main className='project-main'>
               <ProjectDetails project={project}/>
-              <RenderSlider project={project}/>
+              
+              {(project.renders.length > 0  || project.blueprints.length > 0) && (
+                <RenderSlider project={project}/>
+              )}
+              
             </main>
             <footer className='project-footer'>
               <Footer/>

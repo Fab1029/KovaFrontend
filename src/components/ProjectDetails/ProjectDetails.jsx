@@ -10,8 +10,8 @@ const ProjectDetails = ({project}) => {
         <div className='project-details-left-container'>
             
             <div>
-                <h2 data-aos = 'slide-right' data-aos-duration = '600' className='project-details-title'>{project.title.split(' ')[0]}</h2>
-                <h2 data-aos = 'slide-right' data-aos-duration = '600' className='project-details-subtitle'>{project.title.split(' ')[1]}</h2>
+                <h2 data-aos = 'slide-right' data-aos-duration = '600' className='project-details-title'>{project.title}</h2>
+                <h2 data-aos = 'slide-right' data-aos-duration = '600' className='project-details-subtitle'>{project.subtitle}</h2>
             </div>
             
 
