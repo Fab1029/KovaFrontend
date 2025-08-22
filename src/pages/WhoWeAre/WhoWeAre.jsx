@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './WhoWeAre.css'
 import '../../utils/css/Animation.css'
-import video1 from '../../assets/VideoPlayer/video1.mp4'
+import video1 from '../../assets/VideoPlayer/video1.webm'
 import NavBar from '../../components/NavBar/NavBar.jsx'
 import Footer from '../../components/Footer/Footer.jsx'
 import VideoPlayer from '../../components/VideoPlayer/VideoPlayer.jsx'
