@@ -31,6 +31,7 @@ const ProjectsList = ({typeProjects}) => {
                     src={project.render}
                     alt={project.title}
                     className="project-image"
+                    loading='lazy'
                 />
 
                 <button className='open-item-button'>
