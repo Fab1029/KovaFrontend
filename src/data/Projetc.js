@@ -1,3 +1,6 @@
+/*
+    Type: Comercial, Residencial, Social
+*/
 export const project = [
     {
         id: 1,
@@ -21,177 +24,24 @@ export const project = [
     },
     {
         id: 2,
-        title: "Proyecto",
-        subtitle: 'Yunguilla',
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        year: 2023,
-        location: "Yunguilla, Ecuador",
-        type: "Comercial",
-        video: `${import.meta.env.BASE_URL}ProyectoYunguilla/video1.webm`,
-        render: `${import.meta.env.BASE_URL}ProyectoYunguilla/render1.webp`,
-        renders: [
-            `${import.meta.env.BASE_URL}ProyectoYunguilla/render1.webp`,
-            `${import.meta.env.BASE_URL}ProyectoYunguilla/render2.webp`,
-            `${import.meta.env.BASE_URL}ProyectoYunguilla/render3.webp`,
-            `${import.meta.env.BASE_URL}ProyectoYunguilla/render4.webp`,
-        ],
-        blueprints: []
-    },
-    {
-        id: 3,
-        title: "Proyecto",
-        subtitle: 'Cuenca',
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        year: 2024,
-        location: "Cuenca, Ecuador",
-        type: "Social",
-        video: `${import.meta.env.BASE_URL}ProyectoCuenca/video1.webm`,
-        render: `${import.meta.env.BASE_URL}ProyectoCuenca/render1.webp`,
-        renders: [
-            `${import.meta.env.BASE_URL}ProyectoCuenca/render1.webp`,
-            `${import.meta.env.BASE_URL}ProyectoCuenca/render2.webp`,
-            `${import.meta.env.BASE_URL}ProyectoCuenca/render3.webp`,
-            `${import.meta.env.BASE_URL}ProyectoCuenca/render4.webp`,
-        ],
-        blueprints: [
-            `${import.meta.env.BASE_URL}ProyectoCuenca/render2.webp`
-        ]
-    },
-    {
-        id: 4,
-        title: "Proyecto",
-        subtitle: 'Yunguilla',
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        year: 2023,
-        location: "Yunguilla, Ecuador",
-        type: "Comercial",
-        video: `${import.meta.env.BASE_URL}ProyectoYunguilla/video1.webm`,
-        render: `${import.meta.env.BASE_URL}ProyectoYunguilla/render1.webp`,
-        renders: [
-            `${import.meta.env.BASE_URL}ProyectoYunguilla/render2.webp`,
-            `${import.meta.env.BASE_URL}ProyectoYunguilla/render3.webp`,
-            `${import.meta.env.BASE_URL}ProyectoYunguilla/render4.webp`,
-        ],
-        blueprints: []
-    },
-    {
-        id: 5,
-        title: "Proyecto",
-        subtitle: 'Cuenca',
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        year: 2024,
-        location: "Cuenca, Ecuador",
-        type: "Comercial",
-        video: `${import.meta.env.BASE_URL}ProyectoCuenca/video1.webm`,
-        render: `${import.meta.env.BASE_URL}ProyectoCuenca/render1.webp`,
-        renders: [
-            `${import.meta.env.BASE_URL}ProyectoCuenca/render2.webp`,
-            `${import.meta.env.BASE_URL}ProyectoCuenca/render3.webp`,
-            `${import.meta.env.BASE_URL}ProyectoCuenca/render4.webp`,
-        ],
-        blueprints: []
-    },
-    {
-        id: 6,
-        title: "Proyecto",
-        subtitle: 'Cuenca',
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        year: 2024,
-        location: "Cuenca, Ecuador",
-        type: "Residencial",
-        video: `${import.meta.env.BASE_URL}ProyectoCuenca/video1.webm`,
-        render: `${import.meta.env.BASE_URL}ProyectoCuenca/render1.webp`,
-        renders: [
-            `${import.meta.env.BASE_URL}ProyectoCuenca/render2.webp`,
-            `${import.meta.env.BASE_URL}ProyectoCuenca/render3.webp`,
-            `${import.meta.env.BASE_URL}ProyectoCuenca/render4.webp`,
-        ],
-        blueprints: []
-    },
-    {
-        id: 7,
-        title: "Proyecto",
-        subtitle: 'Yunguilla',
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        year: 2023,
-        location: "Yunguilla, Ecuador",
-        type: "Comercial",
-        video: `${import.meta.env.BASE_URL}ProyectoYunguilla/video1.webm`,
-        render: `${import.meta.env.BASE_URL}ProyectoYunguilla/render1.webp`,
-        renders: [
-            `${import.meta.env.BASE_URL}ProyectoYunguilla/render2.webp`,
-            `${import.meta.env.BASE_URL}ProyectoYunguilla/render3.webp`,
-            `${import.meta.env.BASE_URL}ProyectoYunguilla/render4.webp`,
-        ],
-        blueprints: []
-    },
-    {
-        id: 8,
-        title: "Proyecto",
-        subtitle: 'Cuenca',
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        year: 2024,
-        location: "Cuenca, Ecuador",
-        type: "Social",
-        video: `${import.meta.env.BASE_URL}ProyectoCuenca/video1.webm`,
-        render: `${import.meta.env.BASE_URL}ProyectoCuenca/render1.webp`,
-        renders: [
-            `${import.meta.env.BASE_URL}ProyectoCuenca/render2.webp`,
-            `${import.meta.env.BASE_URL}ProyectoCuenca/render3.webp`,
-            `${import.meta.env.BASE_URL}ProyectoCuenca/render4.webp`,
-        ],
-        blueprints: []
-    },
-    {
-        id: 9,
-        title: "Proyecto",
-        subtitle: 'Yunguilla',
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        year: 2023,
-        location: "Yunguilla, Ecuador",
-        type: "Comercial",
-        video: `${import.meta.env.BASE_URL}ProyectoYunguilla/video1.webm`,
-        render: `${import.meta.env.BASE_URL}ProyectoYunguilla/render1.webp`,
-        renders: [
-            `${import.meta.env.BASE_URL}ProyectoYunguilla/render2.webp`,
-            `${import.meta.env.BASE_URL}ProyectoYunguilla/render3.webp`,
-            `${import.meta.env.BASE_URL}ProyectoYunguilla/render4.webp`,
-        ],
-        blueprints: []
-    },
-    {
-        id: 10,
-        title: "Proyecto",
-        subtitle: 'Cuenca',
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        year: 2024,
-        location: "Cuenca, Ecuador",
-        type: "Comercial",
-        video: `${import.meta.env.BASE_URL}ProyectoCuenca/video1.webm`,
-        render: `${import.meta.env.BASE_URL}ProyectoCuenca/render1.webp`,
-        renders: [
-            `${import.meta.env.BASE_URL}ProyectoCuenca/render2.webp`,
-            `${import.meta.env.BASE_URL}ProyectoCuenca/render3.webp`,
-            `${import.meta.env.BASE_URL}ProyectoCuenca/render4.webp`,
-        ],
-        blueprints: []
-    },
-    {
-        id: 11,
-        title: "Proyecto",
-        subtitle: 'Macas',
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        title: "Casa",
+        subtitle: 'Auren',
+        description: "Ubicada en Gualaquiza, esta vivienda de dos niveles combina materiales rústicos como piedra y madera con un diseño moderno y funcional. Sus amplias ventanas favorecen la iluminación natural y la ventilación cruzada, mientras que los patios y áreas verdes integrados aportan frescura, amplitud visual y conexión con la naturaleza. En el interior, los espacios sociales se desarrollan en un ambiente abierto y continuo, en contraste con la zona privada de dormitorios que garantiza intimidad. La casa se organiza en dos departamentos independientes, uno en planta baja y otro en planta alta, logrando un equilibrio entre modernidad, calidez y practicidad.",
         year: 2025,
-        location: "Macas, Ecuador",
-        type: "Comercial",
-        video: `${import.meta.env.BASE_URL}ProyectoMacas/video1.webm`,
-        render: `${import.meta.env.BASE_URL}ProyectoMacas/render1.webp`,
+        location: "Gualaquiza, Ecuador",
+        type: "Residencial",
+        video: `${import.meta.env.BASE_URL}CasaAuren/video.webm`,
+        render: `${import.meta.env.BASE_URL}CasaAuren/primeraFachada.webp`,
         renders: [
-            `${import.meta.env.BASE_URL}ProyectoMacas/render1.webp`,
-            `${import.meta.env.BASE_URL}ProyectoMacas/render2.webp`,
-            `${import.meta.env.BASE_URL}ProyectoMacas/render3.webp`,
-            `${import.meta.env.BASE_URL}ProyectoMacas/render4.webp`,
+            `${import.meta.env.BASE_URL}CasaAuren/primeraFachada.webp`,
+            `${import.meta.env.BASE_URL}CasaAuren/segundaFachada.webp`,
+            `${import.meta.env.BASE_URL}CasaAuren/primeraSala.webp`,
+            `${import.meta.env.BASE_URL}CasaAuren/segundaSala.webp`,
+            `${import.meta.env.BASE_URL}CasaAuren/comedor.webp`,
+            `${import.meta.env.BASE_URL}CasaAuren/cuartoPrincipal.webp`,
+            `${import.meta.env.BASE_URL}CasaAuren/cuartoNinas.webp`,
         ],
         blueprints: []
-    }
-];
+    },
+    
+]
