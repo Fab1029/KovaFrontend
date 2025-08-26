@@ -1,10 +1,4 @@
 .projectsGallery-footer {
     width: 100vw;
-    height: 60vh;
-}
-
-@media (max-width: 700px) {
-  .projectsGallery-footer {
     height: 40vh;
-  }
 }
