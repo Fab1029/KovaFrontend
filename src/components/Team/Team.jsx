@@ -48,8 +48,8 @@ const Team = () => {
           </div>
         </div>
 
-        
-        <div data-aos = 'fade-down'>
+
+        {/*<div data-aos = 'fade-down'>
           <div className='profile-container'>
             <div className='profile-image-container'>
               <img src={PaulaCordovaImage} alt='paula-cordova' className='profile-image' loading='lazy'/>
@@ -62,7 +62,7 @@ const Team = () => {
               Arquitecta, CEO de Kova Arch y gestora de proyectos. Lidera con una visión integral, combinando creatividad, estrategia y sensibilidad por el entorno. Comprometida con la innovación, la sostenibilidad y el diseño de espacios con significado.
             </p>
           </div>
-        </div>
+        </div>*/}
 
       </div>
       

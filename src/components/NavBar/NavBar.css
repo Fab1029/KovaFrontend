@@ -43,7 +43,7 @@
 }
 
 .link-item:active {
-    transform: scale(0.95);
+    transform: scale(0.5);
 }
 
 .link-item.active {

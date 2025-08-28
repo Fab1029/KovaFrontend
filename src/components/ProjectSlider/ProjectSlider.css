@@ -46,7 +46,7 @@
     border-radius: 2rem;
     background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
-    transition: filter 0.3s ease, transform 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .left-arrow:hover, .right-arrow:hover, .left-arrow:active, .right-arrow:active {
@@ -59,6 +59,10 @@
 
 .left-arrow:hover, .left-arrow:active {
     transform: translateX(-10%);
+}
+
+.left-arrow:active, .right-arrow:active {
+    transform: scale(0.8);
 }
 
 .project-title, .project-subtitle {

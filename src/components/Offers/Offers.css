@@ -108,6 +108,11 @@
 
 .open-item-button {
     display: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.open-item-button:active {
+    transform: scale(0.5);
 }
 
 /* RESPONSIVE */

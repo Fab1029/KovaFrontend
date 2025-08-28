@@ -173,6 +173,9 @@
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
 }
 
+.recent-project-button-carrusel:active {
+    transform: scale(0.5);
+}
 
 /* RESPONSIVE */
 @media (max-width: 1200px) {

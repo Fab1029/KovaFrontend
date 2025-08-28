@@ -75,6 +75,10 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
+.offer-picker-item:active {
+  transform: scale(0.5);
+}
+
 .offer-picker-container-title {
   z-index: 3;
 }
