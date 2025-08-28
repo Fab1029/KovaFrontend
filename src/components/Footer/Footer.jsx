@@ -3,7 +3,15 @@ import './Footer.css'
 import footerImage from '../../assets/Footer/footerImage.webp'
 
 const Footer = () => {
-  
+  const whatsappNumber = "593983916659";
+  const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+  const message = "Estoy interesado en conocer más acerca de Kovaarch, me gustaría estar en contacto con ustedes";
+
+  // Enlace distinto según el dispositivo
+  const whatsappLink = isMobile
+    ? `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`
+    : `https://web.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(message)}`;
+
   return (
     <div className='footer'>
         
@@ -36,7 +44,7 @@ const Footer = () => {
                     </svg>
                 </a>
 
-                <a href='https://web.whatsapp.com/' target='_blank'>
+                <a href={whatsappLink} target='_blank'>
                     <svg className='social-icon whatsapp-icon' viewBox="0 0 24 24" fill="#ffffff">
                         <g id="SVGRepo_bgCarrier" strokeWidth="0"/>
                         <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"/>
