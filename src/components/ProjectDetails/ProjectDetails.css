@@ -71,12 +71,30 @@
 @media (max-width: 1000px) { 
     .project-details-container {
         height: auto;
-        margin-top: 2.5rem;
+        margin-top: 2rem;
         flex-direction: column;
     }
 
     .project-details {
-        margin-top: 1rem;
+        margin-top: 0.5rem;
         margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 600px) { 
+    .project-details-container {
+        margin-bottom: 0;
+    }
+
+    .project-details-title, .project-details-subtitle {
+        font-size: 2rem;
+    }
+
+    .project-details-right-container {
+        padding: 0.4rem;
+    }
+
+    .project-details-description, .project-detail-item-description, .project-detail-item-title{
+        font-size: 0.9rem;
     }
 }
