@@ -10,6 +10,7 @@ import RenderSlider from '../../components/RenderSlider/RenderSlider.jsx'
 
 const Project = () => {
   const { id } = useParams();
+  const [loading, setLoading] = useState(true);
   const [project, setProject] = useState(null);
 
   useEffect(() => {
@@ -21,9 +22,19 @@ const Project = () => {
     fetchProject();
   }, [id]); 
 
+  useEffect(() => {
+    if (project) {
+      const timeout = setTimeout(() => {
+        setLoading(false);
+      }, 2000); 
+
+      return () => clearTimeout(timeout);
+    }
+  }, [project]);
+
   return (
       <div className='project-page-container' style={{overflow: 'hidden'}}> 
-        {project ? (
+        {loading ? <Loading/> : (
           <>
             <header className='project-header'>
               <NavBar/>
@@ -40,11 +51,7 @@ const Project = () => {
               <Footer/>
             </footer>
           </>
-        )
-        : (
-          <Loading />
-        )
-        }
+        )}
       </div>
   );
 }

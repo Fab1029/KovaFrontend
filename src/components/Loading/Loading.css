@@ -91,9 +91,9 @@
 }
 
 @keyframes gradient-animation {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 @media (max-width:900px) {
@@ -110,5 +110,12 @@
     .square {
         width: 1.2rem;
         height: 1.2rem;
+    }
+}
+
+@media (max-width:500px) {
+    .square {
+        width: 1rem;
+        height: 1rem;
     }
 }

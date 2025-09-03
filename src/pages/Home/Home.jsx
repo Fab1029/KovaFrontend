@@ -14,6 +14,7 @@ import RecentProjects from '../../components/RecentProjects/RecentProjects.jsx'
 import Testimonials from '../../components/Testimonials/Testimonials.jsx'
 
 const Home = () => {
+  const [loading, setLoading] = useState(true);
   const [clients, setClients] = useState(null);
   const [projects, setProjects] = useState(null);
 
@@ -37,9 +38,20 @@ const Home = () => {
     
   }, []); 
 
+  useEffect(() => {
+    if (clients && projects) {
+      const timeout = setTimeout(() => {
+        setLoading(false);
+      }, 2000); 
+
+      return () => clearTimeout(timeout);
+    }
+  }, [clients, projects]);
+
+
   return (
     <div style={{ overflow: 'hidden' }}>
-      {false/*clients && projects*/ ? (
+      {loading ? <Loading/> : (
         <>
           <header className="home-header-container">
             <ProjectSlider navBar={<NavBar />} projects={projects} header="header" />
@@ -74,8 +86,6 @@ const Home = () => {
             <Footer />
           </footer>
         </>
-      ) : (
-        <Loading />
       )}
     </div>
   );

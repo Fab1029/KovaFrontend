@@ -9,29 +9,43 @@ import Phrase from '../../components/Phrase/Phrase.jsx'
 import Values from '../../components/Values/Values.jsx'
 import Team from '../../components/Team/Team.jsx'
 import PhotosGallery from '../../components/PhotosGallery/PhotosGallery.jsx'
+import Loading from '../../components/Loading/Loading.jsx'
 
 
 
 const WhoWeAre = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setLoading(false);
+    }, 1000); 
+
+    return () => clearTimeout(timeout);
+  }, []);
 
   return (
     
     <div style={{overflow: 'hidden'}}> 
-      <header className='whoWeAre-header'>
-        <NavBar/>
-      </header>
-      <main className='whoWeAre-main'>
-        <div className='whoWeAre-video-container'>
-          <VideoPlayer video={video1} loopMode={true}/>
-        </div>
-        <Phrase/>
-        <Values/>
-        <Team/>
-        <PhotosGallery/>
-      </main>
-      <footer className='whoWeAre-footer'>
-        <Footer/>
-      </footer>
+    {loading ? <Loading/> : (
+      <>
+        <header className='whoWeAre-header'>
+          <NavBar/>
+        </header>
+        <main className='whoWeAre-main'>
+          <div className='whoWeAre-video-container'>
+            <VideoPlayer video={video1} loopMode={true}/>
+          </div>
+          <Phrase/>
+          <Values/>
+          <Team/>
+          <PhotosGallery/>
+        </main>
+        <footer className='whoWeAre-footer'>
+          <Footer/>
+        </footer>
+      </>
+    )}
     </div>
         
   )

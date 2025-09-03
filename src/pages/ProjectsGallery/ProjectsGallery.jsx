@@ -6,10 +6,12 @@ import NavBar from '../../components/NavBar/NavBar'
 import Footer from '../../components/Footer/Footer'
 import OffersPicker from '../../components/OffersPicker/OffersPicker'
 import ProjectsList from '../../components/ProjectsList/ProjectsList'
+import Loading from '../../components/Loading/Loading'
 
 const ProjectsGallery = () => {
   const location = useLocation();
   const projectsListRef = useRef(null);
+  const [loading, setLoading] = useState(true);
   const [typeProject, setTypeProject] = useState('Comercial');
 
   useEffect(() => {
@@ -24,9 +26,6 @@ const ProjectsGallery = () => {
       }, 100);
 
     }
-
-    
-
   }, [location.search]);
 
   const handleOfferChange = (type) => {
@@ -37,22 +36,35 @@ const ProjectsGallery = () => {
     }, 200);
 
   };
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setLoading(false);
+    }, 2000); 
+
+    return () => clearTimeout(timeout);
+  }, []);
   
   return (
   
     <div style={{ overflow: 'hidden' }}>
-      <header className='projectsGallery-header'>
-        <NavBar />
-      </header>
-      <main className='projectsGallery-main'>
-        <OffersPicker offer={typeProject} setOffer={handleOfferChange} />
-        <div ref={projectsListRef}>
-          <ProjectsList typeProjects={typeProject}/>
-        </div>
-      </main>
-      <footer className='projectsGallery-footer'>
-        <Footer />
-      </footer>
+      {loading ? <Loading/> : (
+        <>
+          <header className='projectsGallery-header'>
+            <NavBar />
+          </header>
+          <main className='projectsGallery-main'>
+            <OffersPicker offer={typeProject} setOffer={handleOfferChange} />
+            <div ref={projectsListRef}>
+              <ProjectsList typeProjects={typeProject}/>
+            </div>
+          </main>
+          <footer className='projectsGallery-footer'>
+            <Footer />
+          </footer>
+        </>
+      )}
+      
     </div>
     
   )
