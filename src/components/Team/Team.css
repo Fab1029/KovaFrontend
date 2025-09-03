@@ -5,7 +5,7 @@
 
 .team-profile-container {
     gap: 3rem;
-    margin-top: 2rem;
+    padding: 2rem 3rem;
 
     display: flex;
     align-items: center;

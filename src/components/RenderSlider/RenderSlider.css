@@ -113,6 +113,11 @@
 
 /* RESPONSIVE */ 
 @media (max-width: 500px) {
+    .render-slider-container {
+        height: 30dvh;
+        margin: 1rem auto;
+    }
+
     .arrow-render-slider {
         width: 2rem;
         padding: 0.4rem;

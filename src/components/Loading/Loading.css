@@ -7,6 +7,7 @@
     animation: gradient-animation 2s ease-in-out infinite;
 
     display: flex;
+    position: relative;
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -15,6 +16,7 @@
 .loading-header-container, .loading-main-container, .loading-footer-container {
     flex: 1;
     width: 100%;
+    z-index: 100;
 }
 
 .loading-header-container, .loading-footer-container {
