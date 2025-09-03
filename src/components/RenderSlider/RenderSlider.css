@@ -1,6 +1,6 @@
 .render-slider-container {
-    width: 95vw;
-    height: 85vh;
+    width: 95dvw;
+    height: 85dvh;
     overflow: hidden;
     margin: 3rem auto;
     position: relative;

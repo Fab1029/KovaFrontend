@@ -39,7 +39,7 @@ const Home = () => {
 
   return (
     <div style={{ overflow: 'hidden' }}>
-      {clients && projects ? (
+      {false/*clients && projects*/ ? (
         <>
           <header className="home-header-container">
             <ProjectSlider navBar={<NavBar />} projects={projects} header="header" />
